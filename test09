@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="noindex" name="robots" />
+	<meta name="description" content="한섬 EQL">
+	<meta property="og:locale:alternate" content="ko_KR">
+	<meta property="og:title" content="한섬 EQL">
+	<meta property="og:url" content="https://www.thehandsome.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="/resources/images/favicon/share.png">
+	<meta property="og:site_name" content="한섬 EQL">
+	<meta property="og:description" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="한섬 EQL">
+	<meta name="twitter:url" content="https://www.thehandsome.com/">
+	<meta name="twitter:image" content="/resources/images/favicon/share.png">
+	<meta name="twitter:description" content="">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>한섬 EQL</title>
+
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-touch-icon-180x180-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="/resources/images/favicon/apple-touch-icon-167x167-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-touch-icon-152x152-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-touch-icon-120x120-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-touch-icon-76x76-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-touch-icon-60x60-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/resources/images/favicon/apple-touch-icon-57x57-precomposed.png">
+
+	<link rel="shortcut icon" sizes="256x256" href="/resources/images/favicon/favicon_256x256.png">
+	<link rel="shortcut icon" sizes="196x196" href="/resources/images/favicon/favicon_196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="/resources/images/favicon/favicon_128x128.png">
+	<link rel="shortcut icon" sizes="48x48" href="/resources/images/favicon/favicon_48x48.png">
+	<link rel="shortcut icon" sizes="32x32" href="/resources/images/favicon/favicon_32x32.png">
+	<link rel="shortcut icon" href="/resources/images/favicon/favicon_16x16.png">
+
+	<link rel="icon" sizes="128x128" href="/resources/images/favicon/favicon_128x128.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="/resources/images/favicon/favicon_64x64.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="/resources/images/favicon/favicon_32x32.png" type="image/png">
+
+	<meta name="msapplication-TileImage" content="/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
+
+	<!-- Vendors CSS
+			================================================== -->
+	<link rel="stylesheet" href="/resources/vendors/overlayScrollBars/css/OverlayScrollbars.min.css">
+	<link rel="stylesheet" href="/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="/resources/vendors/star-rating/css/star-rating.min.css">
+	<link rel="stylesheet" href="/resources/vendors/swiper-4.4.6/css/swiper.min.css">
+
+	<!-- Custom styles for this template
+			================================================== -->
+	<link rel="stylesheet" href="/resources/css/ui.min.css">
+	<link rel="stylesheet" href="/resources/css/layout.min.css">
+
+	<!-- Vendors javascript
+			================================================== -->
+	<script src="/resources/vendors/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.js"></script>
+	<script src="/resources/vendors/scrollpos-styler/scrollPosStyler.min.js"></script>
+	<script src="/resources/vendors/overlayScrollBars/js/OverlayScrollbars.js"></script>
+	<script src="/resources/vendors/star-rating/js/star-rating.min.js"></script>
+	<script src="/resources/vendors/swiper-4.4.6/js/swiper.min.js"></script>
+	<script src="/resources/vendors/lottie/lottie.min.js"></script><!-- 200403 추가 : 로딩 애니메이션 플러그인 추가 -->
+
+	<!-- UI JavaScript
+			================================================== -->
+	<script src="/resources/js/front_ui.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.btn-video').on('click', function () {
+				var videoData, videoType, videoUrl;
+				videoData = $(this).data();
+				videoType = videoData.videoType;
+				videoUrl = videoData.videoUrl;
+
+				switch (videoType) {
+					case 'youtube':
+						handsome.ui.front.setYoutubeIFrame($(this).closest('.video-box'), videoUrl);
+						break;
+					case 'vimeo':
+						handsome.ui.front.setVimeoIframe($(this).closest('.video-box'), videoUrl);
+						break;
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrap-inner">
+			<div class="skip-nav-wrap">
+				<a href="#gnbMenuWrap">메뉴 바로가기</a>
+				<a href="#contentsWrap">본문 바로가기</a>
+			</div>
+			<div class="header-wrap sps">
+				<div class="header-top-wrap">
+					<h1 class="header-logo"><a href="/"><img src="/resources/images/common/comm_header_logo.png" alt="EQL"></a></h1>
+					<div class="header-util-wrap">
+						<button type="button" class="btn-search">Search</button>
+						<a href="#" class="btn-join">Join</a>
+						<a href="#" class="btn-login">Login</a>
+						<a href="#" class="btn-my-page">Nick Name</a>
+						<a href="#" class="btn-equal">Equal</a>
+						<a href="#" class="btn-cart">Cart (<span class="cart-cnt">3</span>)</a>
+					</div>
+				</div>
+				<div class="header-bottom-wrap">
+					<div id="gnbMenuWrap" class="gnb-menu-wrap">
+						<ul class="gnb-list theme-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name" style="color: #009e3d;" data-hover-color="#61cc80">06 Olympic</a><!-- 200227 수정 : .depth-1 .menu-name에 attribute 'data-hover-color' 추가 -->
+							</li>
+						</ul>
+						<ul class="gnb-list category-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Woman</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Men</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Brand</a>
+								<div class="gnb-list-sub-wrap brand-sub">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Top Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Exclusive Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AMBIT 2019 FW COLLECTION</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">앤더슨벨 EXCLUSIVE ITEM</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AECA WHITE 베이직 라인</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="gnb-list exclusive-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">EQL Exclusive</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Event</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Archive</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="contentsWrap" class="contents-wrap">
+				<div class="quick-menu sps">
+					<div class="quick-menu-box">
+						<a href="#" class="btn-share">화면 공유</a>
+						<a href="#top" class="btn-top">최상단으로 이동</a>
+						<a href="#footerWrap" class="btn-bottom">최하단으로 이동</a>
+					</div>
+				</div>
+
+				<!--S : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+				<!--S : detail-container-wrapper-->
+				<div class="detail-container-wrapper white js-detail-content">
+					<!-- DESC :
+						컨텐츠 상세 예시페이지. 코너별 가이드는 해당 페이지 참조
+						1. 컨텐츠 상세 레이아웃 : html/detail/01_detail_layout.html
+					-->
+					<div class="detail-contents-wrap">
+						<!--S : 이벤트 컨텐츠 html 영역-->
+						<div class="event-content-wrap">
+							<!--S : 이벤트 컨텐츠 임시 영역-->
+
+							<!-- 
+
+								1. BO > 프로모션 > 이벤트 관리 
+								2. 조회 버튼 클릭 > 이벤트번호 8182
+								
+							-->
+                            
+<!-- <link rel="stylesheet" href="/resources/event/2022/11/insider/style.css">   -->
+							
+<!-- S : 이벤트 상세 코너 -->
+<script src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+<script src="https://www.eqlstore.com/eql_pc/resources/vendors/parallax-scroll/ScrollMagic.min.js"></script>
+<script src="https://www.eqlstore.com/eql_pc/resources/vendors/parallax-scroll/TweenMax.min.js"></script>
+<script src="https://www.eqlstore.com/eql_pc/resources/vendors/parallax-scroll/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script> -->
+
+<style>
+.ui-dialog {top:100px;} /* alert 위치 초기화 */	
+.wrap .header-wrap {z-index:10000 !important;} /* 헤더 z-index 초기화 */
+.hidden {width:1px;height:1px;margin:-1px;font-size:0px;clip:rect(0px,0px,0px,0px);clip-path:inset(50%);overflow:hidden;}
+
+.pmo-cont {max-width:2560px;min-width:1200px;overflow-x:hidden;}
+.pmo-cont article {position:relative;}
+.pmo-cont .inner {width:1200px;margin:0 auto;}
+.pmo-cont .hidden {display:none;}
+.pmo-cont img { /* 이미지 흐림 현상 개선 */
+	image-rendering: -moz-crisp-edges; /* firefox */
+	image-rendering: -o-crisp-edges; /* opera */
+	image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+	image-rendering: crisp-edges;
+	backface-visibility:hidden;
+}
+.pmo-cont .img {text-align:center;}
+.pmo-cont .img img {vertical-align:top;}
+
+.font-fix {font-family:"Noto Sans KR", sans-serif !important;}
+
+/* 섹션 공통 유의사항 */
+.pmo-cont .list-notice {text-align:center;position:relative;}
+.pmo-cont .list-notice dt {text-align:center;font-size:15px;letter-spacing:-0.4px;font-weight:400;color:#fff;}
+.pmo-cont .list-notice dt:after {content:" 보기";}
+.pmo-cont .list-notice.on dt:after {content:" 닫기";}
+.pmo-cont .list-notice dd {display:none;padding-top:31px;}
+.pmo-cont .list-notice.on dd {display:inline-flex;flex-direction:column;margin-left:90px;}
+.pmo-cont .list-notice li {text-align:left;padding:0px 0px 0px 8px;/*font-family:"Noto Sans KR", sans-serif;*/font-size:14px;line-height:2.0;letter-spacing:-0.35px;font-weight:300;position:relative;color:#ccc;}
+.pmo-cont .list-notice li:before {display:inline-block;width:10px;content:"·";position: absolute;left:0;top:0;}
+
+/* top-menu */
+.pmo-cont .evt-top .top-menu {display:flex;justify-content:flex-end;width:100%;height:43px;border-bottom:1px solid #fff;position:absolute;top:0px;left:0px;z-index:20;}
+.pmo-cont .evt-top .top-menu li {position:relative;}
+.pmo-cont .evt-top .top-menu li:hover {cursor:pointer;}
+.pmo-cont .evt-top .top-menu li span {display:block;padding:12px 30px 12px 28px;font-size:18px;letter-spacing:-0.58px;font-weight:300;color:#fff;}
+.pmo-cont .evt-top .top-menu li .box-hash {display:none;width:83px;height:43px;position:absolute;;top:40px;left:23px;}
+.pmo-cont .evt-top .top-menu li .box-hash.on {display:block;}
+.pmo-cont .evt-top .top-menu li i {display:none;position:absolute;top:6px;left:0px;text-align:center;justify-content:center;align-items:center;width:80px;height:38px;font-size:11px;line-height:1.1;letter-spacing:-0.44px;color:#ccc;background:#666;z-index:10;box-sizing:content-box;}
+.pmo-cont .evt-top .top-menu li i.not-yet {display:flex;}
+.pmo-cont .evt-top .top-menu li i:hover {cursor:default;}
+.pmo-cont .evt-top .top-menu li em {display:block;padding-top:4px;position:absolute;top:2px;left:0px;}
+.pmo-cont .evt-top .top-menu li em a {text-align:center;display:flex;justify-content:center;align-items:center;width:80px;height:38px;font-size:11px;line-height:1.1;letter-spacing:-0.44px;color:#999;background:#fff;}
+
+/* 상단 타이틀 */
+.pmo-cont .evt-top {height:calc(100vh - 125px);position:relative;}
+.pmo-cont .evt-top img { width:100%;}
+.pmo-cont .evt-top .movi-sec {width:101%;height:100%;margin-left:-2px;position:relative;overflow:hidden;}
+.pmo-cont .evt-top .movi-sec .vod {width:auto;min-width:100%;height:auto;min-height:100%;transform:translateX(-50%) translateY(-40%);position:absolute;top:50%;left:50%;z-index:0;}
+/* .pmo-cont .evt-top .list-movie li:first-child:before {content:"";position:absolute; top:0; right:0; bottom:0; left:0;background:rgba(0, 0, 0, 0.2);z-index:10;} */
+
+/* sub text */
+.txt-sub {text-align:center;}
+.txt-sub .sec01 {padding:62px 0px 63px 0px;color:#a9d5ed;background:#000;}
+.txt-sub .sec01 h5 {font-size:28px;letter-spacing:-1.12px;font-weight:600;}
+.txt-sub .sec01 h5 span {padding-left:15px;font-size:30px;letter-spacing:0px;font-weight:500;}
+.txt-sub .sec01 p {padding-top:21px;font-size:16px;line-height:1.6;letter-spacing:-0.4px;font-weight:500;}
+
+.txt-sub .sec02 {padding:125px 0px 133px 0px;background:#000 url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/bg_sub_text.png") no-repeat 50% 50%;background-size:cover;}
+.txt-sub .sec02 p {font-size:57px;line-height:1.3;letter-spacing:-2px;font-weight:700;color:#a9d5ed;}
+.txt-sub .sec02 p i {display:inline-block;position:relative;}
+.txt-sub .sec02 p i:before {content:"";display:block;width:100%;height:3px;position:absolute;bottom:2px;background:#a9d5ed;}
+
+/* visual text */
+.pmo-cont .evt-top .tit-top-visual {width:100%;position:absolute;top:54px;left:0px;right:0px;z-index:10;}
+.pmo-cont .evt-top .tit-top-visual span {display:block;font-size:2.344vw;letter-spacing:-1.8px;color:#fff;position:absolute;top:2.1vw;right:1.406vw;}
+.pmo-cont .evt-top .tit-top-visual em {display:block;margin-top:24.844vw;border-top:1px solid #75fb55;border-bottom:1px solid #75fb55;}
+
+.pmo-cont .evt-top .mid-txt {position:absolute;top:0px;bottom:0px;left:0px;right:0px;}
+.pmo-cont .evt-top .mid-txt ul {display:flex;justify-content:space-between;align-items:center;width:100%;height:100%;padding:43px 46px 0px 27px;}
+.pmo-cont .evt-top .mid-txt ul li img {width:auto;height:19px;}
+
+.pmo-cont .evt-top .box-bottom {width:100%;position:absolute;right:0;bottom:0;left:0;z-index:10;}
+.pmo-cont .evt-top .box-bottom span {display:block;}
+.pmo-cont .evt-top .box-bottom .list-sub-txt {height:29.677vw;padding-top:4.245vw;background:rgba(0, 0, 0, 0.30);}
+
+/* top rotate */
+.ani-sec {display:none;width:132px;height:132px;position:absolute;top:49.3vw;bottom:auto;right:70px;z-index:1000;}
+.ani-sec.fixed {position:fixed;top:auto;bottom:70px;right:70px;}
+.ani-sec img {width:100%;}
+.ani-sec img + img {position:absolute;top:0px;left:0px;animation:spin 2.5s linear infinite;}
+@keyframes spin {100%{transform:rotate(360deg);}} 
+
+@media all and (max-width:1216px) {
+	.pmo-cont .evt-top .tit-top-visual span {font-size:28px;letter-spacing:-1.8px;top:22px;right:20px;}
+}
+
+/* tabs */
+.pmo-cont .event-menu {position:relative;}
+.pmo-cont .event-menu .event-menu-inner {position:absolute;top:0px;left:0;width: 100%;background-color:#fff;border-bottom:1px solid #000;z-index:1000;}
+.pmo-cont .event-menu .event-menu-inner.fixed {position:fixed;top:auto;bottom:0px;}
+.pmo-cont .event-menu .event-menu-inner ul {display: flex;display: -webkit-flex;margin:0 auto;width:1200px;border-left:1px solid #555;border-right:1px solid #555;box-sizing: border-box;}
+.pmo-cont .event-menu .event-menu-inner ul li {position: relative;width: 33.34%;text-align: center;border-left:1px solid #000;box-sizing: border-box;}
+.pmo-cont .event-menu .event-menu-inner ul li:first-child {width:33.33%;box-sizing: border-box;border-left:none;}
+.pmo-cont .event-menu .event-menu-inner ul li.active a {background:#a9d5ed;color:#000;}
+.pmo-cont .event-menu .event-menu-inner ul li a {display:flex;display:-webkit-flex;justify-content:center;align-items:center;width:100%;height:38px;font-size:15px;color:#000;background:#fff;}
+.pmo-cont .event-menu .event-menu-inner ul li a em {display:inline-block;margin-right:5px;font-weight:300;}
+
+/* SIM SIM */
+.pmo-cont .section-01 {text-align:center;padding:0px 0px 0px 0px;position:relative;}
+.pmo-cont .section-01 .ins-event {text-align:center;padding:172px 0px 180px 0px;background:#000;}
+.pmo-cont .section-01 .ins-event .tit-sec-event span img {height:16px;}
+.pmo-cont .section-01 .ins-event .tit-sec-event h5 {text-align:center;width:906px;margin:45px auto 72px auto;}
+.pmo-cont .section-01 .ins-event .tit-sec-event h5 img {height:81px;}
+.pmo-cont .section-01 .ins-event .tit-sec-event h5 img + img {height:289px;margin-top:23px;}
+.pmo-cont .section-01 .ins-event .tit-sec-event .txt-01 {padding-bottom:72px;font-size:52px;line-height:1.4;letter-spacing:-1.82px;font-weight:400;color:#fff;}
+.pmo-cont .section-01 .ins-event .tit-sec-event .txt-01 em {color:#a9d5ed;}
+.pmo-cont .section-01 .ins-event .tit-sec-event .txt-02 {padding-bottom:26px;font-size:28px;line-height:1.6;letter-spacing:-0.98px;font-weight:400;color:#fff;}
+.pmo-cont .section-01 .ins-event .tit-sec-event .txt-03 {display:;padding-bottom:87px;font-size:18px;line-height:1.8;letter-spacing:-0.45px;font-weight:300;color:#ccc;}
+.pmo-cont .section-01 .gift-sec {}
+.pmo-cont .section-01 .gift-sec .list-gift {display:inline-flex;flex-wrap:wrap;justify-content:space-between;}
+.pmo-cont .section-01 .gift-sec .list-gift ~ .list-gift {margin-top:26px;}
+.pmo-cont .section-01 .gift-sec .list-gift li {width:350px;}
+.pmo-cont .section-01 .gift-sec .list-gift li img {width:100%;}
+.pmo-cont .section-01 .gift-sec em {display:block;font-size:18px;line-height:1.7;letter-spacing:-0.45px;font-weight:300;color:#ccc;}
+
+.pmo-cont .section-01 .btn-sec {display:block;margin:124px 0px 127px 0px;}
+.pmo-cont .section-01 .btn-sec .btn-reply {display:inline-flex;justify-content:center;align-items:center;width:450px;height:50px;font-size:16px;letter-spacing:-0.32px;font-weight:500;background:#fff;transition:all 0.2s ease-in;}
+.pmo-cont .section-01 .btn-sec .btn-reply:hover {background:#a9d5ed;}
+
+.pmo-cont .section-01 .txt-guide {padding:98px 0px 0px 0px;font-size:28px;letter-spacing:-0.98px;font-weight:600;color:#fff;}
+.pmo-cont .section-01 .txt-guide em {color:#a9d5ed;}
+.pmo-cont .section-01 .ins-event .info-event {display:;}
+.pmo-cont .section-01 .ins-event .info-event .list-prd {display:inline-flex;flex-direction:column;margin-bottom:98px;}
+.pmo-cont .section-01 .ins-event .info-event .list-prd li {display:flex;padding-bottom:18px;font-size:18px;letter-spacing:-0.45px;color:#939393;}
+.pmo-cont .section-01 .ins-event .info-event .list-prd li span {display:flex;width:100px;}
+
+.pmo-cont .section-01 .inner span {display:block;padding-top:102px;margin-bottom:123px;}
+.pmo-cont .section-01 .inner span img {height:16px;}
+.pmo-cont .section-01 .inner h5 {margin-bottom:30px;}
+.pmo-cont .section-01 .inner h5 img {height:391px;}
+.pmo-cont .section-01 .inner .movi-sec {margin:123px 0px 114px 0px;position:relative;}
+.pmo-cont .section-01 .inner .movi-sec video {width:838px;}
+
+.pmo-cont .section-01 .inner .movi-sec .pmo-btn-top {margin-bottom:0px;position:absolute;top:452px;left:382px;}
+.pmo-cont .section-01 .inner .movi-sec .pmo-btn-top.off {display:none;}
+.pmo-cont .section-01 .inner .movi-sec .pmo-btn-top .btn-movie {display:inline-block;width:74px;height:85px;transition: all 0.3s ease-out;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220412/play_btn.png") no-repeat;text-indent:-999em;}
+.pmo-cont .section-01 .inner .movi-sec .pmo-btn-top:hover .btn-movie {background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220412/play_btn_over.png") no-repeat} 
+.pmo-cont .section-01 .inner .movi-sec:hover .btn-movie {background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220412/play_btn_over.png") no-repeat}
+
+.pmo-cont .section-01 .inner {width:838px;}
+.pmo-cont .section-01 .crews {text-align:center;margin-top:114px;padding:86px 0px 80px 0px;background:#d4dadd;}
+.pmo-cont .section-01 .crews em {display:block;margin-bottom:84px;font-size:17px;font-weight:500;}
+.pmo-cont .section-01 .crews ul {display:inline-flex;justify-content:space-between;max-width:1080px;}
+.pmo-cont .section-01 .crews ul li {width:calc(100%/3);margin:0px 15px;}
+.pmo-cont .section-01 .crews ul li img {width:100%;}
+.pmo-cont .section-01 .crews ul li span {display:block;margin:44px 0px 16px 0px;font-size:17px;font-weight:500;}
+.pmo-cont .section-01 .crews ul li p {font-size:18px;letter-spacing:-0.9px;}
+.pmo-cont .section-01 .crews ul li p img {width:auto;height:17px;margin-top:-0px;}
+.pmo-cont .section-01 .crews ul li p i {padding-left:10px;margin-left:7px;position:relative;}
+.pmo-cont .section-01 .crews ul li p i:before {content:"";display:block;width:1px;height:17px;position:absolute;top:3px;left:0px;background:#000;}
+
+.pmo-cont .section-01 .tit-tab-event .tit-sec {position:absolute;top:70px;left:100px;}
+.pmo-cont .section-01 .tit-tab-event .tit-sec p {font-size:18px;line-height:32px;letter-spacing:-0.45px;color:#fff;font-weight:300;}
+.pmo-cont .section-01 .movi-sec em {display:block;width:450px;margin:0 auto;}
+.pmo-cont .section-01 .movi-sec .vod {width:450px;}
+
+.pmo-cont .section-01 .ani-slide {display:flex;padding:11px 0px 11px 0px;background:#fff;}
+.pmo-cont .section-01 .ani-slide img {height:45px;margin-right:16px;animation: marquee 14s linear infinite;}
+@keyframes marquee {
+    0% {transform:translateX(0);} 
+    100% {transform:translateX(-100.00%);}
+}
+
+
+/* SIERRA DESIGNS */
+/* 섹션 공통 */
+.pmo-cont section {position:relative;}
+.pmo-cont .section-02 .tit-sec {text-align:center;width:100%;padding-bottom:20px;z-index:100;}
+.pmo-cont .section-02 .tit-sec h5 img {height:92px;}
+.pmo-cont .section-02 .tit-sec span {display:block;padding-top:18px;font-size:17px;letter-spacing:-0.6px;font-weight:500;color:#fff;}
+
+/* story-01 */
+.pmo-cont .section-02 .story-01 .top-box {padding-bottom:160px;position:relative;background:#d4dadd;}
+.pmo-cont .section-02 .story-01 .top-box > img {width:100%;}
+.pmo-cont .section-02 .story-01 .top-box .tit-sec {position:absolute;top:91px;left:0px;}
+
+.pmo-cont .section-02 .story-01 .top-box .txt-box {font-size:clamp(10px, 0.671vw, 13px);line-height:1.75;letter-spacing:-0.26px;font-weight:400;color:#fff;position:absolute;}
+.pmo-cont .section-02 .story-01 .top-box .txt-box.type-01 {top:8.110vw;left:9.917vw;}
+.pmo-cont .section-02 .story-01 .top-box .txt-box.type-02 {top:15.393vw;left:17.975vw;}
+.pmo-cont .section-02 .story-01 .top-box .txt-box.type-03 {top:6.973vw;right:8.419vw;}
+.pmo-cont .section-02 .story-01 .top-box .txt-box.type-04 {top:13.946vw;right:14.721vw;}
+
+@media all and (max-width:1216px) {
+	.pmo-cont .section-02 .story-01 .top-box .txt-box.type-01 {top:97px;left:119px;}
+	.pmo-cont .section-02 .story-01 .top-box .txt-box.type-02 {top:184px;left:215px;}
+	.pmo-cont .section-02 .story-01 .top-box .txt-box.type-03 {top:83px;right:101px;}
+	.pmo-cont .section-02 .story-01 .top-box .txt-box.type-04 {top:167px;right:176px;}
+}
+
+.insider-item-box {text-align:left;width: 100%; height: 100%; } 
+.insider-item-box .insider-item-box-inner { position: relative; width: 100%; height: 100%;background:#d4dadd;} 
+.insider-item-box.active { z-index: 2; } 
+.insider-item-box.active .insider-item-img .item-fix { position: fixed; top: 84px; left: 0; } 
+.insider-item-box .insider-item-img { width: 100%; position: relative; } 
+.insider-item-box .insider-item-img .item-fix { position: absolute; left: 0; top: 0; width: 100%; height: calc(100vh - 125px); } 
+.insider-item-box .insider-item-img .item-fix .tit-photo span {position:relative;}
+.insider-item-box .insider-item-img .item-fix .tit-photo img {width:auto;height:calc(100vh - 84px);margin:0px 0px 0px 4.442vw;} 
+.insider-item-box .insider-item-img .item-fix .tit-photo em {font-size:17px;line-height:24px;letter-spacing:-0.63px;font-weight:500;position:absolute;right:-135px;top:0;}
+.insider-item-box .insider-item-img .item-list {z-index: 2;display:flex;flex-direction:column;align-items:flex-end; position: relative; padding-top:10.331vw;width: 100%; height: 100%;} 
+.insider-item-box .insider-item-img .item-list li > img {width:100%;}
+.insider-item-box .insider-item-img .item-list li:nth-child(1) {width:23.140vw;min-width:277px;max-width:448px;padding-bottom:66px;margin-right:11.829vw;}
+.insider-item-box .insider-item-img .item-list li:nth-child(2) {width:41.477vw;min-width:497px;max-width:803px;padding-bottom:91px;margin-right:3.409vw;}
+.insider-item-box .insider-item-img .item-list li:nth-child(3) {width:58.471vw;min-width:701px;max-width:1132px;padding-bottom:124px;margin-right:3.409vw;}
+.insider-item-box .insider-item-img .item-list li .txt-box p {padding-top:25px;font-size:15px;line-height:1.75;letter-spacing:-0.3px;}
+.insider-item-box .insider-item-img .item-list li .txt-box p span {display:block;font-weight:500;position:relative;}
+.insider-item-box .insider-item-img .item-list li .txt-box p span:before {content:"";display:block;width:12px;height:12px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/ico_key.png") no-repeat 0 0;background-size:100%;position:absolute;top:3px;left:-15px;}
+.insider-item-box .insider-item-img .item-list li:nth-child(2) .txt-box {display:flex;justify-content:flex-end;}
+.insider-item-box .insider-item-img .item-list li:nth-child(2) .txt-box p span {margin-top:30px;}
+.insider-item-box .insider-item-img .item-list li:nth-child(3) .txt-box {display:flex;justify-content:flex-end;}
+
+/* story-02 */
+/* story-02 공통 */
+.pmo-cont .section-02 .story-02 {padding:90px 0px 0px 0px;background:#f2f2f2;position:relative;}
+.pmo-cont .section-02 .story-02 .tit-sec {margin-bottom:145px;}
+.pmo-cont .section-02 .story-02 .tit-sec span {color:#000;}
+.pmo-cont .section-02 .story-02 .story2-box {position:relative;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec {display:flex;flex-direction:column;align-items:flex-start;font-size:15px;line-height:1.6;letter-spacing:-0.38px;font-weight:400;color:#fff;position:absolute;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec p {padding:15px 15px 12px 0px;font-size:13px;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-05 p {padding:0px 15px 12px 0px;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec img {width:33px;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo {display:flex;justify-content:space-between;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo li {position:relative;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo li > img {width:100%;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo li .txt-box {font-size:15px;line-height:1.6;letter-spacing:-0.3px;font-weight:400;position:absolute;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo li .txt-box span {font-weight:500;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo li .movie-sec {width:100%;height:100%;position:absolute;top:0px;left:0px;overflow:hidden;}
+.pmo-cont .section-02 .story-02 .story2-box .list-story-photo li .movie-sec .vod {width:110%;margin-left:-5%;}
+.pmo-cont .section-02 .story-02 .story2-box .list-thumb {position:absolute;}
+.pmo-cont .section-02 .story-02 .story2-box .list-thumb li {width:3.357vw;padding:7px 5px 6px 5px;margin-bottom:10px;background:#fff;}
+.pmo-cont .section-02 .story-02 .story2-box .list-thumb li img {width:100%;}
+
+/* 상품 링크 */
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-01 {top:18.440vw;left:27.066vw;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-02 {top:20.971vw;left:27.789vw;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-03 {bottom:1.601vw;right:2.376vw;flex-direction:row;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-03 img {margin:20px 20px 0px 0px;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-04 {top:30.320vw;right:24px;}
+.pmo-cont .section-02 .story-02 .story2-box .link-sec.link-05 {top:14.928vw;left:6.560vw;}
+
+/* story2-box : 1 */
+.pmo-cont .section-02 .story-02 .story2-box.type-01 {padding-bottom:63px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-01 .list-story-photo {width:89.360vw;margin:0px 0px 0px 30px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-01 .list-story-photo li:nth-child(1) {width:49.432vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-01 .list-story-photo li:nth-child(2) {width:24.380vw;margin-top:6.147vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-01 .list-story-photo li:nth-child(1) {z-index:1;}
+.pmo-cont .section-02 .story-02 .story2-box.type-01 .list-story-photo li:nth-child(1) .txt-box {top:0px;right:-208px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-01 .list-thumb {top:6.147vw;right:30px;}
+
+/* story2-box : 2 */
+.pmo-cont .section-02 .story-02 .story2-box.type-02 {padding-bottom:5.630vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .list-story-photo {width:89.360vw;margin:0px 0px 0px 30px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .list-story-photo li:nth-child(1) {width:24.380vw;margin-left:7.180vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .list-story-photo li:nth-child(2) {width:49.432vw;margin-top:16.167vw;margin-right:2.996vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .list-story-photo li:nth-child(1) {z-index:1;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .list-story-photo li:nth-child(1) .txt-box {top:0px;right:-274px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .list-thumb {top:6.147vw;right:30px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .added-box {display:inline-block;margin:3.667vw 0px 0px 13.946vw;position:relative;}
+.pmo-cont .section-02 .story-02 .story2-box.type-02 .added-box > img {width:36.002vw;}
+
+/* story2-box : 3 */
+.pmo-cont .section-02 .story-02 .story2-box.type-03 {padding-bottom:80px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-03 .list-story-photo {width:89.360vw;margin:0px 0px 0px 30px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-03 .list-story-photo li:nth-child(1) {width:24.380vw;margin-top:9.039vw;margin-left:7.541vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-03 .list-story-photo li:nth-child(2) {width:36.777vw;margin-right:11.674vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-03 .list-story-photo li:nth-child(1) {z-index:1;}
+.pmo-cont .section-02 .story-02 .story2-box.type-03 .list-story-photo li:nth-child(2) .txt-box {bottom:6.921vw;right:-277px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-03 .list-thumb {top:6.147vw;right:30px;}
+
+/* story2-box : 4 */
+.pmo-cont .section-02 .story-02 .story2-box.type-04 {padding-bottom:189px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-04 .list-story-photo {width:89.360vw;margin:0px 0px 0px 30px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-04 .list-story-photo li:nth-child(1) {width:21.746vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-04 .list-story-photo li:nth-child(2) {width:37.655vw;margin-top:23.347vw;margin-left:-2.5vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-04 .list-story-photo li:nth-child(3) {width:24.380vw;margin-top:4.494vw;}
+.pmo-cont .section-02 .story-02 .story2-box.type-04 .list-story-photo li:nth-child(1) .txt-box {top:2.944vw;right:-214px;}
+.pmo-cont .section-02 .story-02 .story2-box.type-04 .list-thumb {top:6.147vw;right:30px;}
+
+/* story-03 */
+.pmo-cont .section-02 .story-03 .top-box {text-align:center;width:100%;height:100vh;position:relative;background:#000;}
+.pmo-cont .section-02 .story-03 .top-box .bg1 {width:100%;height:100vh;position:absolute;top:0px;left:0px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/img_story03_top.png") no-repeat center top;background-size:cover;opacity:0.4;}
+.pmo-cont .section-02 .story-03 .top-box .bg2 {width:100%;height:100vh;position:absolute;top:0px;left:0px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_story04_top.png") no-repeat center top;background-size:cover;z-index:100;}
+.pmo-cont .section-02 .story-03 .top-box > img {width:100%;opacity:0.5;}
+.pmo-cont .section-02 .story-03 .top-box .tit-sec {position:absolute;top:91px;left:0px;}
+
+.pmo-cont .section-02 .story-03 .list-txt {display:inline-flex;flex-direction:column;width:100%;position:absolute;top:17.562vw;left:0px;}
+.pmo-cont .section-02 .story-03 .list-txt li {margin:0px}
+.pmo-cont .section-02 .story-03 .list-txt li img {width:262px;margin:0px 9vw 7.5vw 9vw;}
+
+.scroll-section {
+min-height: calc(100vh - 85px);
+}
+
+/* CATALOGUE */
+.pmo-cont .section-03 {position:relative;}
+.pmo-cont .section-03 .catalogue-top {width:100%;min-height: calc(100vh - 85px);background:#d4dadd;}
+.pmo-cont .section-03 .catalogue-top > img {width:100%;}
+.pmo-cont .section-03 .catalogue-top .tit-sec {text-align:center;width:100%;padding-bottom:20px;z-index:100;position:absolute;top:91px;left:0px;}
+.pmo-cont .section-03 .catalogue-top .tit-sec h5 img {height:112px;}
+.pmo-cont .section-03 .catalogue-top .tit-sec span {display:block;padding-top:18px;font-size:17px;letter-spacing:-0.6px;font-weight:500;color:#fff;}
+
+.pmo-cont .section-03 .catalogue-top .list-movie {display:flex;justify-content:center;width:100%;position:absolute;top:18.130vw;left:0px;}
+.pmo-cont .section-03 .catalogue-top .list-movie li {width:20.093vw;min-width:241px;max-width:389px;margin:0px 5px 0px 5px;position:relative;}
+.pmo-cont .section-03 .catalogue-top .list-movie li img {width:100%;}
+.pmo-cont .section-03 .catalogue-top .list-movie li .movie-sec {width:100%;height:100%;position:absolute;top:0px;left:0px;overflow:hidden;}
+.pmo-cont .section-03 .catalogue-top .list-movie li .movie-sec .vod {width:114%;margin-left:-5%;}
+
+@media all and (max-width:1216px) {
+	.pmo-cont .section-03 .catalogue-top .list-movie {top:300px;}
+}
+
+/* box 공통 */
+.pmo-cont .section-03 .catalogue-box {}
+.pmo-cont .section-03 .catalogue-box .box {width:100%;height:calc(100vh - 85px);min-height:730px;position:relative;overflow:hidden;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb {display:flex;padding:4.597vw 0px 0px 29px;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li {width:157px;margin-right:8px;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li a > img {width:100%;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top {display:none;width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:100;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top.on {display:block;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .dim {width:100%;height:100%;background:rgba(0, 0, 0, 0.75)}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont {position:absolute;top:50%;left:50%;transform:translate3d(-50%, -50%, 0);}
+/* .pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont {display:flex;justify-content:center;align-items:center;width:100%;height:100%;position:absolute;top:0px;left:0px;} */
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner {position:relative;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner > img {width:auto;height:calc(100vh - 85px - 97px - 98px);}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec {display:flex;flex-direction:column;align-items:flex-start;font-size:13px;line-height:1.6;letter-spacing:-0.38px;font-weight:400;color:#fff;position:absolute;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec p {padding:10px 0px 12px 0px;color:#a9d5ed;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec img {width:33px;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .btn-close-layer {width:38px;position:absolute;top:0px;right:0px;}
+
+.pmo-cont .section-03 .catalogue-box .box .info-prd {position:absolute;bottom:5.062vw;left:6.612vw;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd h6 {padding-bottom:50px;font-size:40px;letter-spacing:-0.8px;font-weight:300;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .ment-box {display:flex;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .ment-box span {display:block;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .ment-box span i {display:block;padding-bottom:10px;font-size:15px;letter-spacing:-0.3px;font-weight:500;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .ment-box span img {width:63px;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .ment-box p {width:321px;margin-left:46px;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .ment-box p img {width:100%;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .list-comment {margin-top:76px;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .list-comment li {padding-top:10px;font-size:14px;letter-spacing:-0.35px;font-weight:400;}
+.pmo-cont .section-03 .catalogue-box .box .info-prd .list-comment li span {font-weight:500;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec {width:44.990vw;min-width:539px;position:absolute;top:62px;right:105px;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd {width:44.990vw;min-width:539px;height:calc(100vh - 85px - 62px);min-height:564px;position:relative;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li {text-align:left;display:none;width:100%;height:100%;position:absolute;top:0px;left:0px;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li.on {display:block;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li:nth-child(1) {z-index:3;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li:nth-child(2) {z-index:2;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li:nth-child(3) {z-index:1;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li img {/*width:90%;*/height:calc(100vh - 85px - 65px);}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec > span {text-align:center;display:block;width:100%;font-size:14px;letter-spacing:-0.35px;font-weight:500;position:absolute;top:0px;left:0px;z-index:10}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-color {position:absolute;top:calc(4.597vw - 14px);left:-5.165vw;z-index:10;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-color:hover {cursor:pointer;}
+.pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-color li {width:14px;height:29px;margin-top:2px;background:#000;}
+.pmo-cont .section-03 .catalogue-box .box .thumb-box {width:75px;position:absolute;top:6.147vw;right:30px;z-index:1000;}
+
+
+.pmo-cont .section-03 .catalogue-box .box .thumb-box span {text-align:center;display:block;font-size:14px;letter-spacing:-0.35px;font-weight:500;}
+.pmo-cont .section-03 .catalogue-box .box .thumb-box .list-thumb li {width:75px;margin-top:10px;}
+.pmo-cont .section-03 .catalogue-box .box .thumb-box .list-thumb li img {width:100%;}
+.zoomLens {border:1px solid #000 !important;-webkit-box-shadow:10px 10px 19px 1px rgba(0,0,0,0.30);box-shadow:10px 10px 19px 1px rgba(0,0,0,0.30);}
+
+/* 상품 링크 */
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-01 {top:20.196vw;right:13.223vw;align-items:flex-end;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-02 {bottom:10.589vw;left:9.917vw;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-03 {top:20.196vw;left:12.862vw;align-items:center;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-04 {top:22.417vw;left:13.791vw;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-05 {top:49%;left:42%;align-items:center;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-06 {top:67%;left:47%;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-07 {top:50%;left:24%;align-items:center;}
+.pmo-cont .section-03 .catalogue-box .box .list-top-thumb li .layer-top .layer-cont .layer-cont-inner .link-sec.link-08 {top:62%;left:38%;}
+
+/* 영역 1 : 현아 */
+.pmo-cont .section-03 .catalogue-box .box.type-01 {background:#d4dadd;}
+.pmo-cont .section-03 .catalogue-box .box.type-01 .zoom-sec .list-color li:nth-child(1) {background:#be9a44;}
+.pmo-cont .section-03 .catalogue-box .box.type-01 .zoom-sec .list-color li:nth-child(2) {background:#3e3e34;}
+.pmo-cont .section-03 .catalogue-box .box.type-01 .zoom-sec .list-color li:nth-child(3) {background:#1c1d22;}
+
+/* 영역 2 : 혜인 */
+.pmo-cont .section-03 .catalogue-box .box.type-02 {background:#f2f2f2;}
+.pmo-cont .section-03 .catalogue-box .box.type-02 .zoom-sec .list-color li:nth-child(1) {background:#1b1b20;}
+.pmo-cont .section-03 .catalogue-box .box.type-02 .zoom-sec .list-color li:nth-child(2) {background:#413a2a;}
+.pmo-cont .section-03 .catalogue-box .box.type-02 .zoom-sec .list-color li:nth-child(3) {background:#656d70;}
+
+/* 영역 3 : 재범 */
+.pmo-cont .section-03 .catalogue-box .box.type-03 {background:#d4dadd;}
+.pmo-cont .section-03 .catalogue-box .box.type-03 .zoom-sec .list-color li:nth-child(1) {background:#7d818c;}
+.pmo-cont .section-03 .catalogue-box .box.type-03 .zoom-sec .list-color li:nth-child(2) {background:#273833;}
+.pmo-cont .section-03 .catalogue-box .box.type-03 .zoom-sec .list-color li:nth-child(3) {background:#2c2a2f;}
+
+/* 영역 3 : 용진 */
+.pmo-cont .section-03 .catalogue-box .box.type-04 {background:#f2f2f2;}
+.pmo-cont .section-03 .catalogue-box .box.type-04 .zoom-sec .list-color li:nth-child(1) {background:#2c3f3d;}
+.pmo-cont .section-03 .catalogue-box .box.type-04 .zoom-sec .list-color li:nth-child(2) {background:#7f838f;}
+.pmo-cont .section-03 .catalogue-box .box.type-04 .zoom-sec .list-color li:nth-child(3) {background:#121214;}
+
+/* GUIDE */
+.pmo-cont .section-04 {background:#fff;position:relative;}
+.pmo-cont .section-04 .brand-banner {position:relative;background:#000;}
+.pmo-cont .section-04 .brand-banner > img {width:100%;}
+.pmo-cont .section-04 .brand-banner .tit-sec {text-align:center;width:100%;position:absolute;top:59px;}
+.pmo-cont .section-04 .brand-banner .tit-sec img {height:107px;}
+.pmo-cont .section-04 .brand-banner .tit-sec span {display:block;padding:30px 0px 15px 0px;font-size:clamp(41px, 3.438vw, 66px);line-height:1.3;letter-spacing:-2.31px;font-weight:700;color:#fff;}
+.pmo-cont .section-04 .brand-banner .tit-sec em {font-size:clamp(41px, 3.438vw, 66px);line-height:1.3;letter-spacing:-2.31px;font-weight:500;color:#fff;}
+.pmo-cont .section-04 .brand-banner .tit-sec p {padding-top:44px;font-size:18px;line-height:1.75;letter-spacing:-0.45px;font-weight:500;color:#fff;}
+
+.pmo-cont .section-04 .brand-banner .btn-sec {text-align:center;position:absolute;bottom:67px;left:0;right:0;}
+.pmo-cont .section-04 .brand-banner .btn-sec .btn-brand {display:inline-flex;justify-content:center;align-items:center;width:178px;height:40px;font-size:13px;color:#fff;border:1px solid #fff;border-radius:24px;background:#000;transition: all 0.3s ease-out;}
+.pmo-cont .section-04 .brand-banner .btn-sec:hover .btn-brand {color:#000;border:1px solid #000;background:#fff;} 
+
+.pmo-cont .section-04 .guide {text-align:center;padding:100px 0px 0px 0px;background:#fff;}
+.pmo-cont .section-04 .guide h6 {}
+.pmo-cont .section-04 .guide h6 img {height:72px;}
+.pmo-cont .section-04 .guide .tit-sub {display:block;padding:0px 0px 0px 0px;font-size:17px;letter-spacing:-0.6px;font-weight:500;}
+.pmo-cont .section-04 .guide-banner {text-align:center;margin:95px 62px 96px 65px;}
+.pmo-cont .section-04 .guide-banner .list-banner {display:inline-flex;justify-content:space-between;width:100%;max-width:1431px;}
+.pmo-cont .section-04 .guide-banner .list-banner li {text-align:center;width:25%;margin:0px 8px 0px 5px;}
+.pmo-cont .section-04 .guide-banner .list-banner li .img-sec {position:relative;overflow:hidden;}
+.pmo-cont .section-04 .guide-banner .list-banner li .img-sec:hover {border-radius:300px;}
+.pmo-cont .section-04 .guide-banner .list-banner li .img-sec:hover:after {content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0, 0, 0, 0.5);}
+.pmo-cont .section-04 .guide-banner .list-banner li .img-sec img {width:100%;}
+.pmo-cont .section-04 .guide-banner .list-banner li .img-sec .arrow {display:none;position:absolute;top:0;left:0;right:0;bottom:0;z-index:10;}
+.pmo-cont .section-04 .guide-banner .list-banner li .img-sec .arrow.on {display:block;}
+.pmo-cont .section-04 .guide-banner .list-banner li span {display:block;padding:15px 0px 2px 0px;font-size:30px;line-height:31px;}
+.pmo-cont .section-04 .guide-banner .list-banner li em {display:block;font-size:15px;line-height:25px;letter-spacing:-0.53px;font-weight:500;}
+
+/* EVENT */
+.section-05 {background:#000;position:relative;}
+
+.section-05 .brand-banner {position:relative;background:#000;}
+.section-05 .brand-banner > img {width:100%;}
+.section-05 .brand-banner .tit-sec {text-align:center;width:100%;position:absolute;top:128px;}
+.section-05 .brand-banner .tit-sec img {height:16px;}
+.section-05 .brand-banner .tit-sec span {display:block;padding:30px 0px 15px 0px;font-size:clamp(41px, 3.438vw, 66px);line-height:1.3;letter-spacing:-2.31px;font-weight:700;color:#fff;}
+.section-05 .brand-banner .tit-sec span i {font-weight:500;}
+.section-05 .brand-banner .tit-sec em {font-size:clamp(41px, 3.438vw, 66px);line-height:1.3;letter-spacing:-2.31px;font-weight:500;color:#fff;}
+.section-05 .brand-banner .tit-sec p {font-size:18px;line-height:1.75;letter-spacing:-0.45px;font-weight:500;color:#fff;}
+.section-05 .brand-banner .btn-sec {text-align:center;position:absolute;bottom:63px;left:0;right:0;}
+.section-05 .brand-banner .btn-sec .btn-brand {display:inline-flex;justify-content:center;align-items:center;width:178px;height:40px;font-size:13px;color:#fff;border:1px solid #fff;border-radius:24px;background:#000;transition: all 0.3s ease-out;}
+.section-05 .brand-banner .btn-sec:hover .btn-brand {color:#000;border:1px solid #000;background:#fff;} 
+
+/* ins-before */
+.ins-before {display:flex;flex-direction:column;justify-content:space-between;align-items:center;width:100%;height:30.208vw;max-height:580px;min-height:367px;padding:35px 0px 30px 0px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/bg_before.png") no-repeat 50% 50%;background-size:cover;position:relative;}
+.ins-before:before {content:"";display:none;width:100%;height:100%;background:rgba(0, 0, 0, 0.80);position:absolute;top:0px;bottom:0px;left:0px;right:0px;}
+.ins-before * {position:relative;}
+.ins-before span {display:block;font-size:30px;letter-spacing:-0.9px;color:#fff;}
+.ins-before h6 img {height:90px;}
+.ins-before a {font-size:31px;letter-spacing:-1.09px;color:#fff;font-weight:500;position:relative;}
+.ins-before a:before {content:"";display:block;width:100%;height:2px;background:#fff;position:absolute;bottom:-2px;left:0px;right:0px;}
+
+/* 이벤트 종료 안내 */
+.txt-end {text-align:center;width:100%;padding:45px 0px 50px 0px;font-size:25px;letter-spacing:-0.88px;font-weight:300;color:#a9d5ed ;background:#404040;}
+
+/* 프로그레스바 */
+.progress-bar {width:0px;height:3px;background-color:#a9d5ed;transition:all 0.1s linear;z-index:10;position:absolute;top:-3px;}
+
+/* 푸터 배너 예외 처리(프로그레스바 관련) */
+.gate-banner-wrap {z-index:20;}
+
+/* 애니메이션 */
+.motion {-webkit-transition:opacity 0ms ease,-webkit-transform 0ms ease;transition:opacity 0ms ease,-webkit-transform 0ms ease;transition:transform 0ms ease,opacity 0ms ease;transition:transform 0ms ease,opacity 0ms ease,-webkit-transform 0ms ease;opacity:0;}
+.motion.bottom {-webkit-transform:translate(0,100%);transform:translate(0,100%);}
+.motion.in {-webkit-transition:opacity 1.2s ease,-webkit-transform .5s ease;transition:opacity 1.2s ease,-webkit-transform .5s ease;transition:transform .5s ease,opacity 1.2s ease;transition:transform .5s ease,opacity 1.2s ease,-webkit-transform .5s ease;-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1;}
+.motion.in-re {-webkit-transition:opacity .8s ease,-webkit-transform 1s ease;transition:opacity .8s ease,-webkit-transform 1s ease;transition:transform 1s ease,opacity .8s ease;transition:transform 1s ease,opacity .8s ease,-webkit-transform 1s ease;-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1;}
+.motion.delay1 {-webkit-transition-delay:.6s;transition-delay:.6s;}
+.motion.delay2 {-webkit-transition-delay:1.2s;transition-delay:1.2s;}
+.motion.delay3 {-webkit-transition-delay:1.8s;transition-delay:1.8s;}
+.motion.delay4 {-webkit-transition-delay:2.4s;transition-delay:2.4s;}
+.motion.delay5 {-webkit-transition-delay:3s;transition-delay:3s;}
+.motion.delay6 {-webkit-transition-delay:3.6s;transition-delay:3.6s;}
+.motion.delay7 {-webkit-transition-delay:4.2s;transition-delay:4.2s;}
+.motion.delay8 {-webkit-transition-delay:4.8s;transition-delay:4.8s;}
+.motion.delay9 {-webkit-transition-delay:5.4s;transition-delay:5.4s;}
+.motion.delay10 {-webkit-transition-delay:6s;transition-delay:6s;}
+.page-in-moveToTop {-webkit-animation:pageMoveToTop .6s ease both;animation:pageMoveToTop .6s ease both;z-index:2;}
+
+.motion2 {opacity:0;}
+.motion2.delay1  {animation-delay:0.6s !important;}
+.motion2.delay2  {animation-delay:1.2s !important;}
+.motion2.delay3  {animation-delay:1.8s !important;}
+.motion2.delay4  {animation-delay:2.4s !important;}
+.motion2.delay5  {animation-delay:3.0s !important;}
+.motion2.delay6  {animation-delay:3.6s !important;}
+.motion2.delay7  {animation-delay:4.2s !important;}
+.motion2.delay8  {animation-delay:4.8s !important;}
+.motion2.delay9  {animation-delay:5.4s !important;}
+.motion2.delay10 {animation-delay:6.0s !important;}
+
+.fade-in-bottom.in {
+	animation: fade-in-bottom 2s forwards ease;
+}
+@keyframes fade-in-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}					
+</style>
+
+<div class="pmo-cont">
+	<article>
+		<!-- s : evt-top -->
+		<div class="evt-top">
+
+			<!-- top-menu -->
+			<ul class="top-menu">
+				<li>
+					<span>episode 1</span>
+					<div class="box-hash">
+						<i>#COMING<br/>SOON</i>
+						<em>
+							<a href="/special/7446/view">#88SEOUL</a>
+						</em>						
+					</div>
+				</li>
+				<li>
+					<span>episode 2</span>
+					<div class="box-hash">
+						<i>#COMING<br/>SOON</i>
+						<em>
+							<a href="/event/EV202209260003776/view">#VOYA3E</a>
+						</em>
+					</div>
+				</li>
+				<li>
+					<span>episode 3</span>
+					<div class="box-hash">
+						<i>#COMING<br/>SOON</i>
+						<em>
+							<a href="/special/8002/view">#HOUSE<br>OF LOVE</a>
+						</em>
+					</div>
+				</li>
+				<li>
+					<span>episode 4</span>
+					<div class="box-hash">
+						<i>#COMING<br/>SOON</i>
+						<em>
+							<a href="javascript:void(0)">#SIERRA<br/>DESIGNS</a>
+						</em>
+					</div>
+				</li>
+			</ul>
+			<!-- /top-menu -->
+
+			<!-- visual -->
+			<div class="tit-top-visual">
+				<h4><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_txt_top01.png" alt=""></h4>
+				<span>우리가 함께 하는 것 #4</span>
+			</div>
+			
+			<div class="movi-sec">
+				<video poster="" class="vod" muted="" autoplay="" loop="" playsinline=""> 
+					<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_top.mp4" type="video/mp4">
+				</video>
+
+				<div class="mid-txt">
+					<ul>
+						<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/txt_mid_01.png" alt="SIM SIM"></li>
+						<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/txt_mid_01.png" alt="SIM SIM"></li>
+						<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/txt_mid_01.png" alt="SIM SIM"></li>
+						<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/txt_mid_01.png" alt="SIM SIM"></li>
+					</ul>
+				</div>
+
+				<div class="box-bottom">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_txt_top02.png" alt="">
+				</div>
+			</div>
+			
+			<div class="ani-sec">
+				<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220929/img_ani_01.png" alt="">
+				<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220929/img_ani_02.png" alt="">
+			</div>
+			<!-- /visual -->
+		</div>
+		<!-- e : evt-top -->
+		
+		<!-- sub text -->
+		<div class="txt-sub">
+			<div class="sec01">
+				<h5>우리가 함께 하는 것<span>episode #4</span></h5>
+				<p>
+					그렇게 모든 것은 우리의 모임을 통해서 시작됩니다.<br/>
+					우리가 함께여서 할 수 있는 것.<br/> 
+					그 안에서 취향을 나누고 경험과 가치를 발견하는 그들의 풀 스토리를 공개합니다.
+				</p>
+			</div>
+			<div class="sec02">
+				<p class="font-fix">
+					이큐엘 인사이더 (<i>심심 산악회</i>)를 통해<br/>
+					지금껏 당신이 몰랐던<br/>
+				   (<i>시에라 디자인</i>)을 만나보세요. 
+				</p>
+			</div>
+		</div>
+		<!-- /sub text -->
+
+		<!-- s : event-menu -->
+		<div class="event-menu" style="display:;">
+			<div class="event-menu-inner">
+				<div class="progress-bar"></div><!-- progress-bar -->
+				<ul>
+					<li class="active"><a href="#event-section-01">SIM SIM</a></li>
+					<li><a href="#event-section-02">SIERRA DESIGNS</a></li>
+					<li><a href="#event-section-03">CATALOGUE</a></li>
+					<li><a href="#event-section-04">EVENT</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- e : event-menu -->
+		
+		<!-- SIM SIM -->
+		<section id="event-section-01" style="display:;">
+			<div class="section-01">
+				
+				<!-- event 01 -->
+				<div class="ins-event">
+					<div class="tit-sec-event">
+						<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/tit_sub_event.png" alt="event"></span>
+						<h5>
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/tit_h5_event_01.png" alt="">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/tit_h5_event_02.png" alt="">
+						</h5>
+						<p class="txt-01 font-fix">
+							당신은 <em>시에라 디자인</em>에 대해 얼마만큼 알고 있나요?
+						</p>
+						<p class="txt-02 font-fix">
+							시에라 디자인을 잘 아는 어드벤처 컬렉터 네 분을 찾고 있어요.
+						</p>
+						<p class="txt-03 font-fix">
+							Tip. 시에라 브랜드 감상평과 받고 싶은 상품을 함께 댓글로 남겨주시면 당첨 확률이 높아집니다.<br/>
+							ex) 60/40 마운틴 파카 블랙 L. 60/40 파카는 최초 1968년 면 60%, 나일론 40% 혼방하여 만든 제품이죠! 아메카지 매니아들로부터 오랫동안 사랑을 받아온 그런 아이템!
+						</p>
+					</div>
+
+					<div class="gift-sec">
+						<ul class="list-gift">
+							<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/gift_01.png" alt=""></li>
+						</ul>
+						<em>60/40 MOUNTAIN PARKA JP (Black / M, L 중 택 1)<br/>총 1명</em>
+						<ul class="list-gift">
+							<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/gift_02.png" alt=""></li>
+							<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/gift_03.png" alt=""></li>
+							<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/gift_04.png" alt=""></li>
+						</ul>
+						<em>22FW 90s MT FISHING JACKET (Yellow, Black, Sage / M,L,XL 중 택 1)<br/>총 3명</em>
+					</div>
+
+					<p class="txt-guide">추첨을 통해 <em>시에라 상품</em>을 드립니다.</p>
+
+					<span class="btn-sec">
+						<a href="javascript:void(0)" class="btn-reply">댓글 참여하러 가기</a>
+					</span>
+
+					<!-- 당첨 안내 -->
+					<div class="info-event">
+						<ul class="list-prd">
+							<li>
+								<span>참여 기간</span>
+								<em>2022. 11. 16 (수) ~ 11. 30 (수)</em>
+							</li>
+							<li>
+								<span>당첨 내용</span>
+								<em>60/40 MOUNTAIN PARKA, 22FW 90s MT FISHING JACKET 증정</em>
+							</li>
+							<li>
+								<span>당첨자</span>
+								<em>4명</em>
+							</li>
+							<li>
+								<span>당첨자발표</span>
+								<em>2022. 12. 2 (금)</em>
+							</li>
+						</ul>
+
+						<dl class="list-notice">
+							<dt>유의사항</dt>
+							<dd>
+								<ul class="list-point">
+									<li>해당 이벤트는 ID당 1회만 참여가 가능합니다.</li>
+									<li>이벤트 당첨 여부는 12.2(금) 공지게시판을 통해 발표됩니다.</li>
+									<li>5만 원 이상의 경품은 고객 부담으로 제세 공과금이 발생합니다.</li>
+									<li>이벤트 당첨자 후 3일 이내 고객님과 연락이 닿지 않을 경우 당첨이 취소됩니다.</li>
+									<li>당첨 안내를 위해 마케팅 수신동의를 하신 분들만 참여 가능합니다.</li>
+									<li>본 프로모션은 당사 사정에 의해 별도 공지 없이 중단될 수 있습니다.</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<!-- /당첨 안내 -->
+
+				</div>
+				<!-- /event 01 -->
+
+				<div class="inner">
+					<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_sec_01_01.png" alt=""></span>
+					<h5><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221116/img_sec_01_02.png" alt=""></h5>
+					<div class="movi-sec">
+						<video poster="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/insider_poster_01.png" class="vod" controls playsinline> 
+							<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221116/movie_main.mp4" type="video/mp4">
+						</video>
+						<span class="pmo-btn-top">
+							<a href="javascript:void(0)" class="btn-movie">영상 플레이</a>
+						</span>
+					</div>
+				</div>
+
+				<div class="ani-slide">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/slogan.png" alt="">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/slogan.png" alt="">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/slogan.png" alt="">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/slogan.png" alt="">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/slogan.png" alt="">
+				</div>
+
+				<!-- VOYA3E Directors -->
+				<div class="crews">
+					<em>SIM SIM CAMPERS</em>
+					<ul class="list-crews">
+						<li>
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/pc_img_crews_01.png" alt="">
+							<span>CAMPER 1</span>
+							<p>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_name_01.png" alt="명재범">
+								<i>paco bar 운영</i>
+							</p>
+						</li>
+						<li>
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/pc_img_crews_02.png" alt="">
+							<span>CAMPER 2</span>
+							<p>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_name_02.png" alt="이현아">
+								<i>에디터, 아트라이터 </i>
+							</p>
+						</li>
+						<li>
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/pc_img_crews_03.png" alt="">
+							<span>CAMPER 3</span>
+							<p>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_name_03.png" alt="이혜인">
+								<i>공간 디렉터</i>
+							</p>
+						</li>
+						<li>
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/pc_img_crews_04.png" alt="">
+							<span>CAMPER 4</span>
+							<p>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_name_04.png" alt="조용진">
+								<i>건축가</i>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<!-- /VOYA3E Directors -->
+			</div>
+		</section>
+		<!-- /SIM SIM -->
+
+		<!-- SIERRA DESIGNS -->
+		<section id="event-section-02" style="display:;">
+			<div class="section-02">
+
+				<!-- story-01 -->
+				<div class="story-01">
+					<!-- top-box -->
+					<div class="top-box">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_story01_top.png" alt="계절의 위로">
+						<div class="tit-sec">
+							<h5><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/tit_story_h5_01.png" alt="계절의 위로"></h5>
+							<span class="font-fix">자연에 대한 애착</span>
+						</div>
+
+						<div class="txt-box type-01">
+							유년기를 보내던 스리랑카는 열대지방이라<br/>
+							초록색 기운이 가장 뚜렷한 나라예요.<br/> 
+							예전처럼 자연을 가까이 하며 살고 싶다라는<br/>
+							생각이 들었고, 더 적극적으로 찾아다니기<br/> 
+							시작했죠. - 혜인
+						</div>
+						<div class="txt-box type-02">
+							유년기를 시골에서 보내서 자연이 익숙하고<br/>
+							편안해요. 자연 속에 있으면 마치 고향에<br/> 
+							돌아간 듯한 기분이 들거든요.<br/> 
+							도시에서 살게 된 후에도 늘 창밖으로 나무가<br/>
+							보이는 곳을 찾았던 것 같아요. - 현아 
+						</div>
+						<div class="txt-box type-03">
+							취미로 등산을 즐기다가 지인을 통해서<br/>
+							LNT (Leave No Trace)라는 문화를 알게<br/>
+							되었고 ‘우리는 잠시 자연을 빌리는 것<br/>
+							뿐’임을 알게 된 후 산이 더 좋아졌고<br/> 
+							애정이 생기기 시작했어요. - 재범
+						</div>
+						<div class="txt-box type-04">
+							고향인 속초는 설악산이나 바다가 가까워<br/> 
+							자연스럽게 야외 활동들을 하기 시작했어요.<br/> 
+							계절의 변화를 가장 극적으로 느끼게 해주는<br/>
+							환절기, 특히 여름에서 가을로 넘어가는<br/>
+							시기를 제일 선호해요. - 용진
+						</div>
+					</div>
+					<!-- /top-box -->
+
+					<!-- story-01-fixed-box -->
+					<div class="story-01-fixed-box">
+						<div class="insider-item-box box01">
+							<div class="insider-item-box-inner">
+								<div class="insider-item-img">
+									<div class="item-fix">
+										<div class="tit-photo">
+											<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/photo_01_01.png" alt=""><em class="font-fix">우리의 피톤치드</em></span>
+										</div>
+									</div>
+									<ul class="item-list">
+										<li>
+											<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/photo_01_02.png" alt="">
+											<div class="txt-box">
+												<p>
+													냄새, 향, 체취 같은 것에 민감한 편인데 여기저기 다녀보니<br/> 
+													산도 산마다의 냄새를 가지고 있더라고요.<br/> 
+													사람의 체취가 다 다르듯이 산마 다도 머금고 있는 향기가 다른데<br/>
+													새로운 곳을 가게 될 때 괜스레 기대가 되는 부분이에요.<br/>
+													- 혜인
+												</p>
+												<p>
+													<span>Haeinn’s recommended place.</span>
+													강원도와 포천 사이 각흘산
+												</p>
+											</div>
+										</li>
+										<li>
+											<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/photo_01_03.png" alt="">
+											<div class="txt-box">
+												<p>
+													눈 쌓인 겨울 산은 유난히 고요해서 온 감각을 깨우면서 예민하게 걷게 되더라고요.<br/> 
+													언 계곡 아래로 흐르던 물소리나 숲을 메운 운무 등 사소한 장면이 기억에 많이 남아 있어요.<br/> 
+													- 현아
+													<span>Hyuna’s recommended place.</span>
+													강원도 화천군 도마치재
+												</p>
+											</div>
+										</li>
+										<li>
+											<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/photo_01_04.png" alt="">
+											<div class="txt-box">
+												<p>
+													새하얀 설산을 뚫고 올라가 텐트 안에서 침낭 안에 핫팩 하나<br/> 
+													터트리고 누웠을 때 몸은 따뜻하고 얼굴은 차가운 그 느낌이 좋아요.<br/>
+													- 재범
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /story-01-fixed-box -->					
+				</div>
+				<!-- /story-01 -->
+
+				<!-- story-02 -->
+				<div class="story-02">
+					<div class="tit-sec">
+						<h5><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/tit_story_h5_02.png" alt="산행의 즐거움"></h5>
+						<span class="font-fix">알아두면 쓸모 있는 라이프 아이템</span>
+					</div>
+
+					<!-- story2-box : 1 -->
+					<div class="story2-box type-01">
+						<ul class="list-story-photo">
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/photo_story2_01_01.png" alt="">
+								<a href="/product/GPMS22102406921/detail?ga_param=EVENT01" target="_self">
+									<div class="link-sec link-01">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+										<p>LIGHT ROLLTOP BACKPACK BEIGE</p>
+									</div>
+								</a>
+								<div class="txt-box">
+									<span>Haeinn’s comment</span>
+									<p>
+										가벼운 원단을 사용하여 무게에<br/> 
+										대한 부담이 없었어요.<br/> 
+										수납 포켓과 스트링이 많아<br/> 
+										물통을 비롯하여 등산 시 필요한<br/> 
+										소지품을 넣기에도 용이했고요.
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/photo_story2_01_02.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_story2_01.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="list-thumb">
+							<li><a href="/product/GPMS22102406921/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_01_01.png" alt=""></a></li>
+							<li><a href="/product/GPMS22091389641/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_01_02.png" alt=""></a></li>
+							<li><a href="/product/GPMS22083185289/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_01_03.png" alt=""></a></li>
+							<li><a href="/product/GPMS22083185365/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_01_04.png" alt=""></a></li>
+							<li><a href="/product/GPMS22042143859/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_01_05.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- /story2-box : 1 -->
+
+					<!-- story2-box : 2 -->
+					<div class="story2-box type-02">
+						<ul class="list-story-photo">
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_02_01.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_story2_02.mp4" type="video/mp4">
+									</video>
+								</div>
+								<div class="txt-box">
+									<span>Hyuna’s comment</span>
+									<p>
+										일상생활에서는 한 가지 목적에 집중한<br/>
+										아이템을 좋아하지만, 캠핑할 때만큼은<br/> 
+										다용도로 쓰일 수 있는 물건에 관심이 가요.<br/> 
+										우드 보드와 스토리지 박스는 도마나<br/> 
+										테이블로도 쓸 수 있고,<br/> 
+										그 외 캠핑 장비들을 보관할 수도 있어요.
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_02_02.png" alt="">
+								<a href="/product/GPMS22052656261/detail?ga_param=EVENT01" target="_self">
+									<div class="link-sec link-02">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+										<p>SIERRA DESIGNS X THOR<br/>WOOD BOARD</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<div class="added-box">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_02_03.png" alt="">
+							<a href="/product/GPMS22052656260/detail?ga_param=EVENT01" target="_self">
+								<div class="link-sec link-03">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+									<p>SIERRA DESIGNS X THOR<br/>CONTAINER BOX</p>
+								</div>
+							</a>
+						</div>
+
+						<ul class="list-thumb">
+							<li><a href="/product/GPMS22052656261/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_02_01.png" alt=""></a></li>
+							<li><a href="/product/GPMS22052656260/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_02_02.png" alt=""></a></li>
+							<li><a href="/product/GPMS22091489702/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_02_03.png" alt=""></a></li>
+							<li><a href="/product/GPMS22091489730/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_02_04.png" alt=""></a></li>
+							<li><a href="/product/GPMS22102406950/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_02_05.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- /story2-box : 2 -->
+
+					<!-- story2-box : 3 -->
+					<div class="story2-box type-03">
+						<ul class="list-story-photo">
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_03_01.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_story2_03.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_03_02.png" alt="">
+								<a href="/product/GPMS22090286040/detail?ga_param=EVENT01" target="_self">
+									<div class="link-sec link-04">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+										<p>PREMIUM SUEDE LEATHER GLOVES</p>
+									</div>
+								</a>
+								<div class="txt-box">
+									<span>Jaebum’s comment</span>
+									<p>
+										캠핑을 하다 보면 하드 워크(거친 작업)들이<br/>
+										많은데, 아웃도어 활동에 적합한<br/> 
+										제품인 것 같아요.<br/> 
+										특히 손목에 고무밴드가 있어 편리했어요.
+									</p>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="list-thumb">
+							<li><a href="/product/GPMS22090286040/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_03_01.png" alt=""></a></li>
+							<li><a href="/product/GPMS22102406889/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_03_02.png" alt=""></a></li>
+							<li><a href="/product/GPMS22083185291/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_03_03.png" alt=""></a></li>
+							<li><a href="/product/GPMS22091489729/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_03_04.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- /story2-box : 3 -->
+
+					<!-- story2-box : 4 -->
+					<div class="story2-box type-04">
+						<ul class="list-story-photo">
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_04_01.png" alt="">
+								<div class="txt-box">
+									<span>Yongjin’s comment</span>
+									<p>
+										평소 위스키만큼은 꼭 챙겨가는<br/>
+										데, 알맞은 잔에 즐겨야 기분이<br/> 
+										나잖아요. 짐을 줄일 때도<br/> 
+										그 정도의 낭만은 챙기고 싶어요.
+									</p>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_04_02.png" alt="">
+								<a href="/product/GPMS22101201762/detail?ga_param=EVENT01" target="_self">
+									<div class="link-sec link-05">
+										<p>STANLEY ADVENTURE SHOT GLASS SET</p>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+									</div>
+								</a>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_story2_04_03.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_story2_04.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="list-thumb">
+							<li><a href="/product/GPMS22101201762/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_04_01.png" alt=""></a></li>
+							<li><a href="/product/GPMS22101201763/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_04_02.png" alt=""></a></li>
+							<li><a href="/product/GPMS22102406806/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_04_03.png" alt=""></a></li>
+							<li><a href="/product/GPMS22083185331/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_04_04.png" alt=""></a></li>
+							<li><a href="/product/GPMS22083185342/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_04_05.png" alt=""></a></li>
+							<li><a href="/product/GPMS22091489720/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/story_thumb_04_06.png" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- /story2-box : 4 -->
+				</div>
+				<!-- /story-02 -->
+
+				<!-- story-03 -->
+				<div class="trigger0">
+					<div class="story-03">
+						<!-- top-box -->
+						<div class="top-box">
+							<div class="bg1"></div>
+							<!-- <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/img_story03_top.png" alt="긴 계절의 끝"> -->
+							<div class="tit-sec">
+								<h5><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/tit_story_h5_03.png" alt="긴 계절의 끝"></h5>
+								<span class="font-fix">어른 사춘기</span>
+							</div>
+							<ul class="list-txt">
+								<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/txt_story_top_01.png" alt=""><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/txt_story_top_02.png" alt=""></li>
+								<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/txt_story_top_03.png" alt=""><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/txt_story_top_04.png" alt=""></li>
+							</ul>
+						</div>
+						<!-- /top-box -->
+					</div>
+				</div>
+				<!-- /story-03 -->
+			</div>
+		</section>
+		<!-- /SIERRA DESIGNS -->
+
+		<!-- CATALOGUE -->
+		<section id="event-section-03" style="display:;">
+			<!-- catalogue -->
+			<div class="section-03">
+				<div class="catalogue">
+					<!-- catalogue-top -->
+					<div class="catalogue-top">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/img_catalogue_top.png" alt="catalogue">
+						<div class="tit-sec">
+							<h5><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/tit_catalogue_h5_01.png" alt="catalogue"></h5>
+							<span class="font-fix">헤리티지를 입는 심심 산악회 아우터 카탈로그</span>
+						</div>
+						<ul class="list-movie">
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_catalogue_top_01.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_catalogue_top_01.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_catalogue_top_02.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_catalogue_top_02.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_catalogue_top_03.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_catalogue_top_03.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>
+							<li>
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221110/photo_catalogue_top_04.png" alt="">
+								<div class="movie-sec">
+									<video poster="" class="vod" playsinline="" autoplay="" muted="" loop=""> 
+										<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/movie_catalogue_top_04.mp4" type="video/mp4">
+									</video>
+								</div>
+							</li>							
+						</ul>
+					</div>
+					<!-- /catalogue-top -->
+
+					<!-- catalogue-box -->
+					<div class="catalogue-box">
+						<!-- box-01 -->
+						<div class="box type-01">
+							<!-- list-top-thumb -->
+							<ul class="list-top-thumb">
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/img_catalogue_top_thumb_01_01.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/img_catalogue_top_photo_01_01.png" alt="">
+												<a href="/product/GPMS22091489702/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-01">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>90s MT FISHING JACKET</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/img_catalogue_top_thumb_01_02.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/img_catalogue_top_photo_01_02.png" alt="">
+												<a href="/product/GPMS22091489702/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-02">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>90s MT FISHING JACKET</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- /list-top-thumb -->
+
+							<!-- info-prd -->
+							<div class="info-prd">
+								<h6>90s MT FISHING JACKET</h6>
+								<div class="ment-box">
+									<span>
+										<i>Hyuna’s pick</i>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/img_photo_person_01.png" alt="">
+									</span>
+									<p>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/txt_ment_01.png" alt="아우터를 끝까지 잠그면 대체로 턱에 닿게 되는데, 촉감이 불편하지 않은지 살펴보고 사는 편이에요. 다행히 투웨이 지퍼여서 불편하지 않았고, 모자 크기가 넉넉한 것도 마음에 들었어요.">
+									</p>
+								</div>
+								<ul class="list-comment">
+									<li><span>DETAIL 1.</span> 가슴 앞부분의 널찍한 입체 포켓으로 수납이 용이해요.</li>
+									<li><span>DETAIL 2.</span> 위아래로 개폐가 가능한 투웨이 지퍼로 필요에 따라 사용할 수 있어요.</li>
+									<li><span>RECOMMENDED ACTIVITY.</span> 수납이 많이 필요로 할 수 있는 낚시 활동을 추천해요.</li>
+								</ul>
+							</div>
+							<!-- /info-prd -->
+
+							<!-- zoom-sec -->
+							<div class="zoom-sec">
+								<span>마우스 오버 해보세요</span>
+								<ul class="list-prd">
+									<li class="on"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_01_01.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_01_01.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_01_02.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_01_02.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_01_03.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_01_03.png" alt=""></li>
+								</ul>
+								<ul class="list-color">
+									<li><span clsss="hidden">COLOR 1</span></li><li><span clsss="hidden">COLOR 2</span></li><li><span clsss="hidden">COLOR 3</span></li>
+								</ul>
+							</div>
+							<!-- /zoom-sec -->
+
+							<!-- thumb-box -->
+							<div class="thumb-box">
+								<span>SHOP</span>
+								<ul class="list-thumb">
+									<li><a href="/product/GPMS22091489702/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/prd_thumb_01_01.png" alt=""></a></li>
+									<li><a href="/product/GPMS22091489701/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/prd_thumb_01_02.png" alt=""></a></li>
+									<li><a href="/product/GPMS22091389642/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/prd_thumb_01_03.png" alt=""></a></li>
+								</ul>								
+							</div>
+							<!-- /thumb-box -->
+						</div>
+						<!-- /box-01 -->
+
+						<!-- box-02 -->
+						<div class="box type-02">
+							<!-- list-top-thumb -->
+							<ul class="list-top-thumb">
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_thumb_02_01.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_photo_01_01.png" alt="">
+												<a href="/product/GPMS22091389641/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-03">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>2WAY ZIP FLAP PARKA</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_thumb_02_02.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_photo_01_02.png" alt="">
+												<a href="/product/GPMS22091389641/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-04">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>2WAY ZIP FLAP PARKA</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- /list-top-thumb -->
+
+							<!-- info-prd -->
+							<div class="info-prd">
+								<h6>2WAY ZIP FLAP PARKA</h6>
+								<div class="ment-box">
+									<span>
+										<i>Haeinn’s pick</i>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_photo_person_02.png" alt="">
+									</span>
+									<p>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/txt_ment_v2_02.png" alt="비대칭적인 지퍼나 포켓의 위치가 다른 아우터들과는 다르더라구요. 유니크한 아우터여서 일상 생활에도 입을 수 있을 것 같아요.">
+									</p>
+								</div>
+								<ul class="list-comment">
+									<li><span>DETAIL 1.</span> 후드 바이저로 우천 시 비를 막아주거나, 강한 햇빛을 차단할 수 있어요.</li>
+									<li><span>DETAIL 2.</span> 손목에는 벨크로, 밑단 스트링, 하이넥 집업을 사용해 방풍 효과를 높일 수 있어요.</li>
+									<li><span>RECOMMENDED ACTIVITY.</span> 방풍효과가 뛰어나 자연을 탐험하는 트래킹을 추천해요.</li>
+								</ul>
+							</div>
+							<!-- /info-prd -->
+
+							<!-- zoom-sec -->
+							<div class="zoom-sec">
+								<span>마우스 오버 해보세요</span>
+								<ul class="list-prd">
+									<li class="on"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_02_01.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_02_01.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221116/prd_photo_02_02.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221116/prd_photo_02_02.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221116/prd_photo_02_03_v2.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221116/prd_photo_02_03_v2.png" alt=""></li>
+								</ul>
+								<ul class="list-color">
+									<li><span clsss="hidden">COLOR 1</span></li><li><span clsss="hidden">COLOR 2</span></li><li><span clsss="hidden">COLOR 3</span></li>
+								</ul>
+							</div>
+							<!-- /zoom-sec -->
+
+							<!-- thumb-box -->
+							<div class="thumb-box">
+								<span>SHOP</span>
+								<ul class="list-thumb">
+									<li><a href="/product/GPMS22091389641/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_02_01.png" alt=""></a></li>
+									<li><a href="/product/GPMS22091389640/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_02_02.png" alt=""></a></li>
+									<li><a href="/product/GPMS22091389639/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_02_03.png" alt=""></a></li>
+								</ul>								
+							</div>
+							<!-- /thumb-box -->
+						</div>
+						<!-- /box-02 -->
+
+						<!-- box-03 -->
+						<div class="box type-03">
+							<!-- list-top-thumb -->
+							<ul class="list-top-thumb">
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_thumb_03_01.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_photo_03_01.png" alt="">
+												<a href="/product/GPMS22102406889/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-05">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>LIGHT DOWN VEST</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_thumb_03_02.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_photo_03_02.png" alt="">
+												<a href="/product/GPMS22102406889/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-06">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>LIGHT DOWN VEST</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- /list-top-thumb -->
+
+							<!-- info-prd -->
+							<div class="info-prd">
+								<h6>LIGHT DOWN VEST</h6>
+								<div class="ment-box">
+									<span>
+										<i>Jaebum’s pick</i>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_photo_person_03.png" alt="">
+									</span>
+									<p>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/txt_ment_03.png" alt="군더더기 없는 디자인과 컬러, 투웨이 지퍼를 사용하여 다양한 스타일링을 할 수 있어 좋았고, 무게감이 느껴지지 않을 정도로 가벼워 활동하기에 불편하지 않았어요.">
+									</p>
+								</div>
+								<ul class="list-comment">
+									<li><span>DETAIL 1.</span> 최소한의 디테일로 부담없이 착용 가능한 디자인의 덕다운 베스트예요.</li>
+									<li><span>DETAIL 2.</span> 신축성 있는 접밴드 디테일을 활용해 착용감이 뛰어나요.</li>
+									<li><span>RECOMMENDED ACTIVITY.</span> 최소한의 디테일로 편리함을 원하는 분들에게 글램핑을 추천해요.</li>
+								</ul>
+							</div>
+							<!-- /info-prd -->
+
+							<!-- zoom-sec -->
+							<div class="zoom-sec">
+								<span>마우스 오버 해보세요</span>
+								<ul class="list-prd">
+									<li class="on"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_03_01.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_03_01.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_03_02.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_03_02.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_03_03.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_03_03.png" alt=""></li>
+								</ul>
+								<ul class="list-color">
+									<li><span clsss="hidden">COLOR 1</span></li><li><span clsss="hidden">COLOR 2</span></li><li><span clsss="hidden">COLOR 3</span></li>
+								</ul>
+							</div>
+							<!-- /zoom-sec -->
+
+							<!-- thumb-box -->
+							<div class="thumb-box">
+								<span>SHOP</span>
+								<ul class="list-thumb">
+									<li><a href="/product/GPMS22102406889/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_03_01.png" alt=""></a></li>
+									<li><a href="/product/GPMS22102406887/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_03_02.png" alt=""></a></li>
+									<li><a href="/product/GPMS22102406886/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_03_03.png" alt=""></a></li>
+								</ul>								
+							</div>
+							<!-- /thumb-box -->
+						</div>
+						<!-- /box-03 -->
+
+						<!-- box-04 -->
+						<div class="box type-04">
+							<!-- list-top-thumb -->
+							<ul class="list-top-thumb">
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_thumb_04_01.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_photo_04_01.png" alt="">
+												<a href="/product/GPMS22102406806/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-07">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>LIGHT DOWN PARKA</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_thumb_04_02.png" alt=""></a>
+									<div class="layer-top">
+										<div class="dim"></div>
+										<div class="layer-cont">
+											<div class="layer-cont-inner">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_catalogue_top_photo_04_02.png" alt="">
+												<a href="/product/GPMS22102406806/detail?ga_param=EVENT01" target="_self">
+													<div class="link-sec link-08">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/btn_prd.png" alt="상품 보러가기">
+														<p>LIGHT DOWN PARKA</p>
+													</div>
+												</a>
+												<a href="javascript:void(0)" class="btn-close-layer"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220315/m_btn_close_layer.png" alt="레이어 닫기"></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- /list-top-thumb -->
+
+							<!-- info-prd -->
+							<div class="info-prd">
+								<h6>LIGHT DOWN PARKA</h6>
+								<div class="ment-box">
+									<span>
+										<i>Yongjin’s pick</i>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/img_photo_person_04.png" alt="">
+									</span>
+									<p>
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/txt_ment_04.png" alt="보온력이 좋을 뿐만 아니라 너무 가벼워서 놀랐어요. 눌렀을 때 잘 들어가는 것을 보면 압축도 잘 될 것 같아 휴대하여 등산하기도 좋을 것 같다는 생각이 들어요.">
+									</p>
+								</div>
+								<ul class="list-comment">
+									<li><span>DETAIL 1.</span> 덕다운 충전재로 가볍고 보온성이 뛰어나요.</li>
+									<li><span>DETAIL 2.</span> 밑단 스트링으로 방풍 효과를 높일 수 있어요.</li>
+									<li><span>RECOMMENDED ACTIVITY.</span> 보온성이 뛰어난 다운 파카가 필요한 백패킹 또는 노지 캠핑을 추천해요.</li>
+								</ul>
+							</div>
+							<!-- /info-prd -->
+
+							<!-- zoom-sec -->
+							<div class="zoom-sec">
+								<span>마우스 오버 해보세요</span>
+								<ul class="list-prd">
+									<li class="on"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_04_01.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_04_01.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_04_02.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_04_02.png" alt=""></li>
+									<li><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_04_03.png" data-zoom-image="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/prd_photo_04_03.png" alt=""></li>
+								</ul>
+								<ul class="list-color">
+									<li><span clsss="hidden">COLOR 1</span></li><li><span clsss="hidden">COLOR 2</span></li><li><span clsss="hidden">COLOR 3</span></li>
+								</ul>
+							</div>
+							<!-- /zoom-sec -->
+
+							<!-- thumb-box -->
+							<div class="thumb-box">
+								<span>SHOP</span>
+								<ul class="list-thumb">
+									<li><a href="/product/GPMS22102406806/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_04_v2_01.png" alt=""></a></li>
+									<li><a href="/product/GPMS22102406884/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_04_v2_02.png" alt=""></a></li>
+									<li><a href="/product/GPMS22102406799/detail?ga_param=EVENT01" target="_self"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/prd_thumb_04_v2_03.png" alt=""></a></li>
+								</ul>								
+							</div>
+							<!-- /thumb-box -->
+						</div>
+						<!-- /box-04 -->
+					</div>
+					<!-- /catalogue-box -->
+				</div>
+			</div>
+			<!-- /catalogue -->
+
+			<!-- guide -->
+			<div class="section-04">
+				<!-- brand-banner -->
+				<div class="brand-banner">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_brand_banner3.png" alt="">
+					<div class="tit-sec">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/img_brand_logo.png" alt="">
+						<p>
+							1965년 창립자 밥 스완슨과 조지 마크스가로부터 시작한 헤리티지 브랜드입니다.<br/> 
+							수년간 그들의 모험과 경험을 통해 제품을 만들기 시작했으며, 아웃도어의 선구자 역할을 하고 있습니다.<br/> 
+							단순히 좋은 제품 이상으로, 열정적으로 사고하는 사람들에 대한 존경을 이야기하는 브랜드입니다.
+						</p>
+					</div>
+					<span class="btn-sec">
+						<a href="/brands/main?brndCategoryNumber=BDMA01M05" class="btn-brand">BRAND SHOP</a>
+					</span>
+				</div>
+				<!-- /brand-banner -->
+
+				<div class="guide">
+					<h6><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/tit_guide.png" alt=""></h6>
+					<span class="tit-sub font-fix">캐주얼한 즐거움을 찾는 어반 아웃도어 가이드</span>
+
+					<!-- guide banner -->
+					<div class="guide-banner">
+						<ul class="list-banner">
+							<li>
+								<a href="/special/8219/view" target="_self">
+									<div class="img-sec">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/banner_guide_01.png" alt="키워드샵 #WE DO (Unique)">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220811/arr_01.png" class="arrow" alt="">
+									</div>
+									<span>EVENT</span>
+									<em class="font-fix">키워드샵 #WE DO (Unique)</em>
+								</a>
+							</li>
+							<li>
+								<a href="/article/archive/4632/view" target="_self">
+									<div class="img-sec">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/banner_guide_02.png" alt="에디터스 노트 #고프코어">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220811/arr_01.png" class="arrow" alt="">
+									</div>
+									<span>EDITORIAL</span>
+									<em class="font-fix">에디터스 노트 #고프코어</em>
+								</a>
+							</li>
+							<li>
+								<a href="/article/archive/4858/view" target="_self">
+									<div class="img-sec">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/banner_guide_03.png" alt="주말에 뭐 입지? #불멍하러 떠나요">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220811/arr_01.png" class="arrow" alt="">
+									</div>
+									<span>EDITORIAL</span>
+									<em class="font-fix">주말에 뭐 입지? #불멍하러 떠나요</em>
+								</a>
+							</li>
+							<li>
+								<a href="/article/archive/3381/view" target="_self">
+									<div class="img-sec">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/banner_guide_04.png" alt="에디터스 노트 #겨울 캠핑 레시피">
+										<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220811/arr_01.png" class="arrow" alt="">
+									</div>
+									<span>EDITORIAL</span>
+									<em class="font-fix">에디터스 노트 #겨울 캠핑 레시피</em>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /guide banner -->
+				</div>
+			</div>
+			<!-- /guide -->
+		</section>
+		<!-- /CATALOGUE -->
+
+		<!-- EVENT -->
+		<section id="event-section-04" style="display:;">
+			<div class="section-05">
+				<!-- event 01 -->
+				<div class="brand-banner">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/img_brand_banner.png" alt="">
+					<div class="tit-sec">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/tit_sub_event_1.png" alt="">
+						<span class="font-fix">기간 한정 <i>37</i>% 할인</span>
+						<p>
+							인사이더 캠페인 기간 동안 시에라 일부 아이템을 최대 ~37% 할인 혜택으로 만나보세요.<br/>
+							2022. 11.16 WED - 11.30 wed 
+						</p>
+					</div>
+					<span class="btn-sec">
+						<a href="javascript:void(0)" class="btn-brand go-related">BUY NOW</a>
+					</span>
+				</div>
+				<!-- /event 01 -->
+				
+				<!-- ins-before -->
+				<div class="ins-before">
+					<span>EQL INSIDER</span>
+					<h6><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221109/ins_img_before.png" alt="What we do"></h6>
+					<a href="/special/8002/view" target="_self">지난 에피소드 보러가기</a>
+				</div>
+				<!-- /ins-before -->
+			</div>
+		</section>
+		<!-- /EVENT -->		
+
+		<!--
+		<p class="txt-end">
+			본 이벤트는 종료되었습니다.
+		</p>
+		-->
+
+	</article>
+</div>
+
+<script>
+(function($context, $doc){
+	if (!$context.length) return;
+	
+	// 스크롤 메뉴
+	var $menu = $context.find('.event-menu');
+	var $menus = $context.find('.event-menu li');
+	var $menubox = $menu.find('.event-menu-inner');
+	var $sections = $context.find('section');
+	var $fixedBox = $context.find('.fixed-box');
+	var offset = 84;
+
+	// 우측 애니메이션 고정
+	var setAniFix = function(){
+		var windowHeight, $aniBox, aniTop, aniHeight;
+
+		windowHeight = $(window).innerHeight();
+		$aniBox = $('.ani-sec');
+		aniTop = $('.evt-top').offset().top;
+		aniHeight = $('.evt-top').outerHeight();
+		sumHeight = aniTop + aniHeight;
+
+		$(window).scrollTop() > sumHeight - windowHeight ? $aniBox.addClass('fixed') : $aniBox.removeClass('fixed');
+	}
+
+	// 탭 하단 고정
+	var setMenufix2 = function(){
+		var windowHeight, topTextTop, topTextHeight, tabHeight, sumHeight;
+		
+		windowHeight = $(window).innerHeight();
+		topTextTop = $('.txt-sub').offset().top;
+		topTextHeight = $('.txt-sub').outerHeight();
+		tabHeight = $menubox.outerHeight();
+		sumHeight = topTextTop + topTextHeight + tabHeight;
+
+		$(window).scrollTop() > sumHeight - windowHeight == true ? $menubox.addClass('fixed') : $menubox.removeClass('fixed');
+	}
+
+	// 스크롤 시 탭 on, off
+	var setSection = function(){
+		$sections.each(function(idx, $section){
+			if ($(window).scrollTop() >= $section.offsetTop - offset - 41) {
+				$menus.removeClass('active');
+				$menus.eq(idx).addClass('active');
+			}
+		});
+	};
+
+	// 탭 클릭 이동
+	$menu.on('click', 'li a', function (e) {
+		var section = $(e.currentTarget.hash);
+		var offsetTop = Math.round(section.offset().top);
+		$doc.stop().animate({
+			scrollTop: offsetTop - offset,
+		}, 400);
+		e.preventDefault();
+	});
+
+	// 섹션 타이틀 고정
+	function setTitlefix() {
+		const checkTiming = 400;
+		const arrySectionTop = [];
+		const arrySectionHeight = [];
+		const arrySectionSum = [];
+		
+		for(var i=0; i<$fixedBox.length; i++) {
+			arrySectionTop.push($fixedBox.eq(i).offset().top);
+			arrySectionHeight.push($fixedBox.eq(i).outerHeight());
+			arrySectionSum.push(arrySectionTop[i] + arrySectionHeight[i] - offset);
+
+			if ($(window).scrollTop() > arrySectionTop[i] - offset  && $(window).scrollTop() <= arrySectionSum[i] - checkTiming) {
+				$fixedBox.eq(i).find('.tit-sec').addClass("fixed");
+				if ($(window).scrollTop() > arrySectionSum[i] - checkTiming) { 
+					$fixedBox.eq(i).find('.tit-sec').addClass("in");
+				} else {
+					$fixedBox.eq(i).find('.tit-sec').removeClass("in");
+				}
+			} else {
+				$fixedBox.eq(i).find('.tit-sec').removeClass("fixed");
+			}
+		}
+	}
+
+	$(window).on('load scroll resize', function(){
+		setMenufix2();
+		setAniFix();
+		//setTitlefix();
+	});
+
+	$(window).on('scroll', function(){
+		setSection();
+		setSection2();
+		handleProgress();
+
+		$('.motion2').each(function(i){
+			if(checkVisible($(this))){
+				$(this).addClass('in');
+			}
+		});
+	});
+
+	// 엘리먼트 체크
+	function checkVisible( elm, eval ) {
+		eval = eval || "object visible";
+		var viewportHeight = $(window).height(), // Viewport Height
+			scrolltop = $(window).scrollTop(), // Scroll Top
+			y = $(elm).offset().top,
+			elementHeight = $(elm).height();   
+		
+		if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+		if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+	}
+
+	// styling swiper
+	function stylingSwiper() {
+		var stylingSwiper = new Swiper('.styling-swiper', {
+			spaceBetween: 0,
+			slidesPerView: 'auto',
+			simulateTouch: true,
+			loop: false,
+		});
+	}
+	stylingSwiper();
+	
+	// 영상 컨트롤
+	var videoEvent = document.querySelector("#event-section-01 .vod"); 
+	$(".section-01 .movi-sec").on("click", ".btn-movie", function(){
+		videoEvent.play();
+		$(this).parent().addClass("off");
+	});
+	$(".section-01 .movi-sec").on("click", function(){
+		$(this).children(".pmo-btn-top").addClass("off");
+	});
+
+	// 프로그레스바
+	var handleProgress = function(){
+		var lastTop = $('.event-menu').position().top;
+		var lastH = $('.event-menu').outerHeight()-offset;
+		var posSum = lastTop + lastH;
+		var progressIndicator = $(".progress-bar");
+		
+		var currentPercentage = ($(window).scrollTop() / ($(document).outerHeight() - $(window).height())) * 100;
+		progressIndicator.css("width", currentPercentage+'%');
+	};
+
+	// 유의사항 토글 
+	$('.list-notice dt').click(function(){
+		$(this).parent().toggleClass('on');
+	});
+
+	// 상단 메뉴 토글
+	$(".top-menu li").hover(function() {
+		$(this).children(".box-hash").addClass("on");
+	}, function(){
+		$(this).children(".box-hash").removeClass("on");
+	});
+
+	// 가이드 화살표 토글
+	$(".guide-banner .list-banner li .img-sec").hover(function() {
+		$(this).children(".arrow").addClass("on");
+	}, function(){
+		$(this).children(".arrow").removeClass("on");
+	});
+
+    // 댓글 영역 이동
+    $(".ins-event .btn-reply").on("click", function(e){
+		e.preventDefault;
+        var offsetTop = $(".detail-footer-wrap").offset().top;
+        $("html").stop().animate({
+            scrollTop: offsetTop - 40,
+        }, 0);
+    });
+	
+	// 화보 1번 영역 fixed
+	// var setMenufix = function(){
+	// 	var lastTop = $('.insider-item-box:last-of-type').offset().top;
+	// 	var lastH = $('.insider-item-box:last-of-type').outerHeight()-offset;
+	// 	var posSum = lastTop + lastH;
+		
+	// 	if($(window).scrollTop() > posSum - 700){
+	// 		$('.insider-item-box:last-of-type').addClass('fix-last');
+	// 	} else {
+	// 		$('.insider-item-box:last-of-type').removeClass('fix-last');
+	// 	}
+	// };
+
+	// 화보 1번 영역 fixed
+	var setSection2 = function(){
+		var $sections = $context.find('.insider-item-box');
+		$sections.each(function(idx, $section){
+			if ($(window).scrollTop() > $($section).offset().top - offset - 30 && $(window).scrollTop() <= $($section).offset().top + $($section).height()) {
+				$sections.removeClass('active');
+				$sections.eq(idx).addClass('active');
+			} else {
+				$sections.eq(idx).removeClass('active');
+			}
+		});
+	};
+	setSection2();
+
+	// 카탈로그 레이어 팝업 열기
+	$(".catalogue-box .list-top-thumb li > a").on("click", function(){
+		$(this).next(".layer-top").addClass("on");
+		$(".zoomContainer").css("display", "none"); // 줌 예외처리
+	});	
+
+	// 카탈로그 레이어 팝업 닫기
+	$(".catalogue-box .btn-close-layer").on("click", function(){
+		$(this).closest(".layer-top").removeClass("on");
+		$(".zoomContainer").css("display", "block"); // 줌 예외처리
+	});
+	$(".catalogue-box .dim").on("click", function(){
+		console.log("on");
+		$(this).closest(".layer-top").removeClass("on");
+		$(".zoomContainer").css("display", "block"); // 줌 예외처리
+	});
+
+	// 카탈로그 컬러 픽업
+	$(".zoom-sec .list-color li").on("click", function(idx){
+		console.log(idx)
+		// $(".zoom-sec .list-prd li").removeClass("on");
+		// $(this).parent().siblings(".list-prd") li:nth-child(" + (idx + 1) +")").addClass("on");
+	});
+
+	// 카탈로그 컬러 픽업
+	$(".catalogue-box .box.type-01 .zoom-sec .list-color li").each(function(idx, el){
+		$(this).on("click", function(){
+			$(".catalogue-box .box.type-01 .zoom-sec .list-prd li").removeClass("on");
+			$(".catalogue-box .box.type-01 .zoom-sec .list-prd li:nth-child(" + (idx + 1) +")").addClass("on");
+		});
+	});
+	$(".catalogue-box .box.type-02 .zoom-sec .list-color li").each(function(idx, el){
+		$(this).on("click", function(){
+			$(".catalogue-box .box.type-02 .zoom-sec .list-prd li").removeClass("on");
+			$(".catalogue-box .box.type-02 .zoom-sec .list-prd li:nth-child(" + (idx + 1) +")").addClass("on");
+		});
+	});
+	$(".catalogue-box .box.type-03 .zoom-sec .list-color li").each(function(idx, el){
+		$(this).on("click", function(){
+			$(".catalogue-box .box.type-03 .zoom-sec .list-prd li").removeClass("on");
+			$(".catalogue-box .box.type-03 .zoom-sec .list-prd li:nth-child(" + (idx + 1) +")").addClass("on");
+		});
+	});
+	$(".catalogue-box .box.type-04 .zoom-sec .list-color li").each(function(idx, el){
+		$(this).on("click", function(){
+			$(".catalogue-box .box.type-04 .zoom-sec .list-prd li").removeClass("on");
+			$(".catalogue-box .box.type-04 .zoom-sec .list-prd li:nth-child(" + (idx + 1) +")").addClass("on");
+		});
+	});
+
+	// 카탈로그 줌
+	$(".zoom-sec .list-prd li img").hover(function() {
+		$(this).ezPlus({
+			zoomType: 'lens',
+			lensShape: 'round',
+			scrollZoom : false,
+			lensSize: 500,
+			containLensZoom: true,
+		});
+	}, function(){
+
+	});
+
+	// 카탈로그 줌 안내 문구 예외처리
+	$(window).on('load resize', function(){
+		var targetEl = $(".pmo-cont .section-03 .catalogue-box .box .zoom-sec .list-prd li img");
+		var initialEl = $(".pmo-cont .section-03 .catalogue-box .box .zoom-sec > span");
+		initialEl.width(targetEl.width());
+	});
+
+	// 하단 구분타이틀로 이동
+	$(".go-related").on("click", function(e){
+        var offsetTop = $(".banner-view-wrap").offset().top;
+        $("html").stop().animate({
+            scrollTop: offsetTop - 200,
+        }, 600);
+    });
+
+
+// //--- DEFINE a reusable animation function: ---//
+// function scrollThere(targetElement, speed) {
+// 	console.log(targetElement);
+// 	// initiate an animation to a certain page element:
+// 	$('html, body').stop().animate(
+// 	  { scrollTop: targetElement.offset().top -125 }, // move window so target element is at top of window
+// 	  speed, // speed in milliseconds
+// 	  'linear' // easing
+// 	); // end animate
+//   } // end scrollThere function definition
+  
+  
+  
+  
+  
+//   //--- START SCROLL EVENTS ---//
+//   // detect a mousewheel event (note: relies on jquery mousewheel plugin):
+//   $(window).on('mousewheel', function (e) {
+  
+// 	// get Y-axis value of each div:
+// 	var div1y = $('.catalogue-box .box.type-01').offset().top,
+// 		div2y = $('.catalogue-box .box.type-02').offset().top,
+// 		div3y = $('.catalogue-box .box.type-03').offset().top,
+// 		div4y = $('.catalogue-box .box.type-04').offset().top,
+// 		// get window's current scroll position:
+// 		lastScrollTop = $(this).scrollTop(),
+// 		// for getting user's scroll direction:
+// 		scrollDirection,
+// 		// for determining the previous and next divs to scroll to, based on lastScrollTop:
+// 		targetUp,
+// 		targetDown,
+// 		// for determining which of targetUp or targetDown to scroll to, based on scrollDirection:
+// 		targetElement;
+  
+// 	// get scroll direction:
+// 	if ( e.deltaY > 0 ) {
+// 	  scrollDirection = 'up';
+// 	} else if ( e.deltaY <= 0 ) {
+// 	  scrollDirection = 'down';
+// 	} // end if
+  
+// 	// prevent default behavior (page scroll):
+// 	e.preventDefault();
+  
+// 	// condition: determine the previous and next divs to scroll to, based on lastScrollTop:
+// 	if (lastScrollTop === div1y) {
+// 	  targetUp = $('.catalogue-box .box.type-01');
+// 	  targetDown = $('.catalogue-box .box.type-02');
+// 	} else if (lastScrollTop === div2y) {
+// 	  targetUp = $('.catalogue-box .box.type-01');
+// 	  targetDown = $('.catalogue-box .box.type-03');
+// 	} else if (lastScrollTop === div3y) {
+// 	  targetUp = $('.catalogue-box .box.type-02');
+// 	  targetDown = $('.catalogue-box .box.type-04');
+	
+// 	} else if (lastScrollTop < div2y) {
+// 	  targetUp = $('.catalogue-box .box.type-01');
+// 	  targetDown = $('.catalogue-box .box.type-02');
+// 	} else if (lastScrollTop < div3y) {
+// 	  targetUp = $('.catalogue-box .box.type-02');
+// 	  targetDown = $('.catalogue-box .box.type-03');
+// 	} else if (lastScrollTop < div4y) {
+// 	  targetUp = $('.catalogue-box .box.type-03');
+// 	  targetDown = $('.catalogue-box .box.type-04');
+// 	}
+// 	// end else if
+  
+// 	// condition: determine which of targetUp or targetDown to scroll to, based on scrollDirection:
+// 	if (scrollDirection === 'down') {
+// 	  targetElement = targetDown;
+// 	} else if (scrollDirection === 'up') {
+// 	  targetElement = targetUp;
+// 	} // end else if
+  
+// 	// scroll smoothly to the target element:
+// 	scrollThere(targetElement, 700);
+  
+//   }); // end on mousewheel event
+//   //--- END SCROLL EVENTS ---//
+
+
+
+
+
+	// 카탈로그 영역 이동
+	var setCatalogueBox = function(){
+		var windowHeight, $catalogueBox, catalogueBoxTop, catalogueBoxHeight, sumHeight;
+
+		$catalogueBox = $(".catalogue-top");
+		catalogueBoxTop = $catalogueBox.offset().top;
+		catalogueBoxHeight = $catalogueBox.outerHeight();
+		sumHeight = catalogueBoxTop + catalogueBoxHeight;
+
+		if($(window).scrollTop() > catalogueBoxTop - 500)  {
+			console.log("on")
+
+		} else {
+			console.log("off")
+
+		}
+	}	
+
+
+	// let lastScrollY = 0;
+	// $(window).on('scroll', function(){
+
+	// 	const scrollY = window.scrollY;
+
+	// 	  // 이전의 스크롤 위치와 비교하기
+	// 	  const direction = scrollY > lastScrollY ? "Scroll Down" : "Scroll Up";
+  
+	// 	  // 현재의 스크롤 값을 저장
+	// 	  lastScrollY = scrollY;
+		  
+	// 	  console.log(direction);
+
+		
+	// });
+
+	// // 스크롤시 섹션별 이동
+	// $(".catalogue-box .box").each(function () {
+	// 	// 개별 Wheel 이벤트 적용
+	// 	$(this).on("mousewheel DOMMouseScroll", function (e) {
+	// 		e.preventDefault();
+	// 		var delta = 0;
+	// 		var initialTop = $(".catalogue-box .box.type-01").offset().top;
+
+
+	// 		if (!event) event = window.event;
+	// 		if (event.wheelDelta) {
+	// 			delta = event.wheelDelta / 120;
+	// 			if (window.opera) delta = -delta;
+	// 		} else if (event.detail) delta = -event.detail / 3;
+	// 		var moveTop = null;
+
+	// 		// 마우스휠 위에서 아래로
+	// 		if (delta < 0) {
+	// 			if ($(this).next() != undefined) {
+	// 				moveTop = $(this).next().offset().top - 85;
+	// 			}
+	// 		}
+
+	// 		// 마우스휠 아래에서 위로
+	// 		else {
+	// 			if ($(this).prev() != undefined && $(this).prev().index() > 0) {
+	// 				moveTop = null;
+	// 			}
+
+	// 			if( $(this).prev().index() == 0 ) {
+	// 				moveTop = initialTop;
+	// 				console.log("on")
+	// 			}
+	// 		}
+	// 		// 화면 이동 0.8초(800)
+	// 		$("html,body").stop().animate({
+	// 			scrollTop: moveTop + 'px'
+	// 		}, {
+	// 			duration: 800, complete: function () {
+	// 			}
+	// 		});
+	// 	});
+	// });
+	// $('.last-section').on("mousewheel DOMMouseScroll", function (e) {
+	// 	var delta = event.wheelDelta / 120;
+
+	// 	if (delta > 0) {
+	// 		$("html,body").stop().animate({
+	// 			scrollTop: $('.event-section-03').offset().top - 85
+	// 		}, {
+	// 			duration: 800, complete: function () {
+	// 			}
+	// 		});
+	// 	}
+	// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	function handleScrollMagic() {
+		var controller = new ScrollMagic.Controller();
+
+		// var sceneArray = new Array()
+
+		/**************************************** Scene0 start ****************************************/
+			// Scene0 : 상단 인트로 이미지 고정
+			var Scene0 = new TimelineMax();
+
+			//let height = $(".trigger1 .intro").height();
+			var Scene0 = new ScrollMagic.Scene({
+				triggerElement: ".trigger0",
+				triggerHook: "onLeave",
+				duration: "100%",
+
+			})
+			.setPin(".trigger0")
+			//.addIndicators({name : "scene0"})
+			.addTo(controller);
+
+			//Scene1.offset(-20);
+
+			// Scene0_2 : 상단 인트로 이미지 모션, 중앙 텍스트
+			var tlScene0_2 = new TimelineMax();
+
+			tlScene0_2
+			.staggerFromTo(".trigger0 .list-txt li img", 2, {opacity: 0, y: "40px"}, {opacity: 1, y: "0px"}, 0.4)
+
+			var Scene0_2 = new ScrollMagic.Scene({
+				triggerElement: ".trigger0",
+				triggerHook: 0,
+				//duration: "150%",
+
+			})
+			.setTween(tlScene0_2)
+			//.addIndicators({name : "Scene0_2"})
+			.addTo(controller);
+
+
+			// // Scene0_2 : 상단 인트로 이미지 모션, 중앙 텍스트
+			// var tlScene0_2 = new TimelineMax();
+
+			// tlScene0_2
+			// .set(".trigger0 .top-box .bg1", {autoAlpha: 0.5})
+			// .to(".trigger0 .top-box .bg1", 3, {autoAlpha: 0})
+			// .from(".trigger0 .top-box .bg2", 3, {top: "100%"}, "-=3")
+			// .to(".trigger0 .top-box .bg2", 3, {top: "0%"}, "-=3")
+
+			// var Scene0_2 = new ScrollMagic.Scene({
+			// 	triggerElement: ".trigger0",
+			// 	triggerHook: 0,
+			// 	duration: "150%",
+
+			// })
+			// .setTween(tlScene0_2)
+			// //.addIndicators({name : "Scene0_2"})
+			// .addTo(controller);
+		/**************************************** /Scene0 end ****************************************/
+
+		// removeIndicators
+		Scene0.removeIndicators();
+		Scene0_2.removeIndicators();
+
+	}
+
+	handleScrollMagic();	
+
+})($('.pmo-cont'), $('html,body'));
+
+// URL 키값을 위한 정의
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	const regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function chkHashUrl() {
+	const chkParamUrl2 = getParameterByName('event02');	// MODERN NOMADS
+	const chkParamUrl3 = getParameterByName('event03'); // STYLING
+	const chkParamUrl4 = getParameterByName('event04'); // EVENT
+	const eventTop02 = $('#event-section-02').offset().top;
+	const eventTop03 = $('#event-section-03').offset().top;
+	const eventTop04 = $('#event-section-04').offset().top;
+	const offset = 84;
+
+	if(chkParamUrl2) {
+		$("html").stop().animate({
+			scrollTop: eventTop02 - offset,
+		}, 400);
+	} else if(chkParamUrl3) {
+		$("html").stop().animate({
+			scrollTop: eventTop03 - offset,
+		}, 400);
+	} else if(chkParamUrl4) {
+		$("html").stop().animate({ 
+			scrollTop: eventTop04 - offset,
+		}, 400);
+	} else {
+		// $(window).scrollTop(0); 
+	}
+}
+
+setTimeout(function() {
+    chkHashUrl();
+}, 400);					
+</script>
+
+<!-- //E : 이벤트 상세 코너 -->
+
+
+
+<!-- <script src="/resources/event/2022/11/insider/pub.js"></script> -->
+
+
+
+
+
+							<!--E : 이벤트 컨텐츠 임시 영역-->
+						</div>
+						<!--E : 이벤트 컨텐츠 html 영역-->
+					</div>
+
+					<div class="detail-footer-wrap" style="height:2000px;">
+
+						<!-- S : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+						<!--S : gate-banner-wrap-->
+						<div class="gate-banner-wrap">
+							<div class="gate-banner-swiper">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Event type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(../../resources/images/temp/temp_event.jpg)"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Event</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Event type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Archive type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_archive_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Archive</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Archive type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+								</ul>
+							</div>
+							<div class="btn-swiper-arrow-wrap">
+								<button class="btn-swiper-arrow prev">이전 슬라이드<span class="icon"></span></button>
+								<button class="btn-swiper-arrow next">다음 슬라이드<span class="icon"></span></button>
+							</div>
+						</div>
+						<!--E : gate-banner-wrap-->
+						<!-- E : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+					</div>
+				</div>
+				<!--E : detail-container-wrapper-->
+				<!--E : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+			</div>
+			<div id="footerWrap" class="footer-wrap">
+				<div class="footer-copyright-wrap">
+					<div class="footer-copyright-inner">
+						<p>(주)한섬  /  대표이사  김민덕  /  서울시 강남구 도산대로 523 한섬빌딩</p><!-- 200403 수정 | 대표자명 변경 ( 김형종  -> 김민덕 ) -->
+						<p>Tel 1661-8858  /  Fax 02-476-8169  /  사업자등록번호 120-81-26337</p><!-- 200331 수정 | TEL 번호 수정 -->
+						<p>통신판매업신고번호 강남 제 00826호 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208126337&apv_perm_no=" target="_blank" class="footer-anchor">사업자 정보 확인</a> <a href="#none" class="footer-anchor" data-popup-trigger data-target="#dialogMoney">하나은행 구매안전 서비스</a></p><!-- 200714 수정 | 사업자 정보 확인 추가 --><!-- 200807 추가 : 하나은행 구매안전 서비스 추가 -->
+						<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->|<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->
+						<p class="copyright">Copyrightⓒ 2017 handsome. All right reserved.</p>
+					</div>
+					<!-- 200807 추가 : 지급보증서 발급조회 안내 팝업 -->
+					<div id="dialogMoney" class="ui-dialog-contents" title="지급보증서 발급조회 안내">
+						<div class="dialog-contents-flex">
+							<p><img src="/resources/images/footer/footer_certification.jpg" alt=""></p>
+							<p class="desc-dark-gray">고객님께서 안전거래를 위해 현금 결제 시 <br>EQL에서 가입한 하나은행의 구매안전서비스를 이용하실 수 있습니다.</p>
+						</div>
+					</div>
+					<!-- //지급보증서 발급조회 안내 팝업 -->
+				</div>
+				<div class="footer-help-wrap">
+					<p class="footer-wrap-title">Help</p>
+					<!-- s : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">FAQ</a></li>
+						<li><a href="#" class="footer-link">공지사항</a></li>
+						<li><a href="#" class="footer-link">제휴문의</a></li>
+						<li><a href="#" class="footer-link">입점상담</a></li>
+						<li><a href="#" class="footer-link">멤버십 안내</a></li>
+					</ul>
+					<!-- e : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<!-- s : 200219 수정 | SNS 순서 변경 -->
+					<div class="footer-wrap-tool sns-link-box">
+						<a href="#" class="sns-link youtube" target="_blank">유튜브</a>
+						<a href="#" class="sns-link facebook" target="_blank">페이스북</a>
+						<a href="#" class="sns-link instagram" target="_blank">인스타그램</a>
+					</div>
+					<!-- e : 200219 수정 | SNS 순서 변경 -->
+				</div>
+				<div class="footer-company-wrap">
+					<p class="footer-wrap-title">Company</p>
+					<!-- S : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">ABOUT EQL</a></li>
+						<li><a href="#" class="footer-link">회사소개</a></li>
+						<li><a href="#" class="footer-link">이용약관</a></li>
+						<li><a href="#" class="footer-link spot">개인정보처리방침</a></li>
+					</ul>
+					<!-- E : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<div class="footer-wrap-tool">
+						<div class="select-wrap family-site js-select" data-placeholder="FAMILY SITE" data-menu-place="up" data-menu-class="family-site">
+							<select title="Family site" class="ui-sel">
+								<optgroup label="ShoppingMall">
+									<option value="https://www.thehyundail.com/">더현대닷컴</option>
+									<option value="https://www.hddfs.com/">현대백화점 DUTY FREE</option>
+									<option value="http://esuper.ehyundai.com/">e슈퍼마켓</option>
+									<option value="https://hyundaihmall.com/">현대Hmall</option>
+									<option value="http://mall.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundairentalcare.co.kr/">현대렌탈케어</option>
+									<option value="http://thehandsome.com/ko">더한섬닷컴</option>
+									<option value="http://www.hfashionmall.com/">H패션몰</option>
+									<option value="http://www.h-vrstation.com/">VR STATION</option>
+								</optgroup>
+								<optgroup label="FamilySite">
+									<option value="http://www.ehyundai.com/newPortal/ir/main.do">현대백화점그룹</option>
+									<option value="https://www.ehyundai.com/newPortal/index.do">현대백화점</option>
+									<option value="http://www.hyundaigreenfood.com/">현대그린푸드</option>
+									<option value="https://www.hyundaihmall.com/">현대홈쇼핑</option>
+									<option value="http://www.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundaihns.com">㈜현대H&amp;S</option>
+									<option value="http://www.hcn.co.kr/">현대HCN</option>
+									<option value="http://www.hyundaimedia.com/">현대미디어</option>
+									<option value="http://www.hyundairentalcare.co.kr">현대렌탈케어</option>
+									<option value="http://www.hyundaidreamtour.com/">현대드림투어</option>
+									<option value="http://www.everdigm.com/">에버다임</option>
+									<option value="http://www.cnsfoodsystem.co.kr/">씨엔에스푸드시스템</option>
+									<option value="http://www.hyundaicatering.co.kr/">현대케이터링시스템</option>
+									<option value="http://www.hyundai-ite.com/">현대IT&amp;E</option>
+									<option value="http://www.thehandsome.com/">한섬</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="show-mobile mobile-only">
+				<a href="#">모바일로 보기</a><!-- DESC : body 또는 wrap에 class "mobile-pc" 추가시 노출 됨 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
