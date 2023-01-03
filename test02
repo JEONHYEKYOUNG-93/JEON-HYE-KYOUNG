@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="noindex" name="robots" />
+	<meta name="description" content="한섬 EQL">
+	<meta property="og:locale:alternate" content="ko_KR">
+	<meta property="og:title" content="한섬 EQL">
+	<meta property="og:url" content="https://www.thehandsome.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://www.eqlstore.com/resources/images/favicon/share.png">
+	<meta property="og:site_name" content="한섬 EQL">
+	<meta property="og:description" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="한섬 EQL">
+	<meta name="twitter:url" content="https://www.thehandsome.com/">
+	<meta name="twitter:image" content="https://www.eqlstore.com/resources/images/favicon/share.png">
+	<meta name="twitter:description" content="">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>한섬 EQL</title>
+
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-180x180-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-167x167-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-152x152-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-120x120-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-76x76-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-60x60-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-57x57-precomposed.png">
+
+	<link rel="shortcut icon" sizes="256x256" href="https://www.eqlstore.com/resources/images/favicon/favicon_256x256.png">
+	<link rel="shortcut icon" sizes="196x196" href="https://www.eqlstore.com/resources/images/favicon/favicon_196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="https://www.eqlstore.com/resources/images/favicon/favicon_128x128.png">
+	<link rel="shortcut icon" sizes="48x48" href="https://www.eqlstore.com/resources/images/favicon/favicon_48x48.png">
+	<link rel="shortcut icon" sizes="32x32" href="https://www.eqlstore.com/resources/images/favicon/favicon_32x32.png">
+	<link rel="shortcut icon" href="https://www.eqlstore.com/resources/images/favicon/favicon_16x16.png">
+
+	<link rel="icon" sizes="128x128" href="https://www.eqlstore.com/resources/images/favicon/favicon_128x128.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="https://www.eqlstore.com/resources/images/favicon/favicon_64x64.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="https://www.eqlstore.com/resources/images/favicon/favicon_32x32.png" type="image/png">
+
+	<meta name="msapplication-TileImage" content="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
+
+	<!-- Vendors CSS
+			================================================== -->
+	<link rel="stylesheet" href="/resources/vendors/overlayScrollBars/css/OverlayScrollbars.min.css">
+	<link rel="stylesheet" href="/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="/resources/vendors/star-rating/css/star-rating.min.css">
+	<link rel="stylesheet" href="/resources/vendors/swiper-4.4.6/css/swiper.min.css">
+
+	<!-- Custom styles for this template
+			================================================== -->
+	<link rel="stylesheet" href="/resources/css/ui.min.css">
+	<link rel="stylesheet" href="/resources/css/layout.min.css">
+
+	<!-- Vendors javascript
+			================================================== -->
+	<script src="https://www.eqlstore.com/resources/vendors/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/scrollpos-styler/scrollPosStyler.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/overlayScrollBars/js/OverlayScrollbars.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/star-rating/js/star-rating.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/swiper-4.4.6/js/swiper.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/lottie/lottie.min.js"></script><!-- 200403 추가 : 로딩 애니메이션 플러그인 추가 -->
+
+	<!-- UI JavaScript
+			================================================== -->
+	<script src="https://www.eqlstore.com/resources/js/front_ui.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.btn-video').on('click', function () {
+				var videoData, videoType, videoUrl;
+				videoData = $(this).data();
+				videoType = videoData.videoType;
+				videoUrl = videoData.videoUrl;
+
+				switch (videoType) {
+					case 'youtube':
+						handsome.ui.front.setYoutubeIFrame($(this).closest('.video-box'), videoUrl);
+						break;
+					case 'vimeo':
+						handsome.ui.front.setVimeoIframe($(this).closest('.video-box'), videoUrl);
+						break;
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrap-inner">
+			<div class="skip-nav-wrap">
+				<a href="#gnbMenuWrap">메뉴 바로가기</a>
+				<a href="#contentsWrap">본문 바로가기</a>
+			</div>
+			<div class="header-wrap sps">
+				<div class="header-top-wrap">
+					<h1 class="header-logo"><a href="/"><img src="https://www.eqlstore.com/resources/images/common/comm_header_logo.png" alt="EQL"></a></h1>
+					<div class="header-util-wrap">
+						<button type="button" class="btn-search">Search</button>
+						<a href="#" class="btn-join">Join</a>
+						<a href="#" class="btn-login">Login</a>
+						<a href="#" class="btn-my-page">Nick Name</a>
+						<a href="#" class="btn-equal">Equal</a>
+						<a href="#" class="btn-cart">Cart (<span class="cart-cnt">3</span>)</a>
+					</div>
+				</div>
+				<div class="header-bottom-wrap">
+					<div id="gnbMenuWrap" class="gnb-menu-wrap">
+						<ul class="gnb-list theme-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name" style="color: #009e3d;" data-hover-color="#61cc80">06 Olympic</a><!-- 200227 수정 : .depth-1 .menu-name에 attribute 'data-hover-color' 추가 -->
+							</li>
+						</ul>
+						<ul class="gnb-list category-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Woman</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Men</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Brand</a>
+								<div class="gnb-list-sub-wrap brand-sub">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Top Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Exclusive Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AMBIT 2019 FW COLLECTION</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">앤더슨벨 EXCLUSIVE ITEM</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AECA WHITE 베이직 라인</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="gnb-list exclusive-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">EQL Exclusive</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Event</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Archive</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="contentsWrap" class="contents-wrap">
+				<div class="quick-menu sps">
+					<div class="quick-menu-box">
+						<a href="#" class="btn-share">화면 공유</a>
+						<a href="#top" class="btn-top">최상단으로 이동</a>
+						<a href="#footerWrap" class="btn-bottom">최하단으로 이동</a>
+					</div>
+				</div>
+
+				<!--S : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+				<!--S : detail-container-wrapper-->
+				<div class="detail-container-wrapper white js-detail-content">
+					<!-- DESC :
+						컨텐츠 상세 예시페이지. 코너별 가이드는 해당 페이지 참조
+						1. 컨텐츠 상세 레이아웃 : html/detail/01_detail_layout.html
+					-->
+					<div class="detail-contents-wrap">
+						<!--S : 이벤트 컨텐츠 html 영역-->
+						<div class="event-content-wrap">
+							<!--S : 이벤트 컨텐츠 임시 영역-->
+
+								<!-- 
+									1. BO > 프로모션 > 이벤트 관리 
+									2. 조회 버튼 클릭 > 이벤트번호 8419
+								-->
+
+								<!-- S : 이벤트 상세 코너 -->
+								<style>
+								.hidden {overflow:hidden;display:inline-block;position:relative;z-index:-1;border:0;width:1px;height:1px;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);}
+
+								/* evt-top */
+								.pmo-cont .evt-top {display:flex;position:relative;height:720px;flex-direction:column;text-align:center;box-sizing: border-box;background:#c23722;background-size:cover;color: #fff;}
+								.pmo-cont .evt-top .top-visual { overflow:hidden; position:relative; height:100%; }
+								.pmo-cont .evt-top .top-visual img { position:absolute; top:0; left:50%; margin-left:-960px; }
+								.pmo-cont .evt-top .top-box { position:absolute; width:100%; text-align:center; }
+								.pmo-cont .evt-top .label {width:100%;position:absolute;top:100px; left:0; color:#fff;font-size:20px}
+								.pmo-cont .evt-top .date{ margin-top:80px; font-size:28px; line-height:1.142; }
+								.pmo-cont .evt-top h2 { margin-top:208px; font-weight:700; font-size:80px; line-height:1.25; letter-spacing:-4px; }
+								.pmo-cont .evt-top .tt {margin:110px 0 0;font-size:34px;}
+								.pmo-cont .evt-top .txt {margin:35px 0 0;font-size:20px;line-height:1.6}
+
+								.pmo-cont .event-menu {position:relative;}
+								.pmo-cont .event-menu .event-menu-inner {position: relative;left: 0;top: 0;width: 100%;background-color: #fff;border:1px solid #000;border-width:1px 0;z-index:3;}
+								.pmo-cont .event-menu .event-menu-inner.fixed {position: fixed;top: 84px;}
+								.pmo-cont .event-menu .event-menu-inner ul {display: flex;display: -webkit-flex;margin:0 auto;width:1200px;border-right:1px solid #000;box-sizing: border-box;}
+								.pmo-cont .event-menu .event-menu-inner ul li {position: relative;width: 33.34%;text-align: center;border-left:1px solid #000;box-sizing: border-box;}
+								.pmo-cont .event-menu .event-menu-inner ul li:first-child{width:33.33%;box-sizing: border-box;}
+								.pmo-cont .event-menu .event-menu-inner ul li.active a{background:#000;color:#fff;}
+								.pmo-cont .event-menu .event-menu-inner ul li a{display:flex;display:-webkit-flex;justify-content:center;align-items:center;width:100%;height:48px;font-size:17px;color:#000;background:#fff;}
+								.pmo-cont .event-menu .event-menu-inner ul li a em{display:inline-block;margin-right:5px;font-weight:300;}
+
+								.pmo-cont .coupon-section{width:100%;padding:100px 0;text-align:center;}
+								.pmo-cont .coupon-section .coupon-box{width:1200px;margin:0 auto;text-align:center}
+								.pmo-cont .coupon-section .event-coupon { font-weight:700; font-size:48px; color:#000; letter-spacing:-1.2px; }
+								.pmo-cont .coupon-section .date{margin-top:35px;font-size:20px;color:#000}
+								.pmo-cont .coupon-section .txt { margin-top:30px; font-weight:500; font-size:21px; line-height:1.6; color:#d62b2c; }
+								.pmo-cont .coupon-section .cpn-box{display:inline-block;margin-top:75px;margin-right:15px; margin-bottom:30px; }
+								.pmo-cont .coupon-section .cpn-box:last-child{margin-left:15px;margin-right:0;}
+								.pmo-cont .coupon-section .coupon-period { font-size:18px; line-height:2; color:#000; }
+								.pmo-cont .coupon-section .coupon-period span { letter-spacing:-.36px; }
+								/* .pmo-cont #event-section-04 .coupon-section .cpn-box{margin-left:10px;margin-right:0}
+								.pmo-cont #event-section-04 .coupon-section .cpn-box:first-child{margin-left:0} */
+								
+								/* 유의사항 */
+								.pmo-cont .list-notice { margin-top:60px; }
+								.pmo-cont .list-notice dt { display:inline-block; position:relative; font-size:18px; color:#000; text-align:center; cursor:pointer; }
+								/* .pmo-cont .list-notice dt:after {content:" 보기"; display: inline-block; margin-left:2px; }
+								.pmo-cont .list-notice.on dt:after {content:" 닫기";} */
+								.pmo-cont .list-notice dd { display:none; margin-top:16px; font-size:14px; line-height:2; color:rgba(0, 0, 0, .55); text-align:left; letter-spacing:-.35px; }
+								.pmo-cont .list-notice.on dd {display: block;}
+								.pmo-cont .list-notice dd ul { width:582px; margin:0 auto; }
+								.pmo-cont .list-notice dd ul li:before { content:'·'; display:inline-block; margin-right:5px; }
+								.pmo-cont .list-point {margin:25px 0 0;}
+								.pmo-cont .list-point li {padding:0 0 0 10px;position: relative;}
+								.pmo-cont .list-point li:before {display:inline-block;content: "·";position: absolute;left:0;}
+								.pmo-cont .list-date li{color:#000}
+								
+								/* 특별한 선물*/
+								.pmo-cont .event-section-01 .txt-sec-wrap { padding:100px 0 120px; background-color:#ecdac6; text-align:center; }
+								.pmo-cont .event-section-01 .txt-sec-wrap h3 { margin-bottom:30px; font-weight:700; font-size:48px; color:#000; }
+								.pmo-cont .event-section-01 .txt-sec-wrap p { font-weight:500; font-size:21px; line-height:1.6; color:#000; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area { overflow:hidden; position:relative; max-width:1920px; margin:0 auto; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .thumbnail-swiper {position:absolute;bottom:30px;left:586px; z-index:2; width:1350px; }
+								.pmo-cont .event-section-01 .special-gift-items.for-life .item-area .thumbnail-swiper { left:85px; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .big-banner-swiper {_width:1920px;margin:0 auto}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .thumbnail-swiper .swiper-slide { width:120px !important; height:100%; border:1px solid #000; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .thumbnail-swiper .swiper-slide img { width:100%; cursor:pointer; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .thumbnail-swiper .swiper-slide.swiper-slide-thumb-active{opacity:25%}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .tit-box { position:absolute; top:42px; z-index:2; text-align:right; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .tit-box h4 { margin-bottom:15px; font-weight:300; font-size:120px; line-height:1.2; color:#fff; text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; letter-spacing:-12px; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .tit-box.left { left:30px; text-align:left; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .tit-box.right { right:30px; text-align:right; }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .tit-box .tt { font-size:21px; line-height:1.7; color:#fff; letter-spacing: -0.53px }
+								.pmo-cont .event-section-01 .special-gift-items .item-area .tit-box img{width:100%}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .link-box{position:absolute;top:0;left:0}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .link-box .link{position:absolute;display:block;width:100px;height:80px;background:#000;opacity: .5;}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .btn-view{display:inline-block;position:absolute;top:50%;z-index:2;;margin-top:-75px; display: none;}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .btn-view.left{left:0}
+								.pmo-cont .event-section-01 .special-gift-items .item-area .btn-view.right{right:0}
+								.pmo-cont .event-section-01 .special-gift-items.for-you { background-color:#006245; }
+								.pmo-cont .event-section-01 .special-gift-items.for-life { background-color:#d82f2c; text-align:right; }
+
+								 /* 아우터 추천 브랜드 */
+								.pmo-cont .event-section-02 { text-align:center; }
+								.pmo-cont .event-section-02 .section-inner { padding-top:100px; padding-bottom:100px; background-color:#000; }
+								.pmo-cont .event-section-02 .section-major-title { margin-bottom:50px; font-weight:700; font-size:48px; line-height:1.6; color:#fff; }
+								.pmo-cont .event-section-02 .section-text { margin-top:30px; margin-bottom: 40px; color:#000; }
+								.pmo-cont .event-section-02 .episode-tab .tabs { overflow:hidden; display:inline-flex; justify-content:center; border:2px solid #fff; border-radius:10px;  }
+								.pmo-cont .event-section-02 .episode-tab .tabs .tab-item .tab-link { display:inline-flex; justify-content:center; align-items:center; width:300px; height:58px; font-size: 18px; color:#fff; }
+								.pmo-cont .event-section-02 .episode-tab .tabs .tab-item:nth-child(1) .tab-link { border-right:1px solid #fff;}
+								.pmo-cont .event-section-02 .episode-tab .tabs .tab-item:nth-child(2) .tab-link { border-left:1px solid #fff;}
+								.pmo-cont .event-section-02 .episode-tab .tabs .tab-item.on .tab-link { background-color:#fff; color:#000; }
+								.pmo-cont .event-section-02 .episode-tab .tab-container { margin-top:50px; }
+								.pmo-cont .event-section-02 .episode-tab .tab-content { display:none; }
+								.pmo-cont .event-section-02 .episode-tab .tab-content.on { display:block; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area { width:1890px; margin:50px auto 0; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list { display:flex; flex-wrap:wrap; margin-left:-30px; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list .item { display: none; padding-bottom:30px; padding-left:30px; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list .item a { display:block; width:350px; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list .item:nth-child(n+1):nth-child(-n+15) { display:block; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list .item.on { display:block; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list.sm.sm .item { display:none; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list.sm.sm .item.on { display:block; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .bt-more { display: none; width: 135px; height: 60px; margin: 50px auto 50px auto; padding: 18px 0 15px; border-radius: 37px; border: solid 2px #fff; font-size: 21px; color: #fff; text-align: center; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .bt-more:hover { background-color:#fff; color:#000; }
+								.pmo-cont .event-section-02 .episode-tab .brand-list-area .bt-more.on { display:block; }
+								@media all and (max-width:1900px) {
+									.pmo-cont .event-section-02 .episode-tab .brand-list-area { width:auto; }
+									.pmo-cont .event-section-02 .episode-tab .brand-list-area .brand-list { justify-content:center; }
+								}
+
+								/* 홀리데이 위시 리스트 */
+								.pmo-cont .event-section-03 {}
+								.pmo-cont .event-section-03 .section-inner { padding-top:100px; padding-bottom:100px; background-color:#d82f2c; text-align:center; }
+								.pmo-cont .event-section-03 .section-major-title { font-weight:700; font-size:48px; line-height:1.6; color:#fff; }
+								.pmo-cont .event-section-03 .section-text { margin-top:30px; margin-bottom:70px; font-weight:500; font-size:21px; color:#fff; }
+								.pmo-cont .event-section-03 .wish-list-map { overflow:hidden; position:relative; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map { position:relative; width:1200px; margin:55px auto 0; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map .img-map { position:relative; z-index:1; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map [class^="icon-map-"] { position:absolute; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map .icon-map-01 { top:136px; left:-238px; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map .icon-map-02 { top:-168px; right:-230px; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map .icon-map-03 { top:-78px; left:-132px; }
+								.pmo-cont .event-section-03 .wish-list-map .item-map .icon-map-04 { top:130px; right:-216px; }
+
+								/* 이슈 */
+								.pmo-cont .event-section-04 { margin-bottom:80px; }
+								.pmo-cont .event-section-04 .section-inner { padding-top:100px; padding-bottom:100px; background-color:#000; text-align:center; }
+								.pmo-cont .event-section-04 .section-major-title { margin-bottom:60px; font-weight:700; font-size:48px; line-height:1.6; color:#fff; }
+
+								.motion {transition: transform 0.0s ease, opacity 0.0s ease;opacity: 0.0;}
+								.motion.bottom {transform: translate(0,100px);}
+								.motion.left {transform: translate(-100px,0);}
+								.motion.right {transform: translate(100px,0);}
+								.motion.in {transition: 1s ease, opacity .8s ease;transform: translate(0,0);opacity: 1;}
+								.motion.delay1 {transition-delay: .2s;}
+								.motion.delay2 {transition-delay: .3s;}
+								.motion.delay3 {transition-delay: .4s;}
+								.motion.delay4 {transition-delay: .5s;}
+								.motion.delay5 {transition-delay: .6s;}
+								.motion.delay6 {transition-delay: .7s;}
+								.motion.delay7 {transition-delay: .8s;}
+								.motion.delay8 {transition-delay: .9s;}
+								</style>
+
+								<div class="pmo-cont">
+									<!-- s : evt-top -->
+									<div class="evt-top">
+										<div class="top-visual">
+											<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_gift_top_visual.jpg" alt="">
+										</div>
+										<div class="top-box">
+											<span class="label">EQL EVENT</span>
+											<h2 class="motion bottom">
+												<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_holiday_gift_top_title.png" alt="HOLIDAY GIFT"> <br>
+												고마운 마음을 전하는 선물 준비
+											</h2>
+											<div class="date">2022. 12. 13(화) - 12. 25(일)</div>
+										</div>
+									</div>
+									<!-- e : evt-top -->
+
+									<div class="coupon-section">
+										<h3 class="event-coupon">홀리데이 스페셜쿠폰</h3>
+										<p class="txt">
+											소중한 사람들에게 고마운 마음을 담아 <br>
+											15% 쿠폰으로 선물 준비에 즐거움을 더 하세요.
+										</p>
+										<div class="coupon-box">
+											<span class="cpn-box">
+												<a href="javascript:void(0);" class="menu-anchor" onclick="monthlyThemaCpnDown('PR202212010018018');"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_holiday_gift_coupon1.png" alt="모든 회원게에 15%, 최대 5만원 할인"></a>
+											</span>
+											<span class="cpn-box">
+												<a href="/public/member/addMemberStep1" class="menu-anchor"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_holiday_gift_coupon2.png" alt="신규 회원에게 20%, 최대 5만원 할인"></a>
+											</span>
+										</div>
+										<div class="coupon-period">
+											<span>쿠폰 발급 및 사용 기간</span>
+											~ 12. 25(일) 23:59
+										</div>
+										<dl class="list-notice on">
+											<dt>유의사항</dt>
+											<dd>
+												<ul>
+													<li>15% 쿠폰은 ID당 2회 발급 가능합니다.</li>
+													<li>쿠폰은 전 카테고리에 한하여 사용 가능하며, 일부 상품과 브랜드에 한하여 사용이 제한될 수 있습니다.</li>
+													<li>신규 회원 가입 쿠폰은 가입 후 자동 발급됩니다. (마이페이지 > 쿠폰에서 확인)</li>
+													<li>주문 취소와 상품의 품절 및 반품시 사용한 쿠폰의 유효기간이 만료된 경우 재발급되지 않습니다.</li>
+													<li>당사 사정으로 해당 기획전 쿠폰이 조기 종료될 수 있습니다.</li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+
+									<!-- s : event-menu -->
+									<!-- <div class="event-menu">
+										<div class="event-menu-inner">
+											<ul>
+												<li class="active">
+													<a href="#event-section-01">기어&amp;굿즈</a>
+												</li>
+												<li>
+													<a href="#event-section-02">어패럴</a>
+												</li>
+												<li>
+													<a href="#event-section-03">브랜드</a>
+												</li>
+												<li>
+													<a href="#event-section-04">쿠폰</a>
+												</li>
+											</ul>
+										</div>
+									</div> -->
+									<!-- e : event-menu -->
+									
+									<article>
+										<!-- S: 특별한 선물 -->
+										<section id="event-section-01" class="event-section-01">
+											<div class="txt-sec-wrap">
+												<h3>다가오는 연말 특별한 선물</h3>
+												<p>마음을 전하는 선물을 EQL에서 찾아보세요.</p>
+											</div>
+											<div class="img-sec-wrap">
+												<div class="img-sec special-gift-items for-you">
+													<div class="item-area">
+														<div class="tit-box right">
+															<h4 class="motion bottom">#FOR YOU</h4>
+															<p class="tt">
+																한 해를 마무리하며 <br>
+																수고한 당신과 나, 우리 모두에게 <br>
+																특별한 선물로 마음을 전해보세요.
+															</p>
+														</div>
+														<div class="big-banner-swiper">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b01.jpg" usemap="#map_item_01_01">
+																	<map name="map_item_01_01">
+																		<area target="_self" alt="홀리몰리 레이어 팔레트" title="홀리몰리 레이어 팔레트" href="/product/GPSH22080877285/detail" coords="448,108,685,344" shape="rect">
+																		<area target="_self" alt="밀크 래쉬 마스카라 빈티지 플럼" title="밀크 래쉬 마스카라 빈티지 플럼" href="/product/GPHJ21110396683/detail" coords="0,335,230,589" shape="rect">
+																		<area target="_self" alt="어쿠스틱 매트 밤 미스틱 튤립" title="어쿠스틱 매트 밤 미스틱 튤립" href="/product/GPHJ22041541589/detail" coords="417,490,649,726" shape="rect">
+																		<area target="_self" alt="어쿠스틱 매트 밤 데님 로즈" title="어쿠스틱 매트 밤 데님 로즈" href="/product/GPHJ22041541591/detail" coords="922,382,1155,622" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b02.jpg" usemap="#map_item_01_02">
+																	<map name="map_item_01_02">
+																		<area target="_self" alt="오 드 뷔게르 + 봄 드 뷔게르(옅은 발색)" title="오 드 뷔게르 + 봄 드 뷔게르(옅은 발색)" href="/product/GP3222112317567/detail" coords="314,161,454,308" shape="rect">
+																		<area target="_self" alt="오 드 뷔게르 + 봄 드 뷔게르(옅은 발색)" title="오 드 뷔게르 + 봄 드 뷔게르(옅은 발색)" href="/product/GP3222112317567/detail" coords="388,313,528,446" shape="rect">
+																		<area target="_self" alt="밴두 드 뷔게르 + 봄 드 뷔게르(컬러 : 오트에이 Oat A)" title="밴두 드 뷔게르 + 봄 드 뷔게르(컬러 : 오트에이 Oat A)" href="/product/GP3222112317541/detail" coords="194,458,388,631" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b03.jpg" usemap="#map_item_01_03">
+																	<map name="map_item_01_03">
+																		<area target="_self" alt="아이스 호보백" title="아이스 호보백" href="/product/GPPZ22082280846/detail" coords="24,354,285,620" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b04.jpg" usemap="#map_item_01_04">
+																	<map name="map_item_01_04">
+																		<area target="_self" alt="Heart silver jewelry bag" title="Heart silver jewelry bag" href="/product/GPVV22102507602/detail" coords="143,188,398,434" shape="rect">
+																		<area target="_self" alt="Perfection In Imperfection silver mirror charm" title="Perfection In Imperfection silver mirror charm" href="/product/GPVV22102809269/detail" coords="227,444,464,671" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b05.jpg" usemap="#map_item_01_05">
+																	<map name="map_item_01_05">
+																		<area target="_self" alt="flower carved ring gold" title="flower carved ring gold" href="/product/GPJR22010610638/detail" coords="280,92,500,308" shape="rect">
+																		<area target="_self" alt="flower carved ring silver" title="flower carved ring silver" href="/product/GPJR22010610639/detail" coords="254,353,487,587" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_look01_b06.jpg" usemap="#map_item_01_06">
+																	<map name="map_item_01_06">
+																		<area target="_self" alt="FOL (Full of Love). R / gold" title="FOL (Full of Love). R / gold" href="/product/GPJR22092896940/detail" coords="296,39,525,168" shape="rect">
+																		<area target="_self" alt="GRACE COLLAR. N" title="GRACE COLLAR. N" href="/product/GPJR22092896851/detail" coords="186,451,427,596" shape="rect">
+																		<area target="_self" alt="GRACE CUFF. B / gold" title="GRACE CUFF. B / gold" href="/product/GPJR22092997450/detail" coords="164,642,388,765" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b07.jpg" usemap="#map_item_01_07">
+																	<map name="map_item_01_07">
+																		<area target="_self" alt="발롱 스웨이드 롱부츠" title="발롱 스웨이드 롱부츠" href="/product/GPSU22092795976/detail" coords="209,258,458,514" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b08.jpg" usemap="#map_item_01_08">
+																	<map name="map_item_01_08">
+																		<area target="_self" alt=" Platform Chelsea Boots" title=" Platform Chelsea Boots" href="/product/GPPG22090285863/detail" coords="134,142,421,444" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b09.jpg" usemap="#map_item_01_09">
+																	<map name="map_item_01_09">
+																		<area target="_self" alt="오다 메리제인" title="오다 메리제인" href="/product/GP5D20100617493/detail" coords="260,340,490,599" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look01_b10.jpg" usemap="#map_item_01_10">
+																	<map name="map_item_01_10">
+																		<area target="_self" alt="Signature jewelry case bag" title="Signature jewelry case bag" href="/product/GPVV22113019662/detail" coords="229,167,495,428" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/pc_look01_b11.jpg" usemap="#map_item_01_11">
+																	<map name="map_item_01_11">
+																		<area target="_self" alt="TIMELESS HEART NECKLACE" title="TIMELESS HEART NECKLACE" href="/product/GPAL22120520799/detail" coords="159,331,392,593" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/pc_look01_b12.jpg" usemap="#map_item_01_12">
+																	<map name="map_item_01_12">
+																		<area target="_self" alt="CLASSIC. HOOPS" title="CLASSIC. HOOPS" href="/product/GPJR22092997463/detail" coords="124,354,429,535" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/pc_look01_b13.jpg" usemap="#map_item_01_13">
+																	<map name="map_item_01_13">
+																		<area target="_self" alt="HOPE TOPAZ RING" title="HOPE TOPAZ RING" href="/product/GPAL22121223225/detail" coords="191,149,464,275" shape="rect">
+																		<area target="_self" alt="HOPE TOPAZ RING" title="HOPE TOPAZ RING" href="/product/GPAL22120520715/detail" coords="79,282,337,388" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/pc_look01_b14.jpg" usemap="#map_item_01_14">
+																	<map name="map_item_01_14">
+																		<area target="_self" alt="ORBIT RING " title="ORBIT RING " href="/product/GPAL22120520900/detail" coords="177,425,432,668" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/pc_look01_b15.jpg" usemap="#map_item_01_15">
+																	<map name="map_item_01_15">
+																		<area target="_self" alt="PONY GEM NECKLACE" title="PONY GEM NECKLACE" href="/product/GPAL22121223182/detail" coords="188,373,479,692" shape="rect">
+																	</map>
+																</div>
+															</div>
+														</div>
+												
+														<div thumbsSlider="" class="swiper thumbnail-swiper">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s01.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s02.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s03.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s04.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s05.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s06.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s07.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s08.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s09.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s10.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s11.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s12.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s13.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s14.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look01_s15.jpg" alt="" />
+																</div>
+															</div>
+														</div>
+														<a href="/special/3467/view?ga_param=ProjectBrand01" class="btn-view right">
+															<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20210903/btn_look_go.png" alt="" />
+														</a>
+													</div>
+												</div>
+												<div class="img-sec special-gift-items for-life">
+													<div class="item-area">
+														<div class="tit-box left">
+															<h4 class="motion bottom">#FOR LIFE</h4>
+															<p class="tt">
+																연말을 맞아 새로운 분위기로 전환 <br>
+																공간에도 홀리데이 무드를 <br>
+																선물해보세요.
+															</p>
+														</div>
+														<div class="big-banner-swiper">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b01.jpg" usemap="#map_item_02_01">
+																	<map name="map_item_02_01">
+																		<area target="_self" alt="Christmas bear simple mug" title="Christmas bear simple mug" href="/product/GPIH21121606744/detail" coords="198,293,465,597" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b02.jpg" usemap="#map_item_02_02">
+																	<map name="map_item_02_02">
+																		<area target="_self" alt="Santa Village Blanket" title="Santa Village Blanket" href="/product/GPIH22111515541/detail" coords="195,255,462,547" shape="rect">
+																		<area target="_self" alt="윈터체크 양면 테이블크로스" title="윈터체크 양면 테이블크로스" href="/product/GPSI22112217424/detail" coords="77,569,445,826" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b03.jpg" usemap="#map_item_02_03">
+																	<map name="map_item_02_03">
+																		<area target="_self" alt="Christmas pillow cover" title="Christmas pillow cover" href="/product/GPSN22111716297/detail" coords="199,373,483,673" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b04.jpg" usemap="#map_item_02_04">
+																	<map name="map_item_02_04">
+																		<area target="_self" alt="페이스 타월 - 포멜로 어닝 스트라이프" title="페이스 타월 - 포멜로 어닝 스트라이프" href="/product/GPBB22102106380/detail" coords="275,229,559,403" shape="rect">
+																		<area target="_self" alt="페이스 타월 - 풋볼 어닝 스트라이프" title="페이스 타월 - 풋볼 어닝 스트라이프" href="/product/GPBB22102106373/detail" coords="127,418,474,739" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b05.jpg" usemap="#map_item_02_05">
+																	<map name="map_item_02_05">
+																		<area target="_self" alt="엠블럼 차량용 디퓨저 SET" title="엠블럼 차량용 디퓨저 SET" href="/product/GPDG22112217040/detail" coords="139,311,418,613" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b06.jpg" usemap="#map_item_02_06">
+																	<map name="map_item_02_06">
+																		<area target="_self" alt="팔로산토 캔들" title="팔로산토 캔들" href="/product/GP9I22062465949/detail" coords="181,177,489,439" shape="rect">
+																		<area target="_self" alt="올림피아 자그놀리 X 글로썸 인센스 콜라보 에디션" title="올림피아 자그놀리 X 글로썸 인센스 콜라보 에디션" href="/product/GP9I22080175533/detail" coords="115,456,475,668" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b07.jpg" usemap="#map_item_02_07">
+																	<map name="map_item_02_07">
+																		<area target="_self" alt="목욕하는 물고기 3종세트" title="목욕하는 물고기 3종세트" href="/product/GPQ622062064280/detail" coords="164,243,534,731" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b08.jpg" usemap="#map_item_02_08">
+																	<map name="map_item_02_08">
+																		<area target="_self" alt="홀리데이 에디션 기프트 세트" title="홀리데이 에디션 기프트 세트" href="/product/GPIG22112116770/detail" coords="208,269,550,727" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b09.jpg" usemap="#map_item_02_09">
+																	<map name="map_item_02_09">
+																		<area target="_self" alt="BUBBLE GUM Mini Mug" title="BUBBLE GUM Mini Mug" href="/product/GPNX22042745794/detail" coords="146,52,528,306" shape="rect">
+																		<area target="_self" alt="BFF!" title="BFF!" href="/product/GPNX22102608298/detail" coords="208,324,526,593" shape="rect">
+																	</map>
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/pc_look02_b10.jpg" usemap="#map_item_02_10">
+																	<map name="map_item_02_10">
+																		<area target="_self" alt="Chameleon Catchall Tray" title="Chameleon Catchall Tray" href="/product/GPNX22110109990/detail" coords="53,217,490,476" shape="rect">
+																	</map>
+																</div>
+															</div>
+														</div>
+												
+														<div thumbsSlider="" class="swiper thumbnail-swiper">
+															<div class="swiper-wrapper">
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s01.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s02.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s03.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s04.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s05.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s06.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s07.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s08.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s09.jpg" alt="" />
+																</div>
+																<div class="swiper-slide">
+																	<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_look02_s10.jpg" alt="" />
+																</div>
+															</div>
+														</div>
+														<a href="/special/3467/view?ga_param=ProjectBrand01" class="btn-view right"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20210903/btn_look_go.png" alt="" /></a>
+													</div>
+												</div>
+											</div>
+
+										</section>
+										<!-- E: 특별한 선물 -->
+
+										<!-- S: 추천 브랜드 -->
+                                        <section id="event-section-02" class="event-section-02">
+											<div class="section-inner">
+                                                <h3 class="section-major-title">추천 브랜드</h3>
+                                                <div class="episode-tab">
+                                                    <ul class="tabs">
+                                                        <li class="tab-item" data-title="brand-tab-01"><a href="#forYou" class="tab-link">#FOR YOU</a></li>
+                                                        <li class="tab-item" data-title="brand-tab-02"><a href="#forLife" class="tab-link">#FOR LIFE</a></li>
+                                                    </ul>
+                                                     <div class="tab-container">
+                                                        <div class="tab-content tab-all on">
+                                                            <div class="brand-list-area all">
+                                                                <ul class="brand-list js-randomList">
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G46&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_01.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P41&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_02.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M15&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_03.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A71&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_04.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M67&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_05.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K89&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_06.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N53&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_07.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01E56&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_08.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A30&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_09.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J52&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_10.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01H90&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_11.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A58&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_12.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K49&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_13.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K24&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_14.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N93&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_15.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K88&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_16.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G28&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/brand_y_17.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J62&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_18.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C37&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/brand_y_19.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I47&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_20.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N48&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_21.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J20&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_22.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J19&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_23.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01E82&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_24.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K66&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_25.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I41&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_01.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M58&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_02.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A70&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_03.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K69&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_04.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O46&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_05.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01Q39&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_06.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I09&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_07.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A40&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_08.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J66&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_09.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G77&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_10.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M65&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_11.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N90&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_12.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F22&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_13.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J64&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_14.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P73&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_15.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L40&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_16.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J65&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_17.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A74&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_18.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G56&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_19.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01H74&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_20.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C49&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_21.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01D26&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_22.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G51&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_23.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G52&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_24.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P93&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_24-1.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L72&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_24-2.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+																<ul class="brand-list sm js-randomList">
+																	<li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I05&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_s26.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O78&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_s27.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M40&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_s28.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F79&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s26.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N91&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s27.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L27&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s28.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01Q42&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s29.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L20&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s30.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G08&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s31.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G68&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s32.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J59&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s33.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F35&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s34.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P61&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s35.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P60&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s36.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01Q77&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s37.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K98&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s38.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F92&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s39.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L39&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s40.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P88&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s41.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J04&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s42.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01D27&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s43.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K83&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s44.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C51&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s45.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C48&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s46.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G54&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s47.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O77&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s48.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O66&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s49.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<!-- <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J09&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s50.png" alt="">
+                                                                        </a>
+                                                                    </li> -->
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O69&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s51.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N61&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s52.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G21&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s53.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N81&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s54.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01D23&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s55.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																</ul>
+                                                                <a href="javascript:void(0)" class="bt-more on" onclick="handleMore(200, '.brand-list-area.all')">더보기</a>
+                                                            </div>
+                                                        </div>
+														<div id="forYou" class="tab-content tab-brand-tab-01">
+                                                            <div class="brand-list-area brand-tab-01">
+                                                                <ul class="brand-list js-randomList">
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G46&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_01.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P41&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_02.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M15&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_03.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A71&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_04.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M67&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_05.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K89&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_06.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N53&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_07.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01E56&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_08.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A30&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_09.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J52&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_10.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01H90&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_11.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A58&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_12.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K49&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_13.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K24&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_14.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N93&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_15.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K88&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_16.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G28&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221214/brand_y_17.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J62&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_18.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C37&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/brand_y_19.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I47&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_20.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N48&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_21.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J20&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_22.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J19&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_23.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01E82&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_24.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K66&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_25.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+																<ul class="brand-list sm js-randomList">
+																	<li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I05&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_s26.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O78&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_s27.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-01">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M40&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_you_s28.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																</ul>
+                                                                <a href="javascript:void(0)" class="bt-more on" onclick="handleMore(200, '.brand-list-area.brand-tab-01')">더보기</a>
+                                                            </div>
+                                                        </div>
+														<div id="forLife" class="tab-content tab-brand-tab-02">
+                                                            <div class="brand-list-area brand-tab-02">
+                                                                <ul class="brand-list js-randomList">
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I41&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_01.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M58&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_02.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A70&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_03.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K69&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_04.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O46&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_05.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01Q39&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_06.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01I09&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_07.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A40&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_08.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J66&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_09.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G77&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_10.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01M65&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_11.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N90&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_12.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F22&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_13.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J64&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_14.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P73&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_15.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L40&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_16.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J65&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_17.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01A74&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_18.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G56&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_19.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01H74&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_20.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C49&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_21.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01D26&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_22.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G51&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_23.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G52&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_24.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P93&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_24-1.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L72&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_24-2.png" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+																<ul class="brand-list sm js-randomList">
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F79&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s26.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N91&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s27.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L27&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s28.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01Q42&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s29.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L20&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s30.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G08&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s31.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G68&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s32.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J59&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s33.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F35&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s34.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P61&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s35.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P60&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s36.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01Q77&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s37.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K98&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s38.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01F92&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s39.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01L39&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s40.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01P88&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s41.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J04&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s42.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01D27&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s43.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01K83&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s44.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C51&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s45.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01C48&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s46.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G54&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s47.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O77&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s48.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O66&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s49.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<!-- <li class="item" data-title="brand-tab-02"">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01J09&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s50.png" alt="">
+                                                                        </a>
+                                                                    </li> -->
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01O69&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s51.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N61&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s52.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01G21&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s53.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01N81&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s54.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																	<li class="item" data-title="brand-tab-02">
+                                                                        <a href="/brands/main?brndCategoryNumber=BDMA01D23&sortColumn=BEST_DC_SEQ" class="">
+                                                                            <img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221209/pc_brand_life_s55.png" alt="">
+                                                                        </a>
+                                                                    </li>
+																</ul>
+                                                                <a href="javascript:void(0)" class="bt-more" onclick="handleMore(200, '.brand-list-area.brand-tab-02')">더보기</a>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+											</div>
+                                        </section>
+                                        <!-- E: 추천 브랜드 -->
+
+										<!-- S: 홀리데이 위시 리스트 -->
+										<section id="event-section-03" class="event-section-03">
+											<div class="section-inner">
+												<h3 class="section-major-title">홀리데이 위시리스트</h3>
+												<p class="section-text">누구나 갖고 싶은 선물 목록</p>
+												<div class="wish-list-map">
+													<div class="maps">
+														<div class="item-map">
+															<div class="img-map">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221213/pc_item_1.png" usemap="#image-map-01">
+																<map name="image-map-01">
+																	<area target="_self" alt="플라스틱 아크" title="플라스틱 아크" href="/product/GPKW22112116763/detail" coords="97,131,460,361" shape="rect">
+																	<area target="_self" alt="귓볼" title="귓볼" href="/product/GP8P21101491028/detail" coords="477,52,738,281" shape="rect">
+																	<area target="_self" alt="아이헤이트먼데이" title="아이헤이트먼데이" href="/product/GP1F22112418114/detail" coords="762,29,1077,289" shape="rect">
+																	<area target="_self" alt="유라이크홈" title="유라이크홈" href="/product/GPEG22120220272/detail" coords="816,507,976,752" shape="rect">
+																	<area target="_self" alt="애시드로우" title="애시드로우" href="/product/GPID22112317663/detail" coords="985,300,1167,577" shape="rect">
+																	<area target="_self" alt="유라이크홈" title="유라이크홈" href="/product/GPEG22112217159/detail" coords="655,348,693,728,809,739,801,497,856,491,885,351" shape="poly">
+																	<area target="_self" alt="세임디" title="세임디" href="/product/GPQW22113019497/detail" coords="29,424,309,765" shape="rect">
+																	<area target="_self" alt="로파서울" title="로파서울" href="/product/GPCI22112217437/detail" coords="318,393,641,674" shape="rect">
+																</map>
+															</div>
+															<div class="icon-map-01">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_icon01.png" alt="">
+															</div>
+														</div>
+														<div class="item-map">
+															<div class="img-map">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_map02.png" usemap="#image-map2">
+																<map name="image-map2">
+																	<area target="_self" alt="반타블루" title="반타블루" href="/product/GPO422113019353/detail" coords="48,47,250,292" shape="rect">
+																	<area target="_self" alt="레이트리스튜디오" title="레이트리스튜디오" href="/product/GP1H21090279506/detail" coords="266,33,500,314" shape="rect">
+																	<area target="_self" alt="에브리벌스데이" title="에브리벌스데이" href="/product/GPKO22012415253/detail" coords="511,162,587,543,702,533,718,213,611,162" shape="poly">
+																	<area target="_self" alt="흐꺙" title="흐꺙" href="/product/GM0022091590543/detail" coords="727,156,886,429" shape="rect">
+																	<area target="_self" alt="마르타" title="마르타" href="/product/GPI622111114480/detail" coords="895,124,1160,377" shape="rect">
+																	<area target="_self" alt="쇼트즈위젤" title="쇼트즈위젤" href="/product/GP9G22042244273/detail" coords="21,305,199,556" shape="rect">
+																	<area target="_self" alt="리이제" title="리이제" href="/product/GPLI22062866989/detail" coords="62,568,281,752" shape="rect">
+																	<area target="_self" alt="펠로우" title="펠로우" href="/product/GP3D20102323008/detail" coords="307,533,541,770" shape="rect">
+																	<area target="_self" alt="피으" title="피으" href="/product/GP4S22113019677/detail" coords="549,572,760,793" shape="rect">
+																	<area target="_self" alt="프릳츠" title="프릳츠" href="/product/GPUW22092997732/detail" coords="720,464,766,571,786,677,969,664,972,424,774,446" shape="poly">
+																	<area target="_self" alt="키니키니" title="키니키니" href="/product/GPN122110912674/detail" coords="983,444,1177,759" shape="rect">
+																	<area target="_self" alt="드메리엘" title="드메리엘" href="/product/GP1121120704785/detail" coords="209,321,508,521" shape="rect">
+																</map>
+															</div>
+															<div class="icon-map-02">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_icon02.png" alt="">
+															</div>
+														</div>
+														<div class="item-map">
+															<div class="img-map">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_map03.png" usemap="#image-map3">
+																<map name="image-map3">
+																	<area target="_self" alt="바글" title="바글" href="/product/GPQZ22063067825/detail" coords="42,134,312,366" shape="rect">
+																	<area target="_self" alt="아닐로" title="아닐로" href="/product/GPN022110913192/detail" coords="321,262,551,488" shape="rect">
+																	<area target="_self" alt="솔트레인" title="솔트레인" href="/product/GPBK22071170631/detail" coords="559,238,781,496" shape="rect">
+																	<area target="_self" alt="투스티" title="투스티" href="/product/GPG122010610565/detail" coords="674,32,668,209,789,226,789,299,973,308,1001,110,863,16" shape="poly">
+																	<area target="_self" alt="얼투아" title="얼투아" href="/product/GPRI22071170731/detail" coords="1015,117,985,241,1045,408,1169,402,1158,134" shape="poly">
+																	<area target="_self" alt="딥퍼랑스" title="딥퍼랑스" href="/product/GPJB22081678744/detail" coords="42,500,360,767" shape="rect">
+																	<area target="_self" alt="파운틴 오브 워터스" title="파운틴 오브 워터스" href="/product/GPVJ22101704187/detail" coords="406,508,785,776" shape="rect">
+																	<area target="_self" alt="리베르" title="리베르" href="/product/GPBI22060861128/detail" coords="811,318,798,564,936,614,1016,393,974,331" shape="poly">
+																	<area target="_self" alt="오럴프로젝트" title="오럴프로젝트" href="/product/GPWB22111615851/detail" coords="961,553,1175,761" shape="rect">
+																</map>
+															</div>
+															<div class="icon-map-03">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_icon03.png" alt="">
+															</div>
+														</div>
+														<div class="item-map">
+															<div class="img-map">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_map04.png" usemap="#image-map4">
+																<map name="image-map4">
+																	<area target="_self" alt="라운디드" title="라운디드" href="/product/GPIJ22040538134/detail" coords="13,160,167,461" shape="rect">
+																	<area target="_self" alt="루미르" title="루미르" href="/product/GP1722060259644/detail" coords="174,44,418,322" shape="rect">
+																	<area target="_self" alt="세임디" title="세임디" href="/product/GPQW22113019496/detail" coords="451,120,660,356" shape="rect">
+																	<area target="_self" alt="에프에프컬렉티브" title="에프에프컬렉티브" href="/product/GP9M22091288978/detail" coords="722,127,833,481,947,484,1020,123" shape="poly">
+																	<area target="_self" alt="유라이크홈" title="유라이크홈" href="/product/GPEG21111499884/detail" coords="1007,226,978,456,1175,454,1158,242" shape="poly">
+																	<area target="_self" alt="애시드로우" title="애시드로우" href="/product/GPID22112317662/detail" coords="59,471,272,764" shape="rect">
+																	<area target="_self" alt="플러스마이너스제로" title="플러스마이너스제로" href="/product/GPLQ22092796033/detail" coords="305,376,524,688" shape="rect">
+																	<area target="_self" alt="모타" title="모타" href="/product/GPC721091583148/detail" coords="532,554,839,768" shape="rect">
+																	<area target="_self" alt="아뜰리에드메종" title="아뜰리에드메종" href="/product/GPKN22011913610/detail" coords="668,314,666,546,848,547,763,310" shape="poly">
+																	<area target="_self" alt="오페로" title="오페로" href="/product/GPKT22091791662/detail" coords="863,494,1166,710" shape="rect">
+																</map>
+															</div>
+															<div class="icon-map-04">
+																<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_wishlist_icon04.png" alt="">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+										<!-- E: 홀리데이 위시 리스트 -->
+
+										<!-- S: 이슈 -->
+										<section id="event-section-04" class="event-section-04">
+											<div class="section-inner">
+												<h3 class="section-major-title">ISSUE</h3>
+												<div>
+													<a href="/event/singleEvent/EV202212120004096/2022/box/wishTreeEvent_2212">
+														<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221212/pc_holiday_issue.jpg" alt="">
+													</a>
+												</div>
+											</div>
+										</section>
+										<!-- E: 이슈 -->
+									</article>
+								</div>
+
+								<script>
+								(function($context, $doc){
+									if (!$context.length) return;
+									
+									// 스크롤 메뉴
+									var $menu = $context.find('.event-menu');
+									var $menuanchor = $context.find('.menu-anchor');
+									var $menus = $context.find('.event-menu li');
+									var $menubox = $menu.find('.event-menu-inner');
+									var $sections = $context.find('section');
+									var offset = 84;
+									var setMenufix = function(){
+										var lastTop = $('#event-section-04').position().top
+										var lastH = $('#event-section-04 ').outerHeight()-offset;
+										var posSum = lastTop + lastH
+										if ($(window).scrollTop() > $menu.offset().top - offset  && $(window).scrollTop() <= posSum) {
+											$menubox.addClass('fixed');
+										}
+										else {
+											$menubox.removeClass('fixed');
+										}
+									};
+									var setSection = function(){
+										$sections.each(function(idx, $section){
+											if ($(window).scrollTop() >= $section.offsetTop - offset) {
+												$menus.removeClass('active');
+												$menus.eq(idx).addClass('active');
+											}
+										});
+									};
+
+									// setMenufix();
+									// setSection();
+									
+									$menu.on('click', 'a', function (e) {
+
+										var section = $(e.currentTarget.hash);
+
+										if (!section.length) return;
+										try {
+											var offsetTop = Math.round(section.offset().top);
+									
+											$doc.stop().animate({
+												scrollTop: offsetTop - offset + 2
+											}, 400);
+									
+											e.preventDefault();
+										}
+										catch(e) {
+											console && console.log(e)
+										}
+									});
+
+									$menuanchor.on('click', function (e) {
+
+										var section = $(e.currentTarget.hash);
+
+										if (!section.length) return;
+										try {
+											var offsetTop = Math.round(section.offset().top - 100);
+
+											$doc.stop().animate({
+												scrollTop: offsetTop - offset + 2
+											}, 400);
+
+											e.preventDefault();
+										}
+										catch(e) {
+											console && console.log(e)
+										}
+									});
+
+									$(window).scrollTop(1);
+									$(window).on('scroll', function(){
+										// setMenufix();
+										// setSection();
+
+										$('.motion').each(function(i){
+											// var sum = delay*i
+											if(checkVisible($(this))){
+												$(this).addClass('in');
+											}
+											
+										});
+										
+									});
+
+									$('.top-box .motion').each(function(i){
+										if(checkVisible($(this))){
+											$(this).addClass('in');
+										}
+									});
+
+									function checkVisible( elm, eval ) {
+										eval = eval || "object visible";
+										var viewportHeight = $(window).height(), // Viewport Height
+											scrolltop = $(window).scrollTop(), // Scroll Top
+											y = $(elm).offset().top,
+											elementHeight = $(elm).height();   
+										
+										if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+										if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+									}
+									
+									function popSwiper(){
+										$(".look-slider-box").each(function(index){
+											var $this = $(this);
+											var lookSwiper = new Swiper('.instance.swiper' + index, {
+												init: false,
+												loop: true,
+												spaceBetween: 0,
+												speed: 600,
+												slidesPerView: 'auto',
+												allowTouchMove: true,
+												autoplay: {
+												delay: 3000,
+												disableOnInteraction: false,
+												},
+												navigation: {
+													prevEl: $this.find(".swiper-button-prev")[0],
+													nextEl: $this.find(".swiper-button-next")[0],
+												},
+											});
+											lookSwiper.init();
+										});
+									}
+									popSwiper();
+
+									// 브랜드리스트 랜덤 적용
+									randomList();
+									function randomList(){
+										$(".js-randomList").each(function(index){
+											// bo 등록시 랜덤 적용
+											var len = $(this).find('.item').length;
+											var ul = $(this);
+											var liArr = ul.children('.item');
+											liArr.sort(function() {
+												var temp = parseInt(Math.random() * len);
+												var temp1 = parseInt(Math.random() * len);
+												return temp1 - temp;
+											}).appendTo(ul);
+
+										});
+									}
+
+									//유의사항 토글 
+                                    $('.list-notice dt').click(function(e){
+                                        $(this).closest('dl').toggleClass('on')
+                                        e.preventDefault();
+                                    });
+
+									function fnOuterSwiper() {
+                                        var thumbnailSwipers = [];
+                                        var bigBannerSwipers = [];
+
+                                        $('.thumbnail-swiper').each(function(idx, el) {
+                                            var thumbnailSwiper = new Swiper($(this).addClass(`thumbnail-banner-${idx}`), {
+                                                init: false,
+                                                spaceBetween: 15,
+                                                slidesPerView: 10,
+                                                freeMode: true,
+                                                touchRatio: 1,
+                                                autoplay: false,
+                                                watchSlidesProgress: true,
+                                            });
+                                            thumbnailSwipers.push(thumbnailSwiper);
+                                            thumbnailSwipers[idx].init();
+                                        });
+
+                                        $('.big-banner-swiper').each(function(idx, el) {
+                                            var bigBannerSwiper = new Swiper($(this).addClass(`big-banner-${idx}`), {
+                                                init: false,
+                                                effect : 'fade',
+                                                    fadeEffect: {
+                                                        crossFade: true
+                                                    },
+                                                spaceBetween: 0,
+                                                slidesPerView: 1,
+                                                touchRatio: 0,
+                                                autoplay:false,
+                                                thumbs: {
+                                                    swiper: thumbnailSwipers[idx],
+                                                },
+                                            });
+                                            bigBannerSwipers.push(bigBannerSwiper);
+                                            bigBannerSwipers[idx].init();
+                                        });
+                                    }
+                                    fnOuterSwiper();
+
+									// 탭
+									$("ul.tabs li").on("click", function (evt) {
+                                        evt.preventDefault();
+                                        $(this).addClass("on");
+                                        $(this).siblings().removeClass("on");
+
+                                        var activeTab = $(this).attr("data-title");
+                                        $(".tab-" + activeTab).addClass("on").siblings().removeClass('on');
+                                        $(".brand-list .item").removeClass("on");  // 탭 이동시 배너 히든 초기화
+                                        $(".bt-more").addClass("on");  // 탭 이동시 버튼 히든 초기화
+                                    });
+
+								})($('.pmo-cont'), $('html,body'));
+
+								// 아이템 더보기
+								function handleMore(items, target) {    // target 으로 div 클래스를 전달 받아 함수를 재활용 할 수 있도록 설정
+									items.preventDefault;
+
+									$(target).find(".item:hidden").slice(0, items).addClass("on"); // 숨김 설정된 다음 n개를 선택하여 표시
+									
+									console.log($(target).find(".item:hidden").length);
+									if ($(target).find(".item:hidden").length === 0){ // 숨겨진 아이템이 있는지 체크
+										$(target).find(".bt-more").removeClass("on");
+									}
+								}
+
+								</script>
+								<!-- //E : 이벤트 상세 코너 -->
+
+							<!--E : 이벤트 컨텐츠 임시 영역-->
+						</div>
+						<!--E : 이벤트 컨텐츠 html 영역-->
+					</div>
+
+					<div class="detail-footer-wrap">
+
+						<!-- S : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+						<!--S : gate-banner-wrap-->
+						<div class="gate-banner-wrap">
+							<div class="gate-banner-swiper">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Event type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(../..https://www.eqlstore.com/resources/images/temp/temp_event.jpg)"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Event</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Event type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Archive type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_archive_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Archive</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Archive type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+								</ul>
+							</div>
+							<div class="btn-swiper-arrow-wrap">
+								<button class="btn-swiper-arrow prev">이전 슬라이드<span class="icon"></span></button>
+								<button class="btn-swiper-arrow next">다음 슬라이드<span class="icon"></span></button>
+							</div>
+						</div>
+						<!--E : gate-banner-wrap-->
+						<!-- E : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+					</div>
+				</div>
+				<!--E : detail-container-wrapper-->
+				<!--E : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+			</div>
+			<div id="footerWrap" class="footer-wrap">
+				<div class="footer-copyright-wrap">
+					<div class="footer-copyright-inner">
+						<p>(주)한섬  /  대표이사  김민덕  /  서울시 강남구 도산대로 523 한섬빌딩</p><!-- 200403 수정 | 대표자명 변경 ( 김형종  -> 김민덕 ) -->
+						<p>Tel 1661-8858  /  Fax 02-476-8169  /  사업자등록번호 120-81-26337</p><!-- 200331 수정 | TEL 번호 수정 -->
+						<p>통신판매업신고번호 강남 제 00826호 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208126337&apv_perm_no=" target="_blank" class="footer-anchor">사업자 정보 확인</a> <a href="#none" class="footer-anchor" data-popup-trigger data-target="#dialogMoney">하나은행 구매안전 서비스</a></p><!-- 200714 수정 | 사업자 정보 확인 추가 --><!-- 200807 추가 : 하나은행 구매안전 서비스 추가 -->
+						<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->|<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->
+						<p class="copyright">Copyrightⓒ 2017 handsome. All right reserved.</p>
+					</div>
+					<!-- 200807 추가 : 지급보증서 발급조회 안내 팝업 -->
+					<div id="dialogMoney" class="ui-dialog-contents" title="지급보증서 발급조회 안내">
+						<div class="dialog-contents-flex">
+							<p><img src="https://www.eqlstore.com/resources/images/footer/footer_certification.jpg" alt=""></p>
+							<p class="desc-dark-gray">고객님께서 안전거래를 위해 현금 결제 시 <br>EQL에서 가입한 하나은행의 구매안전서비스를 이용하실 수 있습니다.</p>
+						</div>
+					</div>
+					<!-- //지급보증서 발급조회 안내 팝업 -->
+				</div>
+				<div class="footer-help-wrap">
+					<p class="footer-wrap-title">Help</p>
+					<!-- s : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">FAQ</a></li>
+						<li><a href="#" class="footer-link">공지사항</a></li>
+						<li><a href="#" class="footer-link">제휴문의</a></li>
+						<li><a href="#" class="footer-link">입점상담</a></li>
+						<li><a href="#" class="footer-link">멤버십 안내</a></li>
+					</ul>
+					<!-- e : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<!-- s : 200219 수정 | SNS 순서 변경 -->
+					<div class="footer-wrap-tool sns-link-box">
+						<a href="#" class="sns-link youtube" target="_blank">유튜브</a>
+						<a href="#" class="sns-link facebook" target="_blank">페이스북</a>
+						<a href="#" class="sns-link instagram" target="_blank">인스타그램</a>
+					</div>
+					<!-- e : 200219 수정 | SNS 순서 변경 -->
+				</div>
+				<div class="footer-company-wrap">
+					<p class="footer-wrap-title">Company</p>
+					<!-- S : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">ABOUT EQL</a></li>
+						<li><a href="#" class="footer-link">회사소개</a></li>
+						<li><a href="#" class="footer-link">이용약관</a></li>
+						<li><a href="#" class="footer-link spot">개인정보처리방침</a></li>
+					</ul>
+					<!-- E : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<div class="footer-wrap-tool">
+						<div class="select-wrap family-site js-select" data-placeholder="FAMILY SITE" data-menu-place="up" data-menu-class="family-site">
+							<select title="Family site" class="ui-sel">
+								<optgroup label="ShoppingMall">
+									<option value="https://www.thehyundail.com/">더현대닷컴</option>
+									<option value="https://www.hddfs.com/">현대백화점 DUTY FREE</option>
+									<option value="http://esuper.ehyundai.com/">e슈퍼마켓</option>
+									<option value="https://hyundaihmall.com/">현대Hmall</option>
+									<option value="http://mall.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundairentalcare.co.kr/">현대렌탈케어</option>
+									<option value="http://thehandsome.com/ko">더한섬닷컴</option>
+									<option value="http://www.hfashionmall.com/">H패션몰</option>
+									<option value="http://www.h-vrstation.com/">VR STATION</option>
+								</optgroup>
+								<optgroup label="FamilySite">
+									<option value="http://www.ehyundai.com/newPortal/ir/main.do">현대백화점그룹</option>
+									<option value="https://www.ehyundai.com/newPortal/index.do">현대백화점</option>
+									<option value="http://www.hyundaigreenfood.com/">현대그린푸드</option>
+									<option value="https://www.hyundaihmall.com/">현대홈쇼핑</option>
+									<option value="http://www.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundaihns.com">㈜현대H&amp;S</option>
+									<option value="http://www.hcn.co.kr/">현대HCN</option>
+									<option value="http://www.hyundaimedia.com/">현대미디어</option>
+									<option value="http://www.hyundairentalcare.co.kr">현대렌탈케어</option>
+									<option value="http://www.hyundaidreamtour.com/">현대드림투어</option>
+									<option value="http://www.everdigm.com/">에버다임</option>
+									<option value="http://www.cnsfoodsystem.co.kr/">씨엔에스푸드시스템</option>
+									<option value="http://www.hyundaicatering.co.kr/">현대케이터링시스템</option>
+									<option value="http://www.hyundai-ite.com/">현대IT&amp;E</option>
+									<option value="http://www.thehandsome.com/">한섬</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="show-mobile mobile-only">
+				<a href="#">모바일로 보기</a><!-- DESC : body 또는 wrap에 class "mobile-pc" 추가시 노출 됨 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
