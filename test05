@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="noindex" name="robots" />
+	<meta name="description" content="한섬 EQL">
+	<meta property="og:locale:alternate" content="ko_KR">
+	<meta property="og:title" content="한섬 EQL">
+	<meta property="og:url" content="https://www.thehandsome.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="/resources/images/favicon/share.png">
+	<meta property="og:site_name" content="한섬 EQL">
+	<meta property="og:description" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="한섬 EQL">
+	<meta name="twitter:url" content="https://www.thehandsome.com/">
+	<meta name="twitter:image" content="/resources/images/favicon/share.png">
+	<meta name="twitter:description" content="">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>한섬 EQL</title>
+
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="/resources/images/favicon/apple-touch-icon-180x180-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="/resources/images/favicon/apple-touch-icon-167x167-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="/resources/images/favicon/apple-touch-icon-152x152-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="/resources/images/favicon/apple-touch-icon-120x120-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="/resources/images/favicon/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="/resources/images/favicon/apple-touch-icon-76x76-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="/resources/images/favicon/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="/resources/images/favicon/apple-touch-icon-60x60-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/resources/images/favicon/apple-touch-icon-57x57-precomposed.png">
+
+	<link rel="shortcut icon" sizes="256x256" href="/resources/images/favicon/favicon_256x256.png">
+	<link rel="shortcut icon" sizes="196x196" href="/resources/images/favicon/favicon_196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="/resources/images/favicon/favicon_128x128.png">
+	<link rel="shortcut icon" sizes="48x48" href="/resources/images/favicon/favicon_48x48.png">
+	<link rel="shortcut icon" sizes="32x32" href="/resources/images/favicon/favicon_32x32.png">
+	<link rel="shortcut icon" href="/resources/images/favicon/favicon_16x16.png">
+
+	<link rel="icon" sizes="128x128" href="/resources/images/favicon/favicon_128x128.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="/resources/images/favicon/favicon_64x64.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="/resources/images/favicon/favicon_32x32.png" type="image/png">
+
+	<meta name="msapplication-TileImage" content="/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
+
+	<!-- Vendors CSS
+			================================================== -->
+	<link rel="stylesheet" href="/resources/vendors/overlayScrollBars/css/OverlayScrollbars.min.css">
+	<link rel="stylesheet" href="/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="/resources/vendors/star-rating/css/star-rating.min.css">
+	<link rel="stylesheet" href="/resources/vendors/swiper-4.4.6/css/swiper.min.css">
+
+	<!-- Custom styles for this template
+			================================================== -->
+	<link rel="stylesheet" href="/resources/css/ui.min.css">
+	<link rel="stylesheet" href="/resources/css/layout.min.css">
+
+	<!-- Vendors javascript
+			================================================== -->
+	<script src="/resources/vendors/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.js"></script>
+	<script src="/resources/vendors/scrollpos-styler/scrollPosStyler.min.js"></script>
+	<script src="/resources/vendors/overlayScrollBars/js/OverlayScrollbars.js"></script>
+	<script src="/resources/vendors/star-rating/js/star-rating.min.js"></script>
+	<script src="/resources/vendors/swiper-4.4.6/js/swiper.min.js"></script>
+	<script src="/resources/vendors/lottie/lottie.min.js"></script><!-- 200403 추가 : 로딩 애니메이션 플러그인 추가 -->
+
+	<!-- UI JavaScript
+			================================================== -->
+	<script src="/resources/js/front_ui.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.btn-video').on('click', function () {
+				var videoData, videoType, videoUrl;
+				videoData = $(this).data();
+				videoType = videoData.videoType;
+				videoUrl = videoData.videoUrl;
+
+				switch (videoType) {
+					case 'youtube':
+						handsome.ui.front.setYoutubeIFrame($(this).closest('.video-box'), videoUrl);
+						break;
+					case 'vimeo':
+						handsome.ui.front.setVimeoIframe($(this).closest('.video-box'), videoUrl);
+						break;
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrap-inner">
+			<div class="skip-nav-wrap">
+				<a href="#gnbMenuWrap">메뉴 바로가기</a>
+				<a href="#contentsWrap">본문 바로가기</a>
+			</div>
+			<div class="header-wrap sps">
+				<div class="header-top-wrap">
+					<h1 class="header-logo"><a href="/"><img src="/resources/images/common/comm_header_logo.png" alt="EQL"></a></h1>
+					<div class="header-util-wrap">
+						<button type="button" class="btn-search">Search</button>
+						<a href="#" class="btn-join">Join</a>
+						<a href="#" class="btn-login">Login</a>
+						<a href="#" class="btn-my-page">Nick Name</a>
+						<a href="#" class="btn-equal">Equal</a>
+						<a href="#" class="btn-cart">Cart (<span class="cart-cnt">3</span>)</a>
+					</div>
+				</div>
+				<div class="header-bottom-wrap">
+					<div id="gnbMenuWrap" class="gnb-menu-wrap">
+						<ul class="gnb-list theme-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name" style="color: #009e3d;" data-hover-color="#61cc80">06 Olympic</a><!-- 200227 수정 : .depth-1 .menu-name에 attribute 'data-hover-color' 추가 -->
+							</li>
+						</ul>
+						<ul class="gnb-list category-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Woman</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Men</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Brand</a>
+								<div class="gnb-list-sub-wrap brand-sub">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Top Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Exclusive Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AMBIT 2019 FW COLLECTION</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">앤더슨벨 EXCLUSIVE ITEM</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AECA WHITE 베이직 라인</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="gnb-list exclusive-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">EQL Exclusive</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Event</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Archive</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="contentsWrap" class="contents-wrap">
+				<div class="quick-menu sps">
+					<div class="quick-menu-box">
+						<a href="#" class="btn-share">화면 공유</a>
+						<a href="#top" class="btn-top">최상단으로 이동</a>
+						<a href="#footerWrap" class="btn-bottom">최하단으로 이동</a>
+					</div>
+				</div>
+
+				<!--S : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+				<!--S : detail-container-wrapper-->
+				<div class="detail-container-wrapper white js-detail-content">
+					<!-- DESC :
+						컨텐츠 상세 예시페이지. 코너별 가이드는 해당 페이지 참조
+						1. 컨텐츠 상세 레이아웃 : html/detail/01_detail_layout.html
+					-->
+					<div class="detail-contents-wrap">
+						<!--S : 이벤트 컨텐츠 html 영역-->
+						<div class="event-content-wrap">
+							<!--S : 이벤트 컨텐츠 임시 영역-->
+
+							<!-- 
+
+								1. BO > 프로모션 > 이벤트 관리 
+								2. 조회 버튼 클릭 > 이벤트번호 4736
+								
+							-->
+                            
+<!-- <link rel="stylesheet" href="/resources/event/2022/03/insider/style.css">   -->
+							
+<!-- S : 이벤트 상세 코너 -->
+<style>
+.pmo-cont .evt-top {display:flex;position:relative;height:720px;flex-direction:column;text-align:center;box-sizing: border-box;background:url('https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/pc_wintershoes_top.jpg') no-repeat 50% top; background-size:cover; color: #fff; }
+.pmo-cont .evt-top .top-box { position:relative; width:1200px; height:100%; margin:0 auto; text-align:center; }
+.pmo-cont .evt-top .label { display:block; margin-top:110px; font-size:16px; color:#fff;font-weight:300}
+.pmo-cont .evt-top h2 { margin-top:100px;}	
+
+.pmo-cont .evt-info{padding:120px 0;text-align:center;color:#000;letter-spacing:-0.4px;font-size:16px;line-height:1.75;border-bottom:2px solid #ccc}
+
+/* tabs */
+.pmo-cont .event-menu {position: relative;}
+.pmo-cont .event-menu .event-menu-inner {position: absolute;left: 0;top: 0;width: 100%;z-index:100;}
+.pmo-cont .event-menu .event-menu-inner.fixed {position: fixed;top: 84px;}
+.pmo-cont .event-menu .event-menu-inner::before{position:absolute;top:0;left:0;height:40px;background:#ebd2ff;width:50%;content:'';}
+.pmo-cont .event-menu .event-menu-inner::after{position:absolute;top:0;right:0;z-index:-1;height:40px;background:#fff08b;width:50%;content:'';}
+.pmo-cont .event-menu .event-menu-inner ul {display: flex;display: -webkit-flex;margin:0 auto;width:1200px;box-sizing: border-box;}
+.pmo-cont .event-menu .event-menu-inner ul li {width:calc(100% / 1);position:relative;text-align: center;box-sizing: border-box;}
+.pmo-cont .event-menu .event-menu-inner ul li.active a {color:#000;}
+.pmo-cont .event-menu .event-menu-inner ul li a {display:flex;display:-webkit-flex;justify-content:center;align-items:center;width:100%;height:40px;font-size:15px;color:#000;background:#ebd2ff;}
+.pmo-cont .event-menu .event-menu-inner ul li:last-child a{background:#fff08b;}
+.pmo-cont .event-menu .event-menu-inner ul li a em {display:inline-block;margin-right:5px;font-weight:300;}
+
+.pmo-cont .section-01{padding:105px 0 140px;background:#000}
+.pmo-cont .section-01 .tit-box{text-align:center}
+.pmo-cont .section-01 .tit-box .tit{color:#fff;font-size:45px;letter-spacing: -1.13px;font-weight:bold}
+.pmo-cont .section-01 .tit-box .date{width:320px;margin:40px auto 0;font-size:18px;color:#fff;line-height:34px;text-align:left}
+.pmo-cont .section-01 .tit-box .date strong{font-weight:500;margin-right:20px}
+
+.pmo-cont .section-03{padding:95px 0 105px;background:#fff08b;text-align:center}
+.pmo-cont .section-03 .tit-box{text-align:center}
+.pmo-cont .section-03 .tit-box .tit{color:#000;font-size:45px;letter-spacing: -1.13px;font-weight:bold}
+.pmo-cont .section-03 .tit-box .txt{margin-top:30px;font-size:18px;color:#000;line-height:1.6;text-align:center}
+.pmo-cont .section-03 .vs-img{margin-top:15px}
+
+.pmo-cont .evt-coupon{width:100%;padding:80px 0 100px;text-align:center;}
+.pmo-cont .evt-coupon .coupon-box{width:1200px;margin:0 auto;text-align:center}
+.pmo-cont .evt-coupon .coupon-box .cp-txt{margin-top:10px;color:#666;font-size:16px;display:block;text-align:center}
+.pmo-cont .evt-coupon .event-coupon{font-size:45px;font-weight:bold;color:#000;}
+.pmo-cont .evt-coupon .date{margin-top:40px;font-size:16px;color:#000}
+.pmo-cont .evt-coupon .txt{margin-top:23px;color:#000;font-size:16px;line-height:1.6}
+.pmo-cont .evt-coupon .cpn-box{display:inline-block;margin-top:40px;margin-right:16px;vertical-align: top;}
+.pmo-cont .evt-coupon .cpn-box:last-child{margin-left:16px;margin-right:0;}
+
+.pmo-cont .gift-swiper{margin-top:80px;padding:0 130px}
+.pmo-cont .gift-swiper .swiper-slide{width:300px}
+
+.pmo-cont .list-notice {position:relative;z-index:3;text-align:left;width:650px;padding:46px 0 0 0;margin:0 auto;}
+.pmo-cont .list-notice dt {text-align:center;font-size:16px;letter-spacing:-0.4px;font-weight:400;color:#000;text-decoration:underline;}
+.pmo-cont .list-notice dt:after {content:" 보기";}
+.pmo-cont .list-notice.on dt:after {content:" 닫기";}
+.pmo-cont .list-notice dd {display:none;padding:36px 0px 0px 0px;}
+.pmo-cont .list-notice.on dd {display:block;}
+.pmo-cont .list-notice li {padding:0px 0px 0px 10px;font-size:14px;line-height:2.0;letter-spacing:-0.35px;position:relative;color:#000;}
+.pmo-cont .list-notice li:before {display:inline-block;width:10px;content:"·";position: absolute;left:0;top:0;}
+
+.pmo-cont .list-notice.coupon-noti{width:520px}
+.pmo-cont .list-notice.coupon-noti dt{color:#666}
+.pmo-cont .list-notice.coupon-noti li{color:#666}
+
+.detail-footer-wrap{z-index:3}
+
+.pmo-cont .section-02 {position:relative;padding:100px 0 100px 0;background:url(https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_bg.jpg) no-repeat 50% 0;background-size:cover}
+.pmo-cont .section-02 .tit-box{text-align:center}
+.pmo-cont .section-02 .tit-box .tit{color:#000;font-size:45px;letter-spacing: -1.13px;font-weight:bold}
+.pmo-cont .section-02 .tit-box .txt{margin-top:30px;font-size:18px;color:#000}
+.pmo-cont .items-wintershoes {text-align:center;width:1280px;margin:108px auto 0 auto;background:url(https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_line.png) no-repeat 50% 80px}	
+.pmo-cont .items-wintershoes .list-items {width:1280px;overflow:hidden}
+.pmo-cont .items-wintershoes .list-items li{width:50%;float:left;text-align:left;margin-bottom:80px}
+.pmo-cont .items-wintershoes .list-items li:nth-child(even){float:right;text-align:right}
+.pmo-cont .items-wintershoes .list-items li:nth-child(2){margin-top:221px}
+.pmo-cont .items-wintershoes .list-items li:last-child{margin-bottom:0}
+.pmo-cont .items-wintershoes .list-items li .item-info span {display:block;padding:15px 0px 30px 0px;font-size:21px;letter-spacing:-0.53px;color:#fff;line-height:1.71;font-weight:300;}
+.pmo-cont .items-wintershoes .list-items li .item-info em {display:none;padding:5px 0px 31px 0px;font-size:18px;letter-spacing:-0.45px;color:#999;text-transform: uppercase}
+.pmo-cont .items-wintershoes .list-items li input {-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;margin:0;padding:0;width:64px;height:64px;border:0;transition:0.2s;background:url(https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_check_off.png) no-repeat}
+.pmo-cont .items-wintershoes .list-items li input:checked {background:url(https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_check_on.png) no-repeat}
+.pmo-cont .items-wintershoes .list-items li label{margin-right:10px}
+.pmo-cont .items-wintershoes .list-items .item-check{margin-bottom:10px}
+.pmo-cont .items-wintershoes .btn-winter-submit {position:relative;z-index:4;width:1200px;margin:120px auto 0 auto;}
+.pmo-cont .items-wintershoes .btn-winter-submit button {display:flex;justify-content:center;align-items:center;width:450px;height:60px;margin:50px auto 0 auto;font-size:16px;letter-spacing:-0.32px;color:#fff;background:#d2d2d2;}
+.pmo-cont .items-wintershoes .btn-winter-submit button.active {background:#000;}
+.pmo-cont .items-wintershoes .winter-textarea{position:relative;margin:0 auto;height:360px;border:4px solid #000;padding:30px 30px 50px;background:#fff;line-height:1.6;font-size:24px;color:#000;letter-spacing: -0.6px;resize: none;box-sizing:border-box;}
+.pmo-cont .items-wintershoes .winter-textarea::placeholder{position:relative;top:40%;text-align:center;color:#000}
+.pmo-cont .btn-follow {position:absolute;top:284px;right:auto;left:50%;margin-left:-113px;z-index:2;}
+.pmo-cont .btn-follow.fixed {position:fixed;top:145px;}
+
+/* 애니메이션 */
+.motion {transition: transform 0.0s ease, opacity 0.0s ease;opacity: 0.0;}
+.motion.bottom {transform: translate(0,100px);}
+.motion.in {transition: 1s ease, opacity .8s ease;transform: translate(0,0);opacity: 1;}
+.motion.delay1 {transition-delay: .2s;}
+.motion.delay2 {transition-delay: .3s;}
+.motion.delay3 {transition-delay: .4s;}
+.motion.delay4 {transition-delay: .5s;}
+.motion.delay5 {transition-delay: .6s;}
+.motion.delay6 {transition-delay: .7s;}
+.motion.delay7 {transition-delay: .8s;}
+.motion.delay8 {transition-delay: .9s;}
+</style>
+
+<div class="pmo-cont">
+	 <!-- s : evt-top -->
+	 <div class="evt-top">
+		<div class="top-box">
+			<span class="label">EQL EVENT</span>
+			<h2 class="motion bottom"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_top_tit.png" alt="KINDA WARM WINTER SHOES"></h2>
+		</div>
+	</div>
+
+	<!-- event-menu -->
+	<div class="event-menu">
+		<div class="event-menu-inner">
+			<ul>
+				<li class="active"><a href="#section01">EVENT</a></li>
+				<li><a href="#section02">RECOMMEND</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="evt-info">
+		카인다쿨아영이 추천한 겨울 신발 중 하나를 선택하고,<br>
+		그 이유를 남겨주신 분들을 대상으로 슈즈 할인 쿠폰을,<br>
+		추첨을 통해 특별한 경품을 드릴게요.
+	</div>
+
+	<div class="evt-coupon">
+		<h3 class="event-coupon">COUPON</h3>
+		<p class="date"><strong>발급 및 사용 기간</strong> ~ 2022.12.07 (수) 23:59</p>
+
+		<div class="coupon-box">
+			<a href="#btn-winter-submit" class="cpn-box">
+				<!-- 221123 개발 수정 --><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221123/pc_eqllounge_coupon01.png" alt="모든 회원에게 15%, 최대 3만원 할인"><!--// 221123 개발 수정 -->
+				<span class="cp-txt">이벤트 응모시 지급</span>
+			</a>
+			<a href="/public/member/addMemberStep1" class="cpn-box">
+				<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221114/pc_eqllounge_coupon02.png" alt="신규 회원에게 20%, 최대 5만원 할인">
+			</a>
+		</div>
+
+		<dl class="list-notice coupon-noti">
+			<dt>유의사항</dt>
+			<dd>
+				<ul class="list-point">
+					<li>쿠폰은 ID 당 1장만 발급되며, 15% 쿠폰의 최대 할인 금액은 3만 원 입니다.</li>
+					<!-- 221121 개발 수정 --><li>15% 쿠폰은 여성 슈즈 카테고리에서만 적용이 가능합니다. </li><!--// 221121 개발 수정 -->
+					<li>지급된 쿠폰은 마이페이지에서 확인이 가능합니다. </li>
+					<li>쿠폰은 장바구니에서 사용 가능하며 일부 브랜드 및 상품의 경우 사용이 제한될 수 있습니다.</li>
+					<li>반품/환불 시 쿠폰은 재지급되지 않습니다.</li>
+					<li>미사용된 쿠폰은 자동 소멸됩니다. </li>
+					<li>당사 사정으로 해당 쿠폰이 조기 종료될 수 있습니다.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+
+	<article>
+		<section id="section01" class="section-01">
+			<div class="tit-box">
+				<h3 class="tit">EVENT GIFTS</h3>
+				<p class="date">
+					<strong>응모 기간</strong> 2022. 11. 24(목) - 12. 07(수)<br>
+					<!-- 221121 개발 수정 --><strong>당첨 발표</strong> 2022. 12. 13(화)<!--// 221121 개발 수정 -->
+				</p>
+			</div>
+
+			<div class="gift-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_gift01.png" alt="삼성비스포크 슈드레서">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_gift02.png" alt="APTO">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_gift03.png" alt="ATT">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_gift04.png" alt="NUUS">
+					</div>
+					<div class="swiper-slide">
+						<!-- 221121 개발 수정 --><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/pc_wintershoes_gift05_mod.png" alt="VICTORIA SHOES"><!--// 221121 개발 수정 -->
+					</div>
+					<div class="swiper-slide">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221115/pc_wintershoes_gift06.png" alt="스타벅스">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section02" class="section-02">
+			<!-- 221111 개발 영역 -->
+			<div class="tit-box">
+				<h3 class="tit">EVENT</h3>
+				<p class="txt">맘에드는 신발을 선택하고 이벤트에 응모하세요!</p>
+			</div>
+
+			<div class="items-wintershoes">
+				<span class="btn-follow">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_item_profile_n.png" alt="KINDA COOL 아영">
+				</span>
+				<form action="" method="post" class="form-wintershoes">
+					<ul class="list-items">
+						<li>
+							<div class="item-check">
+								<label for="prdChoice1"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_item01_tit.png" alt="BOOTS"></label>
+								<input type="radio" id="prdChoice1" name="contact" value="1">
+							</div>
+							<div class="item-info">
+								<!-- 221121 개발 수정 --><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/wintershoes_item01.png" alt="BOOTS" usemap="#itemMap01"><!--// 221121 개발 수정 -->
+                                <map name="itemMap01">
+                                  <area shape="rect" coords="36,33,449,431" href="/product/GPSM22082683354/detail" target="_self">
+                                  <area shape="rect" coords="30,463,161,721" href="/product/GPSM22082683357/detail" target="_self">
+                                  <area shape="rect" coords="177,465,308,720" href="/product/GPSM22091389635/detail" target="_self">
+                                  <area shape="rect" coords="323,465,453,718" href="/product/GPSM22091389632/detail" target="_self">
+                                </map>
+							</div>
+						</li>
+
+						<li>
+							<div class="item-check">
+								<label for="prdChoice2"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_item02_tit.png" alt="WESTERN BOOTS"></label>
+								<input type="radio" id="prdChoice2" name="contact" value="2">
+							</div>
+							<div class="item-info">
+								<!-- 221121 개발 수정 --><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/wintershoes_item02.png" alt="WESTERN BOOTS" usemap="#itemMap02"><!--// 221121 개발 수정 -->
+                                <map name="itemMap02">
+                                  <area shape="rect" coords="35,30,446,430" href="/product/GPSU22090185709/detail" target="_self">
+                                  <area shape="rect" coords="34,463,161,738" href="/product/GPSU22100498630/detail" target="_self">
+                                  <area shape="rect" coords="177,463,305,736" href="/product/GPSU22092795976/detail" target="_self">
+                                  <area shape="rect" coords="323,463,447,737" href="/product/GPSU22081779129/detail" target="_self">
+                                </map>
+							</div>
+						</li>
+
+						<li>
+							<div class="item-check">
+								<label for="prdChoice3"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_item03_tit.png" alt="CLOGS"></label>
+								<input type="radio" id="prdChoice3" name="contact" value="3">
+							</div>
+							<div class="item-info">
+								<!-- 221121 개발 수정 --><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/wintershoes_item03.png" alt="CLOGS" usemap="#itemMap03"><!--// 221121 개발 수정 -->
+                                <map name="itemMap03">
+                                  <area shape="rect" coords="29,27,446,429" href="/product/GPDM22082983991/detail" target="_self">
+                                  <area shape="rect" coords="29,461,158,736" href="/product/GPDM22091389195/detail" target="_self">
+                                  <area shape="rect" coords="178,460,304,736" href="/product/GPDM22091389209/detail" target="_self">
+                                  <area shape="rect" coords="320,462,449,737" href="/product/GPDM21080672397/detail" target="_self">
+                                </map>
+							</div>
+						</li>
+
+						<li>
+							<div class="item-check">
+								<label for="prdChoice4"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221111/wintershoes_item04_tit.png" alt="FLAT"></label>
+								<input type="radio" id="prdChoice4" name="contact" value="4">
+							</div>
+							<div class="item-info">
+								<!-- 221121 개발 수정 -->
+								<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221121/wintershoes_item04.png" alt="FLAT" usemap="#itemMap04">
+								<map name="itemMap04">
+                                  <area shape="rect" coords="30,30,449,433" href="/product/GP5D20100617486/detail" target="_self">
+                                  <area shape="rect" coords="31,462,161,742" href="/product/GP5D22040137295/detail" target="_self">
+                                  <area shape="rect" coords="175,461,305,740" href="/product/GP5D20101218591/detail" target="_self">
+                                  <area shape="rect" coords="320,460,449,740" href="/product/GP5D20100617492/detail" target="_self">
+                                </map>
+								<!--// 221121 개발 수정 -->
+							</div>
+						</li>
+					</ul>
+					<div class="btn-winter-submit" id="btn-winter-submit">
+						<!--textarea class="winter-textarea" placeholder="슈즈 고르고 이유 쓰기&#13;&#10;(500 글자 제한)"></textarea--> <!--개발할때는 주석해제해주세요. -->
+						<button type="submit" data-popup-trigger data-target="#marketingAccept" class="active">응모하기</button><!-- 응모 버튼 활성화 active 추가 class="active"-->
+					</div>
+					
+					<!-- 마케팅 수신 동의자 -->
+					<div id="marketingAccept" class="ui-dialog-contents" title="마케팅 수신 동의자" data-class="dialog-alert">
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								응모 완료 되었습니다.
+							</div>
+							<div class="btn-even-wrap">
+								<button type="button" class="btn"><span class="inner-text">취소</span></button>
+								<button type="button" class="btn" data-popup-trigger data-target="#agreeMarketing"><span class="inner-text">확인</span></button>
+							</div>
+						</div>
+					</div>
+			
+					<!-- 마케팅 수신 미동의자 -->
+					<div id="agreeMarketing" class="ui-dialog-contents" title="마케팅 수신 미동의자" data-class="dialog-alert">
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								당첨 안내를 위한 마케팅 수신동의가 필요합니다.<br/>
+								수신동의 하시겠습니까?
+							</div>
+							<div class="btn-even-wrap">
+								<button type="button" class="btn"><span class="inner-text">확인</span></button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- /221111 개발 영역 -->
+
+			<dl class="list-notice">
+				<dt>유의사항</dt>
+				<dd>
+					<ul>
+						<!-- 221121 개발 수정 -->
+						<li>해당 이벤트는 ID 당 1회만 참여가 가능합니다.</li>
+						<li>이벤트 당첨 여부는 12/13(화) 공지사항을 통해 발표됩니다.</li>
+						<li>5만원 이상의 경품은 고객 부담으로 제세공과금이 발생합니다.</li>
+						<li>당첨 안내를 위해 마케팅 수신 동의를 하신 분들만 참여 가능합니다.</li>
+						<li>슈즈 경품의 경우 당첨 안내 후 사이즈 취합 예정이며, 주문 제작 상품이므로 발송까지 최대 2주 소요될 수 있습니다.</li>
+						<li>해당 경품의 경우 교환 및 사이즈 변경이 불가합니다.</li>
+						<li>이벤트 당첨 후 3일 이내 고객님과 연락이 닿지 않을 경우 당첨이 취소됩니다.</li>
+						<li>부당한 방법으로 응모한 경우, 즉시 응모 취소 및 추후 이벤트 응모 시 당첨 제외됩니다.</li>
+						<li>본 프로모션은 당사 사정에 의해 별도 공지 없이 중단될 수 있습니다.</li>
+						<!--// 221121 개발 수정 -->
+					</ul>
+				</dd>
+			</dl>
+		</section>
+
+		<section id="section03" class="section-03">
+			<div class="tit-box">
+				<h3 class="tit">부츠 VS 로퍼</h3>
+				<p class="txt">
+					부츠냐. 플랫이냐. 신발장 앞에서 매일 고민 반복 중이신가요?<br>
+					EQL이 제안하는 베스트 아이템으로 고민 해결! 하세요.
+				</p>
+			</div>
+			<p class="vs-img"><!-- 221123 개발 수정 --><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20221123/pc_wintershoes_vs.png" alt="" usemap="#vsMap"><!--// 221123 개발 수정 -->
+				<map name="vsMap">
+				  <area shape="rect" coords="27,25,588,549" href="/display/productsList?categoryNumber=EQLA01A02A03&thisCtgryDpthCd=3&currentPage=1&sortColumn=SALE_QTY_SEQ&endIndex=39&bestYn=&cateNos=&lCateFilter=&mCateFilter=&sCateFilter=&dCateFilter=&productBrand=&price=&size=&color=&mallGubun=CTGRY&gubunFilter=CTGRY" target="_self">
+				  <area shape="rect" coords="694,21,1250,547" href="/display/productsList?categoryNumber=EQLA01A02A02&thisCtgryDpthCd=3&currentPage=1&sortColumn=SALE_QTY_SEQ&endIndex=40&bestYn=&cateNos=&lCateFilter=&mCateFilter=&sCateFilter=&dCateFilter=&productBrand=&price=&size=&color=&mallGubun=CTGRY&gubunFilter=CTGRY" target="_self">
+				</map>
+			  </p>
+			  
+		</section>
+		<!-- /윈터슈즈 이벤트 -->
+	</article>
+</div>
+ 
+<script>
+	(function($context, $doc){
+		if (!$context.length) return;
+		var $menu = $context.find('.event-menu');
+		var $menus = $context.find('.event-menu li');
+		var $menubox = $menu.find('.event-menu-inner');
+		var $sections = $context.find('section');
+		var offset = 84;
+
+		// 프로필
+		$.fn.Scrolling = function(obj, tar) {
+			var _this = this;
+			$(window).scroll(function(e) {
+				var end = obj + tar;
+				$(window).scrollTop() >= obj ? _this.addClass("fixed") : _this.removeClass("fixed");
+				if($(window).scrollTop() >= end) _this.removeClass("fixed");
+			});
+		};
+
+		$(window).on('load scroll', function(){
+			setMenufix();
+			setSection();
+			$(".btn-follow").Scrolling($(".items-wintershoes").offset().top - 150, ($(".items-wintershoes").height() - $(".btn-winter-submit").height()));
+			$('.motion').each(function(i){
+				if(checkVisible($(this))){
+					$(this).addClass('in');
+				}
+			});
+		});
+
+
+		// 탭 고정
+		var setMenufix = function(){
+			var lastTop = $('#section03').position().top
+			var lastH = $('#section03').outerHeight()-offset;
+			var posSum = lastTop + lastH
+			if ($(window).scrollTop() > $menu.offset().top - offset  && $(window).scrollTop() <= posSum) {
+				$menubox.addClass('fixed');
+			}
+			else {
+				$menubox.removeClass('fixed');
+			}
+		};
+
+		// 탭 헤드 on, off
+		var setSection = function(){
+			$sections.each(function(idx, $section){
+				if ($(window).scrollTop() >= $section.offsetTop - offset - 40) {
+					$menus.removeClass('active');
+					$menus.eq(idx).addClass('active');
+				}
+			});
+		};
+
+		// 탭 클릭 이동
+		var handleClickTab = function(){
+			$menus.each(function(idx, el){
+				$menus.eq(idx).on("click", "a", function(e) {
+					e.preventDefault();
+					var section = $(e.currentTarget.hash);
+					var offsetTop = Math.round(section.offset().top);
+					idx === 0 ? $doc.stop().animate({scrollTop: offsetTop - offset}, 400) : $doc.stop().animate({scrollTop: offsetTop - offset - 40}, 400);		// 첫번째 탭 예외 처리 idx === 0
+				});	
+			});
+		};
+		handleClickTab();
+
+		function popSwiper(){
+			$(".gift-swiper").each(function(index, element){
+				var $this = $(this);
+				$this.addClass("type-div-" + index);
+				var giftSwiper = new Swiper(".type-div-" + index, {
+					init: false,
+					effect: 'slide',
+					spaceBetween: 130,
+					speed: 400,
+					// autoplay:  {
+					//     delay: 1,
+					//     disableOnInteraction : false,
+					// },
+					loop: false,
+					slidesPerView: "auto",
+					allowTouchMove: true,
+					/*navigation: {
+						prevEl: '.btn-swiper-arrow.prev',
+						nextEl: '.btn-swiper-arrow.next',
+					}*/
+				});
+				giftSwiper.init();
+			});
+		}
+		popSwiper();
+
+		// 엘리먼트 view 체크
+		function checkVisible( elm, eval ) {
+			eval = eval || "object visible";
+			var viewportHeight = $(window).height(), // Viewport Height
+				scrolltop = $(window).scrollTop(), // Scroll Top
+				y = $(elm).offset().top,
+				elementHeight = $(elm).height();
+
+			if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+			if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+		};
+
+		$('.evt-top .motion').each(function(i){
+			if(checkVisible($(this))){
+				$(this).addClass('in');
+			}
+		});
+
+		// 유의사항 토글 
+		$('.list-notice dt').click(function(){
+			$(this).parent().toggleClass('on');
+		});	
+
+})($('.pmo-cont'), $('html,body'));
+</script>
+
+<!-- //E : 이벤트 상세 코너 -->
+
+<!-- <script src="/resources/event/2022/03/insider/pub.js"></script> -->
+
+
+
+
+
+							<!--E : 이벤트 컨텐츠 임시 영역-->
+						</div>
+						<!--E : 이벤트 컨텐츠 html 영역-->
+					</div>
+
+					<div class="detail-footer-wrap">
+
+						<!-- S : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+						<!--S : gate-banner-wrap-->
+						<div class="gate-banner-wrap">
+							<div class="gate-banner-swiper">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Event type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(../../resources/images/temp/temp_event.jpg)"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Event</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Event type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Archive type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_archive_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Archive</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Archive type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+								</ul>
+							</div>
+							<div class="btn-swiper-arrow-wrap">
+								<button class="btn-swiper-arrow prev">이전 슬라이드<span class="icon"></span></button>
+								<button class="btn-swiper-arrow next">다음 슬라이드<span class="icon"></span></button>
+							</div>
+						</div>
+						<!--E : gate-banner-wrap-->
+						<!-- E : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+					</div>
+				</div>
+				<!--E : detail-container-wrapper-->
+				<!--E : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+			</div>
+			<div id="footerWrap" class="footer-wrap">
+				<div class="footer-copyright-wrap">
+					<div class="footer-copyright-inner">
+						<p>(주)한섬  /  대표이사  김민덕  /  서울시 강남구 도산대로 523 한섬빌딩</p><!-- 200403 수정 | 대표자명 변경 ( 김형종  -> 김민덕 ) -->
+						<p>Tel 1661-8858  /  Fax 02-476-8169  /  사업자등록번호 120-81-26337</p><!-- 200331 수정 | TEL 번호 수정 -->
+						<p>통신판매업신고번호 강남 제 00826호 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208126337&apv_perm_no=" target="_blank" class="footer-anchor">사업자 정보 확인</a> <a href="#none" class="footer-anchor" data-popup-trigger data-target="#dialogMoney">하나은행 구매안전 서비스</a></p><!-- 200714 수정 | 사업자 정보 확인 추가 --><!-- 200807 추가 : 하나은행 구매안전 서비스 추가 -->
+						<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->|<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->
+						<p class="copyright">Copyrightⓒ 2017 handsome. All right reserved.</p>
+					</div>
+					<!-- 200807 추가 : 지급보증서 발급조회 안내 팝업 -->
+					<div id="dialogMoney" class="ui-dialog-contents" title="지급보증서 발급조회 안내">
+						<div class="dialog-contents-flex">
+							<p><img src="/resources/images/footer/footer_certification.jpg" alt=""></p>
+							<p class="desc-dark-gray">고객님께서 안전거래를 위해 현금 결제 시 <br>EQL에서 가입한 하나은행의 구매안전서비스를 이용하실 수 있습니다.</p>
+						</div>
+					</div>
+					<!-- //지급보증서 발급조회 안내 팝업 -->
+				</div>
+				<div class="footer-help-wrap">
+					<p class="footer-wrap-title">Help</p>
+					<!-- s : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">FAQ</a></li>
+						<li><a href="#" class="footer-link">공지사항</a></li>
+						<li><a href="#" class="footer-link">제휴문의</a></li>
+						<li><a href="#" class="footer-link">입점상담</a></li>
+						<li><a href="#" class="footer-link">멤버십 안내</a></li>
+					</ul>
+					<!-- e : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<!-- s : 200219 수정 | SNS 순서 변경 -->
+					<div class="footer-wrap-tool sns-link-box">
+						<a href="#" class="sns-link youtube" target="_blank">유튜브</a>
+						<a href="#" class="sns-link facebook" target="_blank">페이스북</a>
+						<a href="#" class="sns-link instagram" target="_blank">인스타그램</a>
+					</div>
+					<!-- e : 200219 수정 | SNS 순서 변경 -->
+				</div>
+				<div class="footer-company-wrap">
+					<p class="footer-wrap-title">Company</p>
+					<!-- S : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">ABOUT EQL</a></li>
+						<li><a href="#" class="footer-link">회사소개</a></li>
+						<li><a href="#" class="footer-link">이용약관</a></li>
+						<li><a href="#" class="footer-link spot">개인정보처리방침</a></li>
+					</ul>
+					<!-- E : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<div class="footer-wrap-tool">
+						<div class="select-wrap family-site js-select" data-placeholder="FAMILY SITE" data-menu-place="up" data-menu-class="family-site">
+							<select title="Family site" class="ui-sel">
+								<optgroup label="ShoppingMall">
+									<option value="https://www.thehyundail.com/">더현대닷컴</option>
+									<option value="https://www.hddfs.com/">현대백화점 DUTY FREE</option>
+									<option value="http://esuper.ehyundai.com/">e슈퍼마켓</option>
+									<option value="https://hyundaihmall.com/">현대Hmall</option>
+									<option value="http://mall.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundairentalcare.co.kr/">현대렌탈케어</option>
+									<option value="http://thehandsome.com/ko">더한섬닷컴</option>
+									<option value="http://www.hfashionmall.com/">H패션몰</option>
+									<option value="http://www.h-vrstation.com/">VR STATION</option>
+								</optgroup>
+								<optgroup label="FamilySite">
+									<option value="http://www.ehyundai.com/newPortal/ir/main.do">현대백화점그룹</option>
+									<option value="https://www.ehyundai.com/newPortal/index.do">현대백화점</option>
+									<option value="http://www.hyundaigreenfood.com/">현대그린푸드</option>
+									<option value="https://www.hyundaihmall.com/">현대홈쇼핑</option>
+									<option value="http://www.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundaihns.com">㈜현대H&amp;S</option>
+									<option value="http://www.hcn.co.kr/">현대HCN</option>
+									<option value="http://www.hyundaimedia.com/">현대미디어</option>
+									<option value="http://www.hyundairentalcare.co.kr">현대렌탈케어</option>
+									<option value="http://www.hyundaidreamtour.com/">현대드림투어</option>
+									<option value="http://www.everdigm.com/">에버다임</option>
+									<option value="http://www.cnsfoodsystem.co.kr/">씨엔에스푸드시스템</option>
+									<option value="http://www.hyundaicatering.co.kr/">현대케이터링시스템</option>
+									<option value="http://www.hyundai-ite.com/">현대IT&amp;E</option>
+									<option value="http://www.thehandsome.com/">한섬</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="show-mobile mobile-only">
+				<a href="#">모바일로 보기</a><!-- DESC : body 또는 wrap에 class "mobile-pc" 추가시 노출 됨 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
