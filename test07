@@ -1,0 +1,2210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta content="noindex" name="robots" />
+	<meta name="description" content="한섬 EQL">
+	<meta property="og:locale:alternate" content="ko_KR">
+	<meta property="og:title" content="한섬 EQL">
+	<meta property="og:url" content="https://www.thehandsome.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://www.eqlstore.com/resources/images/favicon/share.png">
+	<meta property="og:site_name" content="한섬 EQL">
+	<meta property="og:description" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="한섬 EQL">
+	<meta name="twitter:url" content="https://www.thehandsome.com/">
+	<meta name="twitter:image" content="https://www.eqlstore.com/resources/images/favicon/share.png">
+	<meta name="twitter:description" content="">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>한섬 EQL</title>
+
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="180x180" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-180x180-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="167x167" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-167x167-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="152x152" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-152x152-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="144x144" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="120x120" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-120x120-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="114x114" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="76x76" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-76x76-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="72x72" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed apple-touch-icon" sizes="60x60" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-60x60-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-57x57-precomposed.png">
+
+	<link rel="shortcut icon" sizes="256x256" href="https://www.eqlstore.com/resources/images/favicon/favicon_256x256.png">
+	<link rel="shortcut icon" sizes="196x196" href="https://www.eqlstore.com/resources/images/favicon/favicon_196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="https://www.eqlstore.com/resources/images/favicon/favicon_128x128.png">
+	<link rel="shortcut icon" sizes="48x48" href="https://www.eqlstore.com/resources/images/favicon/favicon_48x48.png">
+	<link rel="shortcut icon" sizes="32x32" href="https://www.eqlstore.com/resources/images/favicon/favicon_32x32.png">
+	<link rel="shortcut icon" href="https://www.eqlstore.com/resources/images/favicon/favicon_16x16.png">
+
+	<link rel="icon" sizes="128x128" href="https://www.eqlstore.com/resources/images/favicon/favicon_128x128.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="https://www.eqlstore.com/resources/images/favicon/favicon_64x64.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="https://www.eqlstore.com/resources/images/favicon/favicon_32x32.png" type="image/png">
+
+	<meta name="msapplication-TileImage" content="https://www.eqlstore.com/resources/images/favicon/apple-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#222222">
+
+	<!-- Vendors CSS
+			================================================== -->
+	<link rel="stylesheet" href="/resources/vendors/overlayScrollBars/css/OverlayScrollbars.min.css">
+	<link rel="stylesheet" href="/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="/resources/vendors/star-rating/css/star-rating.min.css">
+	<link rel="stylesheet" href="/resources/vendors/swiper-4.4.6/css/swiper.min.css">
+
+	<!-- Custom styles for this template
+			================================================== -->
+	<link rel="stylesheet" href="/resources/css/ui.min.css">
+	<link rel="stylesheet" href="/resources/css/layout.min.css">
+
+	<!-- Vendors javascript
+			================================================== -->
+	<script src="https://www.eqlstore.com/resources/vendors/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/jquery-ui.1.12.1/jquery-ui.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/scrollpos-styler/scrollPosStyler.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/overlayScrollBars/js/OverlayScrollbars.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/star-rating/js/star-rating.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/swiper-4.4.6/js/swiper.min.js"></script>
+	<script src="https://www.eqlstore.com/resources/vendors/lottie/lottie.min.js"></script><!-- 200403 추가 : 로딩 애니메이션 플러그인 추가 -->
+
+	<!-- UI JavaScript
+			================================================== -->
+	<script src="https://www.eqlstore.com/resources/js/front_ui.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.btn-video').on('click', function () {
+				var videoData, videoType, videoUrl;
+				videoData = $(this).data();
+				videoType = videoData.videoType;
+				videoUrl = videoData.videoUrl;
+
+				switch (videoType) {
+					case 'youtube':
+						handsome.ui.front.setYoutubeIFrame($(this).closest('.video-box'), videoUrl);
+						break;
+					case 'vimeo':
+						handsome.ui.front.setVimeoIframe($(this).closest('.video-box'), videoUrl);
+						break;
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrap-inner">
+			<div class="skip-nav-wrap">
+				<a href="#gnbMenuWrap">메뉴 바로가기</a>
+				<a href="#contentsWrap">본문 바로가기</a>
+			</div>
+			<div class="header-wrap sps">
+				<div class="header-top-wrap">
+					<h1 class="header-logo"><a href="/"><img src="https://www.eqlstore.com/resources/images/common/comm_header_logo.png" alt="EQL"></a></h1>
+					<div class="header-util-wrap">
+						<button type="button" class="btn-search">Search</button>
+						<a href="#" class="btn-join">Join</a>
+						<a href="#" class="btn-login">Login</a>
+						<a href="#" class="btn-my-page">Nick Name</a>
+						<a href="#" class="btn-equal">Equal</a>
+						<a href="#" class="btn-cart">Cart (<span class="cart-cnt">3</span>)</a>
+					</div>
+				</div>
+				<div class="header-bottom-wrap">
+					<div id="gnbMenuWrap" class="gnb-menu-wrap">
+						<ul class="gnb-list theme-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name" style="color: #009e3d;" data-hover-color="#61cc80">06 Olympic</a><!-- 200227 수정 : .depth-1 .menu-name에 attribute 'data-hover-color' 추가 -->
+							</li>
+						</ul>
+						<ul class="gnb-list category-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Woman</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Men</a>
+								<div class="gnb-list-sub-wrap">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Clothing</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Outer</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">T-Shirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Knit wear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shirts</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">One-piece</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Skirt</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pants</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Leg. Underwear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Activewear</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Shoes</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sneakers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Flat. Loafers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Boots</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Pumps. Heels</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sandals</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoes acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Bag</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Shoulder bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tote bag</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Clutch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Casual. backpack</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Wallet. pouch</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Acc</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Scarves. mufflers</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Hat</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Jewelry</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Watch</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Sunglasses. eyewear</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Fashion acc</a></li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Life</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Tech</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Stationary</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Beauty</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Home</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Culture</a></li>
+												<li class="gnb-list-sub-menu"><a href="#" class="menu-name">Toy</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text eng">Oversize Knit</span>
+														<span class="banner-text">오버사이즈 니트</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Brand</a>
+								<div class="gnb-list-sub-wrap brand-sub">
+									<div class="sub-menu-wrap">
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Top Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+										<div class="sub-menu-column">
+											<a href="#" class="menu-name depth-2">Exclusive Brand</a>
+											<ul class="gnb-list-sub">
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 1</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams 2</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">A.P.C</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Acne studio</a>
+												</li>
+												<li class="gnb-list-sub-menu">
+													<a href="#" class="menu-name">Abrams</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="banner-wrap">
+										<div class="banner-wrap-inner">
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AMBIT 2019 FW COLLECTION</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">앤더슨벨 EXCLUSIVE ITEM</span>
+													</span>
+												</a>
+											</div>
+											<div class="banner-item">
+												<a href="#">
+													<span class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_gnb_sub_banner_brand_img.jpg);"></span>
+													<span class="banner-text-wrap">
+														<span class="banner-text">AECA WHITE 베이직 라인</span>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="gnb-list exclusive-list">
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">EQL Exclusive</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Event</a>
+							</li>
+							<li class="gnb-list-menu depth-1">
+								<a href="#" class="menu-name">Archive</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="contentsWrap" class="contents-wrap">
+				<div class="quick-menu sps">
+					<div class="quick-menu-box">
+						<a href="#" class="btn-share">화면 공유</a>
+						<a href="#top" class="btn-top">최상단으로 이동</a>
+						<a href="#footerWrap" class="btn-bottom">최하단으로 이동</a>
+					</div>
+				</div>
+
+				<!--S : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+				<!--S : detail-container-wrapper-->
+				<div class="detail-container-wrapper white js-detail-content">
+					<!-- DESC :
+						컨텐츠 상세 예시페이지. 코너별 가이드는 해당 페이지 참조
+						1. 컨텐츠 상세 레이아웃 : html/detail/01_detail_layout.html
+					-->
+					<div class="detail-contents-wrap">
+						<!--S : 이벤트 컨텐츠 html 영역-->
+						<div class="event-content-wrap">
+							<!--S : 이벤트 컨텐츠 임시 영역-->
+
+							<!-- 
+
+								1. BO > 프로모션 > 이벤트 관리 
+								2. 조회 버튼 클릭 > 이벤트번호 3845
+
+							 -->
+
+<!-- <link rel="stylesheet" href="/resources/event/2022/05/anniversary/style.css">							  -->
+
+                            
+<!-- S : 이벤트 상세 코너 -->
+<script src="https://www.eqlstore.com/eql_pc/resources/vendors/parallax-scroll/ScrollMagic.min.js"></script><!-- 스크롤 매직 -->
+<script src="https://www.eqlstore.com/eql_pc/resources/vendors/parallax-scroll/TweenMax.min.js"></script>
+<script src="https://www.eqlstore.com/eql_pc/resources/vendors/parallax-scroll/animation.gsap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<!-- 인디케이터 -->
+
+<style>
+/* 공통 */
+.hidden {overflow:hidden;display:inline-block;position:relative;z-index:-1;border:0;width:1px;height:1px;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);}
+.font-fix {font-family:"Noto Sans KR", sans-serif;}
+.wrap .detail-container-wrapper.white {background:#111 !important;}
+
+.pmo-cont {width:100%;max-width:2560px;min-width:1200px;margin:0 auto;background:#000;overflow-x:hidden;}
+@media screen and (max-width:1300px){
+    .pmo-cont {overflow-x:auto;}    
+}
+
+.pmo-cont .inner {width:1200px;margin:0 auto;}
+.ui-dialog {margin-top:20vw;}
+.ui-dialog-container {background: rgba(0,0,0,0.6);}
+.ui-dialog.dialog-alert {width:600px !important;border:1px solid #fff;border-radius:30px;}
+.ui-dialog.dialog-alert .ui-dialog-titlebar {min-height:50px;}
+.ui-dialog.dialog-alert .ui-dialog-contents {padding:0px 0px 45px 0px;}
+.ui-dialog.dialog-alert .ui-dialog-contents .dialog-alert-text {font-size:18px;line-height:30px;letter-spacing:-0.45px;}
+.ui-dialog.dialog-alert .ui-dialog-contents .btn-even-wrap {margin-top:20px;padding:0px 25px 0px 25px;}
+.ui-dialog.dialog-alert .ui-dialog-contents .btn-even-wrap .btn {height:50px;margin:0px 5px;border-radius:10px;background:#f2f2f2;border:1px solid #f2f2f2;}
+.ui-dialog.dialog-alert .ui-dialog-contents .btn-even-wrap .btn + .btn {color:#ccc;background:#fff;}
+.ui-dialog.dialog-alert h6 {padding-bottom:17px;}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {width:43px;height:33px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220516/btn_pmo_close.png") no-repeat 0 0;top:15px;right:15px;}	
+.ui-dialog h6 {font-size:50px;font-weight:500;}
+.ui-dialog .pmo-btn-pop {margin-top:17px;}
+.ui-dialog .pmo-btn-pop button {display:flex;justify-content:center;align-items:center;width:540px;height:50px;margin:0 auto;font-size:15px;letter-spacing:-0.36px;background:#f2f2f2;border-radius:10px;}
+.dev-flex .pmo-btn-flex button {font-weight:300;border-radius:2px;}
+.dev-time .list_prd li .pmo-btn-time button {font-weight:300;border-radius:2px;}
+.dev-coupon .pmo-btn-coupon button {font-family:"Noto Sans KR", sans-serif;font-weight:300;border-radius:2px;}
+
+/* intro */
+.intro {display:flex;justify-content:space-between;width:100%;height:220px;padding:0px 80px 0px 71px;background:#111;position:relative;}
+.intro .txt {flex:1 0 1;padding:30px 10px 0px 0px;white-space:nowrap;}
+.intro .txt span {font-size:24px;letter-spacing:-0.48px;font-weight:400;color:#fff;}
+.intro .txt span em {padding-right:20px;}
+.intro .txt p {padding-top:20px;font-size:16px;line-height:1.7;letter-spacing:-0.32px;font-weight:300;color:#f2f2f2;}
+
+.intro .list-banner {display:flex;justify-content:space-between;align-items:center;width:760px;}
+.intro .list-banner li {margin-left:10px;}
+.intro .list-banner li img {width:100%;}
+.intro .list-banner li:first-child {margin-left:0px;}
+
+/* top-visual */
+.top-visual {text-align:center;width:100%;background:#000;position:relative;}
+.top-visual .inner {width:100%;}
+.top-visual .bg-movie-sec {width:100%;position:absolute;top:0vw;left:0;right:0;opacity:0.25;}
+.top-visual .bg-movie-sec .vod {width:1540px;position:absolute;top:0px;left:50%;margin-left:-770px;}
+.top-visual .tit-visual {padding-top:50px;position:relative;z-index:1;}
+.top-visual .tit-visual h4 {text-align:center;width:100%;padding:50px 0px 60px 0px;font-size:90px;letter-spacing:-1.8px;font-weight:700;color:#fff;}
+.top-visual .tit-visual h4 img {width:100%;max-width:1659px;}
+.top-visual .top-movie {position:relative;z-index:10;}
+.top-visual .top-movie .video-sec {width:340px;height:690px;margin:-150px auto 0 auto ;position:relative;z-index:10;overflow:hidden;}
+.top-visual .top-movie .video-sec .img-phone {position:absolute;top:0px;left:0px;}
+.top-visual .top-movie .video-sec .img-phone img {width:100%;}
+.top-visual .top-movie .video-sec .video-inner {width:317px;height:673px;margin:10px 0px 0px 10px;border-radius:50px;background:#fff;border:1px solid red;overflow:hidden;}
+.top-visual .top-movie .video-sec .video-inner .vod {width:100%;margin-left:0px;margin-top:45px;}
+.top-visual p {padding:30px 0px 70px 0px;font-size:24px;line-height:1.6;letter-spacing:-0.6px;font-weight:700;color:#fff;}
+.top-visual #animateTop2 {transform:scale(2);transform-origin:50% 0%;}
+.top-visual #animateTop3 {margin-top:0px;opacity:0;transform-origin:50% 0px;}
+
+/* countdown */
+.countdown {text-align:center;padding:0px 130px 30px 130px;font-size:20px;background:#000;position:relative;}
+.countdown .inner {width:100%;padding:30px 0px 50px 40px;background:#222;border-radius:50px;}
+.countdown .box-count {text-align:left;display:inline-block;width:116px;padding-left:26px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/bg_clock.png") no-repeat 9px 55px;box-sizing:content-box;}
+.countdown .box-count:first-child {padding-left:0px;background:none;}
+.countdown .box-count span {text-align:center;display:block;margin-bottom:20px;font-size:15px;color:#fff;font-weight:100;}
+.countdown .box-count p {text-align:center;font-size:60px;letter-spacing:-2.4px;font-weight:100;color:#fff;}
+
+/* tabs */
+.pmo-cont .event-menu {position: relative;}
+.pmo-cont .event-menu .event-menu-inner {position: absolute;left: 0;top: 0;width: 100%;background-color:#222;z-index:1000;}
+.pmo-cont .event-menu .event-menu-inner.fixed {position: fixed;top: 84px;}
+.pmo-cont .event-menu .event-menu-inner ul {display: flex;display: -webkit-flex;margin:0 auto;width:1200px;border-right:1px solid #000;box-sizing: border-box;}
+.pmo-cont .event-menu .event-menu-inner ul li {width:calc(100% / 4);position:relative;text-align: center;border-left:1px solid #000;box-sizing: border-box;}
+.pmo-cont .event-menu .event-menu-inner ul li.active a {font-weight:500;background:#fff;color:#000;}
+.pmo-cont .event-menu .event-menu-inner ul li a {display:flex;display:-webkit-flex;justify-content:center;align-items:center;width:100%;height:40px;font-size:15px;font-weight:100;font-stretch:200%;color:#fff;background:#222;}
+.pmo-cont .event-menu .event-menu-inner ul li a em {display:inline-block;margin-right:5px;font-weight:300;}
+
+/* 섹션 공통 */
+.pmo-cont section {position:relative;}
+.pmo-cont .tit-sec {text-align:center;width:100%;padding-top:200px;padding-bottom:100px;position:absolute;top:0px;left:0px;right:0px;z-index:100;transition:all 0.4s;}
+.pmo-cont .tit-sec span {font-size:18px;font-weight:100;color:#fff;}
+.pmo-cont .tit-sec h5 {padding-top:50px;font-size:60px;line-height:1.2;font-weight:600;letter-spacing:-1.2px;color:#fff;}
+
+.pmo-cont .tit-sec.fixed {position:fixed;top:84px;pointer-events: none;transform: translateY(-150px);}
+.pmo-cont .tit-sec.fixed h5 {font-size:36px;}
+.pmo-cont .tit-sec.fixed span {visibility:hidden;}
+
+.pmo-cont .pmo-txt {text-align:center;padding-top:50px;font-size:18px;line-height:1.6;letter-spacing:-0.45px;font-weight:100;color:#fff;}
+.pmo-cont .pmo-btn {text-align:center;margin:15px 0 35px 0px;}
+.pmo-cont .pmo-btn a {padding:10px 0px 10px 0px;display:inline-block;font-size:18px;letter-spacing:-0.45px;font-weight:400;color:#fff;position:relative;}
+.pmo-cont .pmo-btn a:hover:after {content:"";display:block;width:100%;height:1px;background:#fff;position:absolute;left:0;right:0;bottom:10px;}
+.pmo-cont .list-term {width:450px;margin:0 auto;}
+.pmo-cont .list-term li {padding:16px 0px 0px 100px;font-size:18px;letter-spacing:-0.45px;font-weight:100;color:#fff;position:relative;}
+.pmo-cont .list-term li span {position:absolute;top:16px;left:0px;}
+
+/* 섹션 공통 유의사항 */
+.pmo-cont .list-notice {text-align:left;width:480px;margin:30px auto 0 auto;position:relative;}
+.pmo-cont .list-notice dt {text-align:left;font-size:18px;letter-spacing:-0.45px;font-weight:300;color:#fff;}
+.pmo-cont .list-notice dt:after {content:" 보기";}
+.pmo-cont .list-notice.on dt:after {content:" 닫기";}
+.pmo-cont .list-notice dd {display:none;padding-top:20px;}
+.pmo-cont .list-notice.on dd {display:block;}
+.pmo-cont .list-notice li {padding:0px 0px 0px 8px;font-family:"Noto Sans KR", sans-serif;font-size:15px;line-height:24px;letter-spacing:-0.35px;position:relative;color:#222;}
+.pmo-cont .list-notice li:before {display:inline-block;width:10px;content:"·";position: absolute;left:0;top:0;}
+
+/* time-flex */
+.time-flex {padding:530px 0px 150px 0px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/bg_time_flex.png") no-repeat 50% 40px;background-size:cover;}
+.time-flex .tit-sec {padding-top:190px;}
+.time-flex .tit-sec.fixed {transform: translateY(-190px);
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(17,17,17,0) 0%, rgba(17,17,17,1) 20%, rgba(17,17,17,1) 30%);
+}
+.time-flex .list-flex {display:flex;justify-content:center;width:100%;padding:0px 20px 0px 20px;}
+.time-flex .list-flex li {flex:1 1 1 1 1;display:inline-block;padding-top:75px;margin:0 8px;position:relative;}
+.time-flex .list-flex li .tit {text-align:left;padding-left:15px;font-size:21px;line-height:32px;letter-spacing:-0.53px;font-weight:100;color:#fff;position:absolute;top:0px;left:0px;z-index:1;}
+.time-flex .list-flex li .tit span {display:block;font-weight:700;}
+
+.time-flex .list-flex li:before {content:"";display:block;width:5px;height:55px;border-radius:5px;position:absolute;top:4px;left:0px;}
+.time-flex .list-flex li:nth-child(1):before {background:#009345;}
+.time-flex .list-flex li:nth-child(2):before {background:#a192fb;}
+.time-flex .list-flex li:nth-child(3):before {background:#09cdd6;}
+.time-flex .list-flex li:nth-child(4):before {background:#ffd401;}
+.time-flex .list-flex li:nth-child(5):before {background:#ff0456;}
+.time-flex .list-flex li .img-sec img {width:100%;}
+
+.time-flex .list-flex li .price {width:100%;padding:0px 5px 18px 90px;margin-top:14px;background:#222;border-radius:20px;position:relative;}
+.time-flex .list-flex li .price img {position:absolute;top:10px;left:10px;}
+.time-flex .list-flex li .price span {display:block;padding-top:20px;font-size:15px;line-height:1.4;letter-spacing:-0.45px;font-weight:500;color:#fff;word-break:keep-all;}
+.time-flex .list-flex li .price em {display:block;padding-top:10px;font-size:15px;line-height:1.4;font-weight:300;letter-spacing:-0.45px;color:#fff;word-break:keep-all;}
+
+.time-flex .animate-price {text-align:center;padding:0px 30px 0px 30px;margin:30px 0px 50px 0px;position:relative;}
+.time-flex .animate-price .inner {width:100%;max-width:1650px;padding:50px 0px 50px 0px;background:rgba(34, 34, 34, 0.8);border-radius:50px;}
+.time-flex .animate-price p {padding-bottom:70px;font-size:18px;font-weight:300;letter-spacing:-0.45px;color:#fff;}
+.time-flex .animate-price span {display:block;margin-bottom:70px;}
+.time-flex .animate-price .dev-flex .pmo-btn-flex button {background:#ff5100;} /* 개발 초기화 */
+.time-flex .pmo-btn {padding-bottom:52px;}
+.time-flex .list-notice {left:15px;}
+
+
+/* time-coupon */
+.time-coupon {padding:460px 0px 150px 0px;background:#111;}
+.time-coupon .tit-sec {padding-top:150px;
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(17,17,17,0) 0%, rgba(17,17,17,1) 20%, rgba(17,17,17,1) 30%);
+}
+.time-coupon .coupon-sec {text-align:center;width:450px;padding-top:70px;margin:0 auto 30px auto;position:relative;}
+.time-coupon .coupon-sec .tit {text-align:left;padding-left:15px;font-size:21px;line-height:32px;letter-spacing:-0.53px;font-weight:100;color:#fff;position:absolute;top:0px;left:0px;z-index:1;}
+.time-coupon .coupon-sec .tit span {display:block;font-weight:700;}
+.time-coupon .coupon-sec:before {content:"";display:block;width:5px;height:55px;border-radius:5px;position:absolute;top:4px;left:0px;background:#ff5100;}
+.time-coupon .coupon-sec .img-sec img {width:100%;}
+.time-coupon .coupon-sec .price {text-align:left;width:100%;padding:0px 5px 18px 85px;margin-top:14px;background:#222;border-radius:20px;position:relative;}
+.time-coupon .coupon-sec .price img {position:absolute;top:10px;left:10px;}
+.time-coupon .coupon-sec .price span {display:block;padding-top:16px;font-size:15px;line-height:1.4;letter-spacing:-0.45px;font-weight:500;color:#fff;word-break:keep-all;}
+.time-coupon .coupon-sec .price em {display:block;padding-top:2px;font-size:18px;line-height:1.4;font-weight:300;letter-spacing:-0.45px;color:#fff;word-break:keep-all;}
+.time-coupon .dev-coupon .pmo-btn-coupon button {background:#ff5100;} /* 개발 초기화 */
+.time-coupon .list-notice {width:530px;left:40px;}
+.time-coupon .list-notice li {color:#999;}
+.time-coupon .list-term {padding-top:84px;}
+
+/* time-attack */
+.time-attack {padding:490px 0px 150px 0px;background:url("https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/bg_time_attack.png") no-repeat 50% 0px;background-size:cover;}
+.time-attack .tit-sec {padding-top:150px;}
+.time-attack .tit-sec.fixed {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 30%);
+}
+.time-attack .dev-time {margin-top:-100px;}
+.time-attack .pmo-txt {padding-top:0px;}
+.time-attack .list-term {width:610px;padding-top:30px;}
+.time-attack .list-notice {width:660px;left:25px;}
+
+.time-attack .dev-time .list_prd li.on .img-sec span {background:#ff5100;} /* 개발 초기화 */
+.time-attack .dev-time .list_prd li .img-sec span img {width:auto;height:45px;} /* 개발 초기화 */
+.time-attack .dev-time .list_prd li .img-sec em {height:80px;line-height:1.6;} /* 개발 초기화 */
+.time-attack .dev-time .list_prd li .price-sec span:after {content:none;} /* 개발 초기화 */
+.time-attack .dev-time .list_prd li.on .pmo-btn-time button {background:#ff5100;border:1px solid #ff5100;} /* 개발 초기화 */
+
+
+
+/* killing-time */
+.killing-time {padding:400px 0px 0px 0px;background:#fff;}
+.killing-time .tit-sec {padding-top:100px;}
+.killing-time .tit-sec.fixed {padding-top:100px;transform: translateY(-110px);
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 30%);
+}
+.killing-time .tit-sec.fixed {padding-bottom:30px;}
+.killing-time .tit-sec.fixed h5 img {height:55px;}
+
+.pmo-cont .killing-time .tit-sec span {color:#000;}
+.pmo-cont .killing-time .tit-sec h5 {font-size:90px;letter-spacing:-3.6px;color:#000;}
+.killing-time .coupon-sec {text-align:center;margin-bottom:50px;}
+.killing-time .list-term {padding-top:84px;}
+.killing-time .banner-sec {text-align:center;width:100%;height:1604px;padding:50px 0px 0px 0px;background:#000;position:relative;}
+
+/* flex-share */
+.flex-share {padding:260px 0px 100px 0px;background:#fff;position:relative;}
+.flex-share .tit-sec {padding-top:100px;
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 30%);
+}
+.pmo-cont .flex-share .tit-sec {padding-bottom:50px;}
+.pmo-cont .flex-share .tit-sec span {color:#000;}
+.pmo-cont .flex-share .tit-sec h5 {padding-top:0px;font-size:80px;letter-spacing:-3.6px;color:#000;}
+.flex-share p {text-align:center;padding-bottom:50px;font-size:18px;line-height:1.6;letter-spacing:-0.45px;}
+.flex-share .img-sec {width:897px;height:333px;margin:0 auto 50px auto;position:relative;}
+.flex-share .img-sec img {position:absolute;}
+.flex-share .img-sec img.item_01 {top:0px;left:0px;}
+.flex-share .img-sec img.item_02 {top:75px;right:0px;}
+.flex-share .img-sec img.item_03 {top:214px;left:49px;}
+
+
+.flex-share .pmo-btn-share {text-align:center;}	
+.flex-share .pmo-btn-share button {display:flex;justify-content:center;align-items:center;width:450px;height:50px;margin:0px auto;font-size:18px;letter-spacing:-0.36px;color:#fff;background:#000;border-radius:25px;}
+
+
+
+
+
+/* 애니메이션 */
+.fade-out.in {
+	animation: fade-out 0.5s forwards linear;
+}
+@keyframes fade-out {
+	from { 
+        z-index: 100;
+        opacity: 1; 
+    }
+	to 
+    {   
+        z-index: 0;
+        opacity: 0; 
+    }
+}
+
+.animate-price:before {
+    content:"";
+    display:block;
+    position: absolute;
+    top:190px;
+    left:50%;
+    right:0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+    animation: 1.5s bang ease-out infinite backwards, 1.5s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+
+@keyframes bang {
+    100% {
+        box-shadow: 189px -273.6666666667px #ff7700, 171px -364.6666666667px #00b3ff, 166px -9.6666666667px #00ffb3, 44px -110.6666666667px #ff0900, 79px -108.6666666667px #f7ff00, 59px -28.6666666667px #ff0077, -210px -100.6666666667px #ff6f00, -55px -329.6666666667px #9d00ff, -3px 18.3333333333px #00ffea, -144px -69.6666666667px #00ffea, -173px -108.6666666667px #8400ff, -17px -141.6666666667px #ffc400, -6px -116.6666666667px #7700ff, -160px -390.6666666667px #00ffea, -64px -337.6666666667px #d500ff, -245px 48.3333333333px #5500ff, -236px 5.3333333333px #ff8800, 68px -84.6666666667px #ff00a2, -175px -35.6666666667px #9dff00, 182px -51.6666666667px #00ff4d, -241px -73.6666666667px #ff000d, -20px -183.6666666667px #7700ff, 106px -293.6666666667px #3300ff, 216px -166.6666666667px #bb00ff, 205px -350.6666666667px #00ff09, 247px -50.6666666667px #ff0d00, -230px -192.6666666667px #6600ff, 92px -24.6666666667px #e100ff, 193px -172.6666666667px #4000ff, -77px 48.3333333333px #ff00e6, -178px -359.6666666667px #ffd000, -11px -201.6666666667px #8c00ff, -234px -16.6666666667px #00ff15, -10px -215.6666666667px #fffb00, -91px -25.6666666667px #ff002b, 90px -370.6666666667px #bfff00, -69px 27.3333333333px #ffbf00, 16px 24.3333333333px #9900ff, -211px -298.6666666667px #ff2b00, -70px -275.6666666667px #00ff8c, -144px -244.6666666667px #ff1a00, 23px -135.6666666667px #ff00f7, 228px -12.6666666667px #91ff00, -14px -358.6666666667px #00ff6f, -240px -253.6666666667px #a200ff, -111px -216.6666666667px #ff006a, 144px -351.6666666667px #00ddff, -109px -380.6666666667px #9900ff, -236px -346.6666666667px #00ff4d, -147px -81.6666666667px #00d0ff, 150px -324.6666666667px #00c8ff;
+    }
+}
+
+@keyframes gravity {
+    100% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+
+.motion {-webkit-transition:opacity 0ms ease,-webkit-transform 0ms ease;transition:opacity 0ms ease,-webkit-transform 0ms ease;transition:transform 0ms ease,opacity 0ms ease;transition:transform 0ms ease,opacity 0ms ease,-webkit-transform 0ms ease;opacity:0;}
+.motion.bottom {-webkit-transform:translate(0,100%);transform:translate(0,100%);}
+.motion.in {-webkit-transition:opacity 1.2s ease,-webkit-transform .5s ease;transition:opacity 1.2s ease,-webkit-transform .5s ease;transition:transform .5s ease,opacity 1.2s ease;transition:transform .5s ease,opacity 1.2s ease,-webkit-transform .5s ease;-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1;}
+.motion.in-re {-webkit-transition:opacity .8s ease,-webkit-transform 1s ease;transition:opacity .8s ease,-webkit-transform 1s ease;transition:transform 1s ease,opacity .8s ease;transition:transform 1s ease,opacity .8s ease,-webkit-transform 1s ease;-webkit-transform:translate(0,0);transform:translate(0,0);opacity:1;}
+.motion.delay1 {-webkit-transition-delay:.6s;transition-delay:.6s;}
+.motion.delay2 {-webkit-transition-delay:1.2s;transition-delay:1.2s;}
+.motion.delay3 {-webkit-transition-delay:1.8s;transition-delay:1.8s;}
+.motion.delay4 {-webkit-transition-delay:2.4s;transition-delay:2.4s;}
+.motion.delay5 {-webkit-transition-delay:3s;transition-delay:3s;}
+.motion.delay6 {-webkit-transition-delay:3.6s;transition-delay:3.6s;}
+.motion.delay7 {-webkit-transition-delay:4.2s;transition-delay:4.2s;}
+.motion.delay8 {-webkit-transition-delay:4.8s;transition-delay:4.8s;}
+.motion.delay9 {-webkit-transition-delay:5.4s;transition-delay:5.4s;}
+.motion.delay10 {-webkit-transition-delay:6s;transition-delay:6s;}
+</style>
+
+<div class="pmo-cont">
+	<!-- intro -->
+	<div class="intro">
+		<div class="txt">
+			<span><em>EQL PROJECT.</em>2nd anniversary.</span>
+			<p class="font-fix">
+				EQL 스토어가 2주년을 맞이했습니다.<br/>
+				이번 프로젝트는 EQL STORE 의 2주년을 기념하여 온오프를 넘나들며 새로운 고객 경험을 제안합니다.<br/>
+				오프라인 컨셉스토어 ’T-ea SHOP’부터 익스클루시브 ’T-Shirt’, 매일매일 혜택이 쏟아지는 ’T-ime FESTIVAL’까지.<br/>
+				곳곳에서 열리는 다양한 2주년 이벤트를 즐겨보세요.				
+			</p>
+		</div>
+
+		<ul class="list-banner">
+			<li>
+				<a href="/special/6331/view">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/banner_intro_01.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="/event/singleEvent/EV202205260003274/2022/box/birthdayEvent_2022"><!-- 220527 수정 -->
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/banner_intro_02.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="/special/6166/view">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/banner_intro_03.png" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /intro -->
+
+	<!-- top-visual -->
+	<div id="animateTop0" class="top-visual" style="display:;">
+		<div class="inner">
+			<div class="bg-movie-sec">
+				<div class="video-inner">	
+					<video poster="" class="vod" autoplay playsinline muted loop>
+						<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/bg_movie.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+			</div>
+			<div id= "animateTop1" class="tit-visual">
+				<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_top_sub.png" alt="2nd anniversary"></span>
+				<h4 class="font-fix">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_top.png" alt="EQL TIME FESTIVAL">
+				</h4>
+			</div>
+			<div id="animateTop2" class="top-movie">
+				<!-- <div style="text-align:center;width:340px;height:690px;margin:0 auto;background:#555;"></div> -->
+				<div class="video-sec">
+					<div class="img-phone">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220518/img_phone.png" alt="">
+					</div>
+					<div class="video-inner">	
+						<video poster="" class="vod" autoplay playsinline muted loop>
+							<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/top_movie.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</div>
+				</div>
+			</div>
+			<div  class="trigger" id="trigger3"></div>
+			<p id="animateTop3">
+				EQL 2주년 기념 타임 페스티벌<br/>
+				1명을 위한 1000만 원어치의 시간 플렉스<br/>
+				단 1분이면 충분합니다.			
+			</p>
+		</div>
+	</div>
+	<!-- /top-visual -->
+
+	<!-- 카운트 다운 박스 -->
+	<div class="countdown" style="display:;">
+		<div class="inner">
+			<div class="box-count">
+				<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/counter_date.png" alt="date"></span>
+				<p class="count-text" id="days">0</p>
+			</div>
+			<div class="box-count">
+				<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/counter_hours.png" alt="hours"></span>
+				<p class="count-text" id="hours">0</p>
+			</div>
+			<div class="box-count">
+				<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/counter_minutes.png" alt="minutes"></span>
+				<p class="count-text" id="minutes">0</p>
+			</div>
+			<div class="box-count">
+				<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/counter_seconds.png" alt="seconds"></span>
+				<p class="count-text" id="seconds">0</p>
+			</div>
+		</div>
+	</div>
+	<!-- /카운트 다운 박스 -->			
+
+	<!-- s : event-menu -->
+	<div class="event-menu" style="display:;">
+		<div class="event-menu-inner">
+			<ul>
+				<li class="active"><a href="#event-section-01">(T)IME FLEX</a></li>
+				<li><a href="#event-section-02">(T)IME COUPON</a></li>
+				<li><a href="#event-section-03">(T)IME ATTACK</a></li>
+				<li><a href="#event-section-04">KILLING (T)IME</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- e : event-menu -->
+	
+	<article>
+		<section id="event-section-01" style="display:;">
+			<!-- time-flex -->
+			<div class="time-flex">
+				<div class="tit-sec fade-out">
+					<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_sub_flex.png" alt="TIME FLEX"></span>
+					<h5 class="font-fix">시간 = 돈<br/>1000만 원어치 시간 플렉스.</h5>
+				</div>
+				
+				<ul class="list-flex">
+					<li>
+						<div class="tit">
+							<span>지금 당장</span>
+							마음만 먹으면 LA로.
+						</div>
+						<div class="img-sec">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_flex_01.png" alt="">
+						</div>
+						<div class="price">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/ico_flex_01.png" alt="">
+							<span>하나투어</span>
+							<em>항공 이용권 = 750만원</em>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<span>오늘 하루는</span>
+							모든걸 잊고.
+						</div>
+						<div class="img-sec">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_flex_02.png" alt="">
+						</div>
+						<div class="price">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/ico_flex_02.png" alt="">
+							<span><i>자라섬 </i>재즈 페스티벌</span>
+							<em>4인티켓 = 48만원</em>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<span>한 달 동안</span>
+							맛있게 먹으면 0칼로리.
+						</div>
+						<div class="img-sec">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_flex_03.png" alt="">
+						</div>
+						<div class="price">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/ico_flex_03.png" alt="">
+							<span>배달의 민족</span>
+							<em>2만원권 X 50장 = 100만원</em>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<span>100일 동안</span>
+							두 다리 편하게 출근.
+						</div>
+						<div class="img-sec">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_flex_04.png" alt="">
+						</div>
+						<div class="price">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/ico_flex_04.png" alt="">
+							<span>카카오 T</span>
+							<em>택시 포인트 = 100만원</em>
+						</div>
+					</li>
+					<li>
+						<div class="tit">
+							<span>1년 동안</span>
+							뭐 볼까?
+						</div>
+						<div class="img-sec">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_flex_05.png" alt="">
+						</div>
+						<div class="price">
+							<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/ico_flex_05.png" alt="">
+							<span>왓챠</span>
+							<em>OTT 1년 구독 = 7만원</em>
+						</div>
+					</li>
+				</ul>
+
+				<div class="animate-price">
+					<div class="inner">
+						<p class="font-fix">1000만원 어치의 이 모든 경품을 한 번에 플렉스 할 단 한분을 찾습니다. </p>
+						<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_amount.png" alt=""></span>
+
+						<!-- 개발 영역 220516 -->
+						<div class="dev-flex">
+							<style>
+							.dev-flex .pmo-btn-flex {text-align:center;}	
+							.dev-flex .pmo-btn-flex button {display:flex;justify-content:center;align-items:center;width:450px;height:50px;margin:0px auto;font-size:18px;letter-spacing:-0.36px;color:#fff;background:#fa292c;border:1px solid #fa292c;}
+							.dev-flex .pmo-btn-flex.complete button {background:#000 !important;border:1px solid #555 !important;} /* 220607_2 수정 */
+							.dev-flex .pmo-btn-flex.complete button:hover {cursor:default;}
+							</style>
+
+							<div class="pmo-btn-flex"><!-- 도전 완료시 complete 클래스 추가 -->
+								<button type="button" data-popup-trigger data-target="#agreeMarketing1">지금 바로 플렉스 도전</button><!-- 텍스트 교체 : 플렉스 완료 ! --><!-- data-popup-trigger data-target="#marketingAccept1" 속성 제거 -->
+							</div>
+
+							<!-- 마케팅 수신 동의자 -->
+							<div id="marketingAccept1" class="ui-dialog-contents" title="마케팅 수신 동의자" data-class="dialog-alert">
+								<div class="dialog-contents-flex">
+									<div class="dialog-alert-text">
+										<h6><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_alert_complete.png" alt="Complete!"></h6><!-- 220525 수정 -->
+										도전 완료 !<br/>
+										타임플렉스를 공유해 주세요. 1000만원 주인공에 더 가까워 집니다.
+									</div>
+								</div>
+							</div>
+
+							<!-- 마케팅 수신 미동의자 -->
+							<!-- 220525 수정 -->
+							<div id="agreeMarketing1" class="ui-dialog-contents" title="마케팅 수신 미동의자" data-class="dialog-alert">
+								<div class="dialog-contents-flex">
+									<div class="dialog-alert-text">
+										마케팅 수신 (이메일 / SMS)에 동의하신 분들에 한하여<br/>
+										이벤트 참여가 가능합니다.<br/>
+										수신 동의 후, 이벤트에 참여 하시겠습니까?
+									</div>
+									<div class="btn-even-wrap">
+										<button type="button" class="btn"><span class="inner-text">예</span></button>
+										<button type="button" class="btn"><span class="inner-text">아니오</span></button>
+									</div>
+								</div>
+							</div>
+							<!-- /220525 수정 -->
+
+						</div>
+						<!-- /개발 영역 220516 -->
+					</div>
+				</div>
+				
+				<p class="pmo-txt font-fix">플렉스 포부를 댓글로 남겨주세요. 플렉스 할 주인공에 더 가까워 집니다.</p>
+
+				<div class="pmo-btn">
+					<a href="javascript:void(0);">당첨 확률 높히러 가기</a>
+				</div>
+
+				<ul class="list-term font-fix">
+					<li><span>참여기간</span>2022. 5. 30 (월) ~ 2022. 6. 12 (일)</li>
+					<li><span>당첨자</span>단 한 명</li>
+					<li><span>당첨자발표</span>2022. 6. 20 (월)</li>
+				</ul>
+
+				<dl class="list-notice">
+					<dt>유의사항</dt>
+					<dd>
+						<ul>
+							<li>해당 이벤트는 ID당 1회만 참여가 가능합니다.</li>
+							<li>이벤트 당첨 여부 및 경품별 지급내용은 6.20(월) 공지사항을 통해 발표됩니다.</li>
+							<li>5만 원 이상의 경품은 고객 부담으로 제세공과금이 발생합니다.</li>
+							<li>당첨 경품은 타인에게 양도 불가합니다.</li>
+							<li>이벤트 당첨자 후 3일 이내 고객님과 연락이 닿지 않을 경우 당첨이 취소됩니다.</li>
+							<li>당첨 안내를 위해 마케팅 수신동의를 하신 분들만 참여 가능합니다.</li>
+							<li>본 프로모션은 당사 사정에 의해 별도 공지 없이 중단될 수 있습니다.</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<!-- /time-flex -->
+		</section>
+
+		<section id="event-section-02" style="display:;">
+
+			<!-- time-coupon -->
+			<div class="time-coupon">
+				<div class="tit-sec fade-out">
+					<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_sub_coupon.png" alt="TIME COUPON"></span>
+					<h5 class="font-fix">매일 오전 00시<br/>최대 90% 쿠폰 플렉스.</h5><!-- 220527 수정 -->
+				</div>
+
+				<div class="coupon-sec">
+					<div class="tit">
+						<span>그리고 매 순간</span>
+						쇼핑은 EQL.
+					</div>
+					<div class="img-sec">
+						<div class="video-sec">
+							<video poster="" class="vod" autoplay playsinline muted loop>
+								<source src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/coupon_movie.mp4" type="video/mp4">
+								Your browser does not support HTML5 video.
+							</video>
+						</div>
+					</div>
+					<div class="price">
+						<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/ico_eql_01.png" alt="">
+						<span>이큐엘스토어</span>
+						<em class="font-fix">최대 90% 쿠폰</em>
+					</div>
+				</div>
+
+				<!-- 개발 영역 220516 -->
+				<div class="dev-coupon">
+					<style>
+					.dev-coupon .pmo-btn-coupon {text-align:center;}	
+					.dev-coupon .pmo-btn-coupon button {display:flex;justify-content:center;align-items:center;width:450px;height:50px;margin:0px auto;font-size:18px;letter-spacing:-0.36px;color:#fff;background:#fa292c;border:1px solid #fa292c;}
+					.dev-coupon .pmo-btn-coupon.complete button {background:#000;border:1px solid #555;}
+					.dev-coupon .pmo-btn-coupon.complete button:hover {cursor:default;}
+					</style>
+
+					<div class="pmo-btn-coupon"><!-- 쿠폰 발급 완료시 complete 클래스 추가, 텍스트 교체 : 쿠폰 발급 완료 ! -->
+						<button type="button" data-popup-trigger data-target="#marketingAccept3">쿠폰 받기</button><!-- 220525 수정 --><!-- '쿠폰 받기' 로 텍스트 수정 -->
+					</div>
+
+					<!-- 마케팅 수신 동의자 -->
+					<div id="marketingAccept3" class="ui-dialog-contents" title="마케팅 수신 동의자" data-class="dialog-alert">
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								<h6><span>70</span>%</h6>
+								쿠폰이 발급되었습니다 !
+								<div class="pmo-btn-pop">
+									<button type="button" onclick="location.href='/special/6166/view?utm_source=site&utm_medium=tshop&utm_campaign=tshop01'">쿠폰 쓰러가기</button><!-- 220525 수정 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 마케팅 수신 미동의자 -->
+					<!-- 220525 수정 -->
+					<div id="agreeMarketing3" class="ui-dialog-contents" title="마케팅 수신 미동의자" data-class="dialog-alert"><!-- 닫기 누를 경우 로그인 페이지로 이동 -->
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								마케팅 수신 (이메일 / SMS)에 동의하신 분들에 한하여<br/>
+								이벤트 참여가 가능합니다.<br/>
+								수신 동의 후, 이벤트에 참여 하시겠습니까?
+							</div>
+							<div class="btn-even-wrap">
+								<button type="button" class="btn"><span class="inner-text">예</span></button>
+								<button type="button" class="btn"><span class="inner-text">아니오</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- /220525 수정 -->
+
+				</div>
+				<!-- /개발 영역 220516 -->
+
+				<ul class="list-term font-fix">
+					<li><span>참여기간</span>2022. 5. 30 (월) ~ 2022. 6. 12 (일)</li>
+				</ul>
+
+				<dl class="list-notice">
+					<dt>유의사항</dt>
+					<dd>
+						<ul>
+							<li>해당 이벤트는 ID당 일 1회 발급 가능합니다.</li>
+							<li>본 쿠폰은 10 ~ 90% 까지 발급됩니다.</li>
+							<li>본 쿠폰은 발급 후 익일 24시간 이내 사용 가능하며, 취소/환불 후 재발급되지 않습니다.</li>
+							<li>쿠폰 종류 별 최대 할인 금액은 상이하며, 최대 8만원 할인 가능합니다.</li>
+							<li>일부 상품의 경우 적용이 불가합니다.</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<!-- /time-coupon -->
+
+		</section>
+
+		<section id="event-section-03" style="display:;">
+
+			<!-- time-attack -->
+			<div class="time-attack">
+				<div class="tit-sec fade-out">
+					<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_sub_attack.png" alt="TIME ATTACK"></span>
+					<h5 class="font-fix">매일 오전 10시<br/>0원으로 새로운 상품 어택.</h5>
+				</div>
+
+				<!-- 개발 영역 220516 -->
+				<div class="dev-time">
+					<!-- 220602 css 수정 -->
+					<style>
+					.dev-time .list_prd {width:1680px;padding-bottom:100px;margin:0 auto;}
+					.dev-time .list_prd li {display:inline-block;width:360px;padding-top:100px;margin:0 30px;}
+					.dev-time .list_prd li .img-sec {width:360px;padding-top:30px;position:relative;border-radius:50px;}
+					.dev-time .list_prd li .img-sec img {width:360px;height:360px;}
+					.dev-time .list_prd li .img-sec span {width:80px;height:80px;display:flex;justify-content:center;align-items:center;font-size:24px;color:#fff;background:#000;border-radius:40px;position:absolute;top:0px;right:-30px;z-index:10;}
+					.dev-time .list_prd li .img-sec em {text-align:center;display:block;padding:10px 0px 20px 0px;font-size:15px;letter-spacing:-0.38px;color:#fff;}
+					.dev-time .list_prd li .price-sec {display:flex;justify-content:space-between;padding:0px 25px 20px 30px;}
+					.dev-time .list_prd li .price-sec span {display:inline-block;font-size:48px;font-weight:300;color:#333;position:relative;}
+					.dev-time .list_prd li .price-sec span:after {content:"";display:block;width:100%;height:2px;background:#333;position:absolute;top:30px;left:0px;right:0px;}
+					.dev-time .list_prd li .price-sec em {font-size:48px;color:#fff;}
+					.dev-time .list_prd li .pmo-btn-time button {display:flex;justify-content:center;align-items:center;width:360px;height:50px;margin:0px 0px -1px -1px;font-size:16px;letter-spacing:-0.32px;color:#fff;background:#000;border:1px solid #000;}
+					.dev-time .list_prd li .pmo-btn-time button:hover {cursor:default;}
+						
+					@media screen and (max-width:1680px){
+						.dev-time .list_prd {width:1260px;}
+					}	
+
+					/* 진행중인 상품 */
+					.dev-time .list_prd li.on .img-sec span {background:#fa292c;}
+					.dev-time .list_prd li.on .pmo-btn-time button {color:#fff;background:#fa292c;border:1px solid #fa292c;}
+					.dev-time .list_prd li.on .pmo-btn-time button:hover {cursor:pointer;}
+
+					/* 어택 완료 상품 */
+					.dev-time .list_prd li.complete .pmo-btn-time button {color:#999;background:#222;border:1px solid #555;}
+
+					/* 어택 마감 상품 */
+					.dev-time .list_prd li.end .img-sec img {opacity:0.3;} /* 220607 추가 */
+					.dev-time .list_prd li.end .img-sec span {display:none;}
+					.dev-time .list_prd li.end .pmo-btn-time button {color:#999;background:#222;border:1px solid #555;}
+					</style>
+					<!-- /220602 css 수정 -->		
+					
+					<!-- 220525 수정 시작 -->
+					<!-- time-attack-wrap -->
+					<div class="time-attack-wrap">
+						<ul class="list_prd">
+							<li class="on">
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_01.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_10.png" alt="10"></span>
+									<em>애플 워치 7 알루미늄 케이스<br/>+ 스포츠 밴드 (미드나이트)</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_01.png" alt="539,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button" data-popup-trigger data-target="#agreeMarketing2">어택하기</button>
+								</div>
+							</li>
+							<li class="end">
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_02.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_30.png" alt="10"></span>
+									<em>딥티크 베이 캔들 190G</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_02.png" alt="91,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">타임 아웃</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_03.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_10.png" alt="10"></span>
+									<em>오트리 메달리스트<br/>스니커즈 270MM</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_03.png" alt="269,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_04.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_10.png" alt="10"></span>
+									<em>발뮤다 더 토스트<br/>(컬러 랜덤)</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220526/item_origin_price_04.png" alt="339,000"></span><!-- 220527 수정_3 -->
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+
+							<!-- 220607 삭제 -->
+							<!--
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_05.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_20.png" alt="10"></span>
+									<em>RRL 엠브로이더리 코튼 캡<br/>(컬러 랜덤)</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_05.png" alt="111,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							-->
+							<!-- /220607 삭제 -->
+
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_06.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_150.png" alt="10"></span>
+									<em>르라보 히노끼 핸드 크림 55ML</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_06.png" alt="33,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_07.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_500.png" alt="10"></span>
+									<em>스타벅스 아이스 아메리카노 톨</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_07.png" alt="4,500"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_08.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_25.png" alt="10"></span>
+									<em>자크뮈스 코튼 버킷햇 58CM<br/>(컬러 랜덤)</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_08.png" alt="133,640"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_09.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_20.png" alt="10"></span>
+									<em>스투시 X 날진 보틀 907ML</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_09.png" alt="42,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_10.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_2.png" alt="10"></span>
+									<em>셀린느 트리오페 숄더백</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_10.png" alt="3,300,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_11.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_10.png" alt="10"></span>
+									<em>다이슨 슈퍼소닉 HD08</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_11.png" alt="499,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_12.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_23.png" alt="10"></span>
+									<em>칼하트 WIP 킨토<br/>트래블 텀블러 350ML (카키)</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_12.png" alt="65,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_13.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_150.png" alt="10"></span>
+									<em>이솝 레저렉션 핸드크림 75ML</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_13.png" alt="31,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+							<li>
+								<div class="img-sec">
+									<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_attack_14.png" alt="">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_num_10.png" alt="10"></span>
+									<em>B&O 베오사운드 A1<br/>(그레이 미스트)</em>
+								</div>
+								<div class="price-sec">
+									<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_origin_price_14.png" alt="419,000"></span>
+									<em><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/item_price_0.png" alt="0원"></em>
+								</div>
+								<div class="pmo-btn-time">
+									<button type="button">진행 예정</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- /time-attack-wrap -->
+					<!-- /220525 수정 끝 -->
+			
+					<!-- 마케팅 수신 동의자 -->
+					<div id="marketingAccept2" class="ui-dialog-contents" title="마케팅 수신 동의자" data-class="dialog-alert">
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								<h6><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_alert_seccess.png" alt="Success!"></h6><!-- 220525 수정 -->
+								어택성공 !<br/>
+								6.20일부터 순차적으로 발송 진행 됩니다.
+							</div>
+						</div>
+					</div>
+			
+					<!-- 마케팅 수신 미동의자 -->
+					<!-- 220525 수정 시작 -->
+					<div id="agreeMarketing2" class="ui-dialog-contents" title="마케팅 수신 미동의자" data-class="dialog-alert">
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								마케팅 수신 (이메일 / SMS)에 동의하신 분들에 한하여<br/>
+								이벤트 참여가 가능합니다.<br/>
+								수신 동의 후, 이벤트에 참여 하시겠습니까?
+							</div>
+							<div class="btn-even-wrap">
+								<button type="button" class="btn"><span class="inner-text">예</span></button>
+								<button type="button" class="btn"><span class="inner-text">아니오</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- /220525 수정 끝 -->
+
+					<!-- 타임어택 실패 시 -->
+					<div id="marketingNext" class="ui-dialog-contents" title="타임어택 실패" data-class="dialog-alert">
+						<div class="dialog-contents-flex">
+							<div class="dialog-alert-text">
+								<h6><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_next_time.png" alt="At the next time"></h6><!-- 220525 수정 -->
+								다음 타임 어택을 노려보세요.<br/>
+								아쉬운 오늘을 위해 준비한 100% 당첨 보너스 쿠폰을 놓치지마세요.
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /개발 영역 220516 -->
+
+				<!-- 220527 수정_3 -->
+				<p class="pmo-txt font-fix">
+					타임어택 종료 후, 다음 날 10시<br/> 
+					EQL 인스타그램 스토리를 통해 당첨자 명단이 보여집니다.<br/> 
+					금토일 어택의 경우, 다음 날 오전에 확인하세요! 					
+				</p>
+				<!-- /220527 수정_3 -->
+
+				<div class="pmo-btn">
+					<a href="https://www.instagram.com/eql_store/" target="_blank">인스타그램 바로가기</a>
+				</div>
+
+				<ul class="list-term font-fix">
+					<li><span>참여기간</span>2022. 5. 30 (월) ~ 2022. 6. 12 (일)</li>
+				</ul>
+
+				<dl class="list-notice">
+					<dt>유의사항</dt>
+					<dd>
+						<ul>
+							<li>해당 이벤트는 ID당 일 1회 어택이 가능합니다.</li>
+							<li>이벤트 당첨 내용은 5.31일부터 오후 14시 공지사항을 통해 발표됩니다.</li>
+							<li>이벤트 당첨 후 상품 발송은 6.20일 이후 순차적으로 발송 될 예정입니다.</li>
+							<li>이벤트 당첨 후 3일 이내 고객님과 연락이 닿지 않을 경우 당첨이 취소됩니다.</li>
+							<li>상기 경품에 대한 색상 변경이 있을 수 있습니다. </li>
+							<li>5만 원 이상의 경품은 고객 부담으로 제세공과금이 발생합니다.</li>
+							<li>경품 증정을 위해 마케팅 수신동의를 하신 분들만 참여 가능합니다.</li>
+							<li>경품 증정을 위해 최원 정보를 최신 정보로 업데이트 해주시기 바랍니다. </li>
+							<li>이벤트 참여 시 경품 배송을 위해 제 3자에게 개인정보(이름, 연락처, 주소) 제공에 동의한 것으로 간주합니다.</li>
+							<li>본 프로모션은 당사 사정에 의해 별도 공지 없이 종료될 수 있습니다.</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<!-- /time-attack -->
+
+		</section>
+
+		<section id="event-section-04" style="background:#eee;display:;">
+			
+			<!-- killing-time -->
+			<div class="killing-time">
+				<div class="tit-sec fade-out">
+					<span><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_sub_time.png" alt="KILLING TIME"></span>
+					<h5 class="font-fix"><img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/tit_killing_time.png" alt="이큐엘스토어 이슈"></h5>
+				</div>
+
+				<!-- 220602 수정 -->
+				<!-- banner-sec -->
+				<div class="banner-sec">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220602/banner_killing_time.png" alt="" usemap="#image-map1">
+					<map name="image-map1">
+						<area target="_self" alt="" href="/special/6331/view"                                                                          coords="0,0,591,591"        shape="rect">
+						<area target="_self" alt="" href="/special/6166/view"                                                                          coords="610,286,1199,0"     shape="rect">
+						<area target="_self" alt="" href="/special/6494/view?ga_param=Tshirtsbrandrelay"                                               coords="611,306,1199,588"   shape="rect">
+						<area target="_self" alt="" href="/event/EV202107210001615/view?&utm_source=insta&utm_medium=lnkbio&utm_campaign=BENEFITGUIDE" coords="0,611,285,895"      shape="rect">
+						<area target="_self" alt="" href="/event/EV202107210001615/view?&utm_source=insta&utm_medium=lnkbio&utm_campaign=BENEFITGUIDE" coords="304,611,590,898"    shape="rect">
+						<area target="_self" alt="" href="/special/6493/view?ga_param=Tshirtsbrandrelay"                                               coords="607,609,1199,896"   shape="rect">
+						<area target="_self" alt="" href="/special/6492/view?ga_param=Tshirtsbrandrelay"                                               coords="0,915,592,1199"     shape="rect">
+						<area target="_self" alt="" href="/special/6495/view?ga_param=Tshirtsbrandrelay"                                               coords="609,916,1199,1202"  shape="rect">
+						<area target="_self" alt="" href="/special/6496/view?ga_param=Tshirtsbrandrelay"                                               coords="1,1218,591,1502"    shape="rect">
+						<area target="_self" alt="" href="/display/productsList?categoryNumber=EQLA01A01A06&ga_param=keywordbanner"                    coords="610,1218,897,1504"  shape="rect">
+						<area target="_self" alt="" href="/display/productsList?categoryNumber=EQLA01A02A05&ga_param=keywordbanner"                    coords="915,1220,1199,1504" shape="rect">
+					</map>
+				</div>
+				<!-- banner-sec -->
+				<!-- /220602 수정 -->
+
+			</div>
+			<!-- /killing-time -->
+
+		</section>
+
+		<div id="comment" class="comment-sec">
+
+			<!-- flex-share -->
+			<div class="flex-share">
+				<div class="tit-sec">
+					<h5 class="font-fix">내가 1000만 원어치 플렉스 해보자면.</h5>
+				</div>
+
+				<p>
+					1000만 원어치 플렉스 포부와 함께<br/>
+					같이 할 사람의 EQL ID를 댓글로 남겨주세요.<br/>
+					플렉스 당첨 확률이 높아집니다.
+				</p>
+
+				<div class="img-sec">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_comment_01.png" class="item_01 motion bottom" alt="">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_comment_02.png" class="item_02 motion bottom delay1" aalt="">
+					<img src="https://cdn.eqlstore.com/display/html/DSP_CTGRY/20220525/img_comment_03.png" class="item_03 motion bottom delay2" aalt="">
+				</div>
+
+				<div class="pmo-btn-share">
+					<button type="button" data-popup-trigger data-target="#copyLink">이벤트 공유하기</button><!-- 220527 수정 -->
+				</div>
+
+				<!-- 링크 복사하기 -->
+				<div id="copyLink" class="ui-dialog-contents" title="링크 복사하기" data-class="dialog-alert">
+					<div class="dialog-contents-flex">
+						<div class="dialog-alert-text">
+							링크를 복사하였습니다 !
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /flex-share -->
+			
+		</div>
+	</article>
+</div>
+
+<script>
+(function($context, $doc){
+	if (!$context.length) return;
+	
+	// 스크롤 메뉴
+	var $menu = $context.find('.event-menu');
+	var $menus = $context.find('.event-menu li');
+	var $menubox = $menu.find('.event-menu-inner');
+	var $sections = $context.find('section');
+	var offset = 84;
+	var tabHeight = 40;
+
+	var setMenufix = function(){
+		var lastTop = $('#event-section-04').position().top
+		var lastH = $('#event-section-04').outerHeight()-offset;
+		var posSum = lastTop + lastH
+		if ($(window).scrollTop() > $menu.offset().top - offset  && $(window).scrollTop() <= posSum) {
+			$menubox.addClass('fixed');
+		}
+		else {
+			$menubox.removeClass('fixed');
+		}
+	};
+
+	var setSection = function(){
+		$sections.each(function(idx, $section){
+			if ($(window).scrollTop() >= $section.offsetTop - offset - tabHeight - 1) {
+				$menus.removeClass('active');
+				$menus.eq(idx).addClass('active');
+			}
+		});
+	};
+
+	// 섹션 타이틀 고정
+	function setTitlefix() {
+		const checkTiming = 400;
+		const arrySectionTop = [];
+		const arrySectionHeight = [];
+		const arrySectionSum = [];
+		
+		for(var i=0; i<$sections.length; i++) {
+			arrySectionTop.push($sections.eq(i).offset().top);
+			arrySectionHeight.push($sections.eq(i).outerHeight());
+			arrySectionSum.push(arrySectionTop[i] + arrySectionHeight[i] - offset);
+
+			if ($(window).scrollTop() > arrySectionTop[i] - offset  && $(window).scrollTop() <= arrySectionSum[i] - checkTiming) {
+				$sections.eq(i).find('.tit-sec').addClass("fixed");
+				if ($(window).scrollTop() > arrySectionSum[i] - checkTiming) { 
+					$sections.eq(i).find('.tit-sec').addClass("in");
+				} else {
+					$sections.eq(i).find('.tit-sec').removeClass("in");
+				}
+			} else {
+				$sections.eq(i).find('.tit-sec').removeClass("fixed");
+			}
+		}
+	}
+
+	// 탭 클릭 이동
+	$menu.on('click', 'li a', function (e) {
+		var section = $(e.currentTarget.hash);
+		var offsetTop = Math.round(section.offset().top);
+		$doc.stop().animate({
+			scrollTop: offsetTop - offset - tabHeight,
+		}, 400);
+		e.preventDefault();
+	});
+
+	// 첫번째 탭 예외 처리
+	$menu.on('click', 'li:nth-child(1) a', function (e) {
+		var section = $(e.currentTarget.hash);
+		var offsetTop = Math.round(section.offset().top);
+		$doc.stop().animate({
+			scrollTop: offsetTop - offset,
+		}, 400);
+		e.preventDefault();
+	});
+
+	$(window).on('load scroll resize', function(){
+		setMenufix();
+		setTitlefix();
+	});
+
+	$(window).on('scroll', function(){
+		setSection();
+
+		$('.motion').each(function(i){
+			if(checkVisible($(this))){
+				$(this).addClass('in');
+			}
+		});	
+	});
+
+	// 카운트 다운
+	const targetDate = "12 June 2022 23:59:59 GMT+0900";
+	function countdown() {
+		const newTargetDate = new Date(targetDate);
+		const currentDate = new Date();
+		if(currentDate < newTargetDate) {    // 1차 오픈
+			const totalSeconds = (newTargetDate - currentDate) / 1000;
+			const days = Math.floor(totalSeconds / 3600 / 24);
+			const hours = Math.floor(totalSeconds / 3600) % 24;
+			const minutes = Math.floor(totalSeconds / 60) % 60;
+			const seconds = Math.floor(totalSeconds) % 60;
+			document.getElementById('days').innerText = formatTime(days);
+			document.getElementById('hours').innerText = formatTime(hours);
+			document.getElementById('minutes').innerText = formatTime(minutes);
+			document.getElementById('seconds').innerText = formatTime(seconds);
+		} else {    // 이벤트 종료
+			return;
+		}
+	}
+	function formatTime(time) {
+		return time < 10 ? "0" + time : time;
+	}
+	setInterval(countdown, 1000);	
+
+
+	/**************** 스크롤 매직 애니메이션 시작 ***************/
+	// 스크롤 매직
+	var controller = new ScrollMagic.Controller();
+
+	// 탑 비주얼 컨테이너
+	var scene0 = new ScrollMagic.Scene({
+		duration: "1500",
+		offset: 280,
+	})
+	.setPin('#animateTop0')
+	.addTo(controller)
+	// .addIndicators({name: "setSpin"});	
+
+	// animation 탑 비주얼 타이틀
+	var tween1 = TweenMax.to('#animateTop1', 0.5, {
+		opacity: 1,
+		x: 0,
+		y: 0,
+	});
+	var scene1 = new ScrollMagic.Scene({
+		triggerElement: "animateTop1",
+		duration: "800",
+		offset: 280,
+	})
+	.setTween(tween1)
+	.addTo(controller)
+	// .addIndicators({
+	// 	name: "1"
+	// });
+	
+	// animation 핸드폰
+	var tween2 = TweenMax.to('#animateTop2', 0.5, {
+		scale: 1,
+		x: 0,
+		y: -10,
+	});
+	var scene2 = new ScrollMagic.Scene({
+		duration: "800",
+		offset: 280,
+	})
+	.setTween(tween2)
+	.addTo(controller)
+	// .addIndicators({
+	// 	name: "2"
+	// });	
+
+	// animation 비주얼 서브 텍스트
+	var tween3 = TweenMax.to('#animateTop3', 0.5, {
+		opacity: 1,
+		x: 0,
+		y: 0,
+	});
+	var scene3 = new ScrollMagic.Scene({
+		duration: "1000",
+		offset: 800,
+	})
+	.setTween(tween3)
+	.addTo(controller)
+	// .addIndicators({
+	// 	name: "3"
+	// });	
+	/**************** 스크롤 매직 애니메이션 끝 ***************/
+
+	// 당첨 확률 높이기 버튼
+	$(".time-flex .pmo-btn a").on("click", function(){
+		console.log("클릭")
+		var scrollPosition = $("#comment").offset().top;
+		$("html").animate({
+			scrollTop: scrollPosition - offset - tabHeight,
+		}, 500);			
+	});
+
+	// 유의사항 토글 
+	$('.list-notice dt').click(function(){
+		$(this).parent().toggleClass('on');
+	});	
+
+	// 컨텐츠 스크롤바
+	// detailScrollBars = OverlayScrollbars($('.killing-time .banner-sec'), {
+	// 	className : "os-theme-light",
+	// });
+
+	// 엘리먼트 체크
+	function checkVisible( elm, eval ) {
+		eval = eval || "object visible";
+		var viewportHeight = $(window).height(), // Viewport Height
+			scrolltop = $(window).scrollTop(), // Scroll Top
+			y = $(elm).offset().top,
+			elementHeight = $(elm).height();   
+		
+		if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+		if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+	}	
+
+	/* 220527 수정 */
+	// 주소 복사
+	var copyBtn = document.querySelector(".pmo-btn-share button");
+	copyBtn.addEventListener("click", function () {
+		var copy_url = document.location.href;
+		console.log(copy_url);
+		navigator.clipboard.writeText(copy_url);
+	}, false);
+	/* /220527 수정 */
+
+})($('.pmo-cont'), $('html,body'));
+
+// URL 키값을 위한 정의
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	const regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function chkHashUrl() {
+	const chkParamUrl2 = getParameterByName('event02');	// 타임 쿠폰
+	const chkParamUrl3 = getParameterByName('event03'); // 타임 어택
+	const chkParamUrl4 = getParameterByName('event04'); // 킬링 타임 /* 220530 수정2 */
+	const eventTop02 = $('#event-section-02').offset().top;
+	const eventTop03 = $('#event-section-03').offset().top;
+	const eventTop04 = $('#event-section-04').offset().top; /* 220530 수정2 */
+	const offset = 84;
+
+	if(chkParamUrl2) {
+		$("html").stop().animate({
+			scrollTop: eventTop02 - offset,
+		}, 400);
+	} else if(chkParamUrl3) {
+		$("html").stop().animate({
+			scrollTop: eventTop03 - offset,
+		}, 400);
+	} else if(chkParamUrl4) { // 킬링 타임 /* 220530 수정2 */
+		$("html").stop().animate({ 
+			scrollTop: eventTop04 - offset,
+		}, 400);
+	} else {
+		// $(window).scrollTop(0); 
+	}
+}
+
+setTimeout(function() {
+    chkHashUrl();
+}, 400);
+</script>
+<!-- //E : 이벤트 상세 코너 -->
+
+<!-- <script src="/resources/event/2022/05/anniversary/pub.js"></script> -->
+
+
+
+
+
+							<!--E : 이벤트 컨텐츠 임시 영역-->
+						</div>
+						<!--E : 이벤트 컨텐츠 html 영역-->
+					</div>
+
+					<div class="detail-footer-wrap">
+
+						<!-- S : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+						<!--S : gate-banner-wrap-->
+						<div class="gate-banner-wrap">
+							<div class="gate-banner-swiper">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Event type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(../..https://www.eqlstore.com/resources/images/temp/temp_event.jpg)"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">IN FOCUS : CONVERS</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Event</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Event type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Archive type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_archive_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Archive</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Archive type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Brand Focus type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title"> ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN ANDERSON BELL FOR WOMEN</span>
+														<p class="desc">테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽 테니스를 컨셉으로 디자인을 선보이는 테니스보이클럽</p>
+													</div>
+													<span class="gatemenu-type">Brand Focus</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Brand Focus type -->
+									</li>
+									<li class="swiper-slide">
+										<!-- s: item - Lookbook type -->
+										<div class="gate-view-item">
+											<a href="" class="gate-view-link">
+												<div class="ratio-img-wrap">
+													<div class="img-viewer" style="background-image: url(https://www.eqlstore.com/resources/images/temp/temp_brand_detail_banner_img.jpg);"></div>
+												</div>
+												<div class="view-info-wrap">
+													<div class="view-title-box">
+														<span class="title">ANDERSON BELL FOR WOMEN</span>
+													</div>
+													<span class="gatemenu-type">Lookbook</span>
+												</div>
+											</a>
+										</div>
+										<!-- e: item - Lookbook type -->
+									</li>
+								</ul>
+							</div>
+							<div class="btn-swiper-arrow-wrap">
+								<button class="btn-swiper-arrow prev">이전 슬라이드<span class="icon"></span></button>
+								<button class="btn-swiper-arrow next">다음 슬라이드<span class="icon"></span></button>
+							</div>
+						</div>
+						<!--E : gate-banner-wrap-->
+						<!-- E : 200317 수정 | 연관 컨텐츠 swiper 1줄로 노출되도록 수정 -->
+					</div>
+				</div>
+				<!--E : detail-container-wrapper-->
+				<!--E : 200313 수정 | 이벤트 상세 레이아웃 전면 수정-->
+			</div>
+			<div id="footerWrap" class="footer-wrap">
+				<div class="footer-copyright-wrap">
+					<div class="footer-copyright-inner">
+						<p>(주)한섬  /  대표이사  김민덕  /  서울시 강남구 도산대로 523 한섬빌딩</p><!-- 200403 수정 | 대표자명 변경 ( 김형종  -> 김민덕 ) -->
+						<p>Tel 1661-8858  /  Fax 02-476-8169  /  사업자등록번호 120-81-26337</p><!-- 200331 수정 | TEL 번호 수정 -->
+						<p>통신판매업신고번호 강남 제 00826호 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208126337&apv_perm_no=" target="_blank" class="footer-anchor">사업자 정보 확인</a> <a href="#none" class="footer-anchor" data-popup-trigger data-target="#dialogMoney">하나은행 구매안전 서비스</a></p><!-- 200714 수정 | 사업자 정보 확인 추가 --><!-- 200807 추가 : 하나은행 구매안전 서비스 추가 -->
+						<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->|<p>개인정보보호책임자  이정득  /  호스팅 서비스 (주)한섬</p><!-- 200714 수정 | 위치 변경 --><!-- 200826 호스팅서비스 추가 -->
+						<p class="copyright">Copyrightⓒ 2017 handsome. All right reserved.</p>
+					</div>
+					<!-- 200807 추가 : 지급보증서 발급조회 안내 팝업 -->
+					<div id="dialogMoney" class="ui-dialog-contents" title="지급보증서 발급조회 안내">
+						<div class="dialog-contents-flex">
+							<p><img src="https://www.eqlstore.com/resources/images/footer/footer_certification.jpg" alt=""></p>
+							<p class="desc-dark-gray">고객님께서 안전거래를 위해 현금 결제 시 <br>EQL에서 가입한 하나은행의 구매안전서비스를 이용하실 수 있습니다.</p>
+						</div>
+					</div>
+					<!-- //지급보증서 발급조회 안내 팝업 -->
+				</div>
+				<div class="footer-help-wrap">
+					<p class="footer-wrap-title">Help</p>
+					<!-- s : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">FAQ</a></li>
+						<li><a href="#" class="footer-link">공지사항</a></li>
+						<li><a href="#" class="footer-link">제휴문의</a></li>
+						<li><a href="#" class="footer-link">입점상담</a></li>
+						<li><a href="#" class="footer-link">멤버십 안내</a></li>
+					</ul>
+					<!-- e : 200303 수정 | Footer Help 메뉴 순서 수정 -->
+					<!-- s : 200219 수정 | SNS 순서 변경 -->
+					<div class="footer-wrap-tool sns-link-box">
+						<a href="#" class="sns-link youtube" target="_blank">유튜브</a>
+						<a href="#" class="sns-link facebook" target="_blank">페이스북</a>
+						<a href="#" class="sns-link instagram" target="_blank">인스타그램</a>
+					</div>
+					<!-- e : 200219 수정 | SNS 순서 변경 -->
+				</div>
+				<div class="footer-company-wrap">
+					<p class="footer-wrap-title">Company</p>
+					<!-- S : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<ul class="footer-link-list">
+						<li><a href="#" class="footer-link">ABOUT EQL</a></li>
+						<li><a href="#" class="footer-link">회사소개</a></li>
+						<li><a href="#" class="footer-link">이용약관</a></li>
+						<li><a href="#" class="footer-link spot">개인정보처리방침</a></li>
+					</ul>
+					<!-- E : 200325 수정 | footer company ABOUT EQL 추가, 이메일무단 수집거부 삭제 -->
+					<div class="footer-wrap-tool">
+						<div class="select-wrap family-site js-select" data-placeholder="FAMILY SITE" data-menu-place="up" data-menu-class="family-site">
+							<select title="Family site" class="ui-sel">
+								<optgroup label="ShoppingMall">
+									<option value="https://www.thehyundail.com/">더현대닷컴</option>
+									<option value="https://www.hddfs.com/">현대백화점 DUTY FREE</option>
+									<option value="http://esuper.ehyundai.com/">e슈퍼마켓</option>
+									<option value="https://hyundaihmall.com/">현대Hmall</option>
+									<option value="http://mall.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundairentalcare.co.kr/">현대렌탈케어</option>
+									<option value="http://thehandsome.com/ko">더한섬닷컴</option>
+									<option value="http://www.hfashionmall.com/">H패션몰</option>
+									<option value="http://www.h-vrstation.com/">VR STATION</option>
+								</optgroup>
+								<optgroup label="FamilySite">
+									<option value="http://www.ehyundai.com/newPortal/ir/main.do">현대백화점그룹</option>
+									<option value="https://www.ehyundai.com/newPortal/index.do">현대백화점</option>
+									<option value="http://www.hyundaigreenfood.com/">현대그린푸드</option>
+									<option value="https://www.hyundaihmall.com/">현대홈쇼핑</option>
+									<option value="http://www.hyundailivart.co.kr/">현대리바트몰</option>
+									<option value="http://www.hyundaihns.com">㈜현대H&amp;S</option>
+									<option value="http://www.hcn.co.kr/">현대HCN</option>
+									<option value="http://www.hyundaimedia.com/">현대미디어</option>
+									<option value="http://www.hyundairentalcare.co.kr">현대렌탈케어</option>
+									<option value="http://www.hyundaidreamtour.com/">현대드림투어</option>
+									<option value="http://www.everdigm.com/">에버다임</option>
+									<option value="http://www.cnsfoodsystem.co.kr/">씨엔에스푸드시스템</option>
+									<option value="http://www.hyundaicatering.co.kr/">현대케이터링시스템</option>
+									<option value="http://www.hyundai-ite.com/">현대IT&amp;E</option>
+									<option value="http://www.thehandsome.com/">한섬</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="show-mobile mobile-only">
+				<a href="#">모바일로 보기</a><!-- DESC : body 또는 wrap에 class "mobile-pc" 추가시 노출 됨 -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
